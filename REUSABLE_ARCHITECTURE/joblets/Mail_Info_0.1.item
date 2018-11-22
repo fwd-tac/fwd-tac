@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore">
+  <model:JobletProcess defaultContext="Default" jobType="Standard">
+    <context confirmationNeeded="false" name="Default">
+      <contextParameter comment="" name="MSSql_LA_DB" prompt="MSSql_LA_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="MSSql_EBAO_DB" prompt="MSSql_EBAO_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="MSSql_IS_DB" prompt="MSSql_IS_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="MSSql_IL_DB" prompt="MSSql_IL_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="MSSql_WebDB_DB" prompt="MSSql_WebDB_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="MSSql_CRM_DB" prompt="MSSql_CRM_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="MSSql_LA_HOST" prompt="MSSql_LA_HOST?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="MSSql_IS_WebDB_IL_HOST" prompt="MSSql_IS_WebDB_IL_HOST?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="MSSql_USERNAME" prompt="MSSql_USERNAME?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="MSSql_PASSWORD" prompt="MSSql_PASSWORD?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_Password" value="Le/mPyJBvGMIYVrvXoNiiA=="/>
+      <contextParameter comment="" name="S3_ACCESS_KEY" prompt="S3_ACCESS_KEY?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="S3_SECRET_KEY" prompt="S3_SECRET_KEY?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="S3_BUCKET_NAME" prompt="S3_BUCKET_NAME?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="HDFS_NAMENODE" prompt="HDFS_NAMENODE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="HDFS_USERNAME" prompt="HDFS_USERNAME?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="HDFS_LOCAL_DIR" prompt="HDFS_LOCAL_DIR?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="HDFS_DIR" prompt="HDFS_DIR?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="HOST" prompt="HOST?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="Hive_EBAO_DB" prompt="Hive_EBAO_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="Hive_LA_DB" prompt="Hive_LA_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="Hive_IS_DB" prompt="Hive_IS_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="Hive_IL_DB" prompt="Hive_IL_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="Hive_WebDB_DB" prompt="Hive_WebDB_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="Hive_CRM_DB" prompt="Hive_CRM_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="CDC_FILE_LOC" prompt="CDC_FILE_LOC?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="RECEIVER_MAIL" prompt="RECEIVER_MAIL?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="SENDER_MAIL" prompt="SENDER_MAIL?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="Cc_MAIL" prompt="Cc_MAIL?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="Bcc_MAIL" prompt="Bcc_MAIL?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="MAIL_SUBJECT" prompt="MAIL_SUBJECT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="MAIL_MESSAGE" prompt="MAIL_MESSAGE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="SMTPHOST" prompt="SMTPHOST?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="MAIL_USERNAME" prompt="MAIL_USERNAME?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="MAIL_PASSWORD" prompt="MAIL_PASSWORD?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_Password" value=""/>
+      <contextParameter comment="" name="Redshift_HOST" prompt="Redshift_HOST?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="Redshift_PORT" prompt="Redshift_PORT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_Integer" value=""/>
+      <contextParameter comment="" name="Redshift_DB" prompt="Redshift_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="Redshift_SCHEMA" prompt="Redshift_SCHEMA?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="Redshift_USERNAME" prompt="Redshift_USERNAME?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="Redshift_PASSWORD" prompt="Redshift_PASSWORD?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_Password" value="h8SMKxKM5NZ/+FdjcsN8XQ=="/>
+      <contextParameter comment="" name="Redshift_BATCH_AUDIT_TABLE_NAME" prompt="Redshift_BATCH_AUDIT_TABLE_NAME?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="Redshift_MAIL_TABLE_NAME" prompt="Redshift_MAIL_TABLE_NAME?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="Hive_USERNAME" prompt="Hive_USERNAME?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="Hive_PASSWORD" prompt="Hive_PASSWORD?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_Password" value="MgJQ4tW6n8VWLozLEBjq6Q=="/>
+      <contextParameter comment="" name="L_pid" prompt="L_pid?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_String" value=""/>
+      <contextParameter comment="" name="L_Project_name" prompt="L_Project_name?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_String" value=""/>
+      <contextParameter comment="" name="L_Job_name" prompt="L_Job_name?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_String" value=""/>
+      <contextParameter comment="" name="L_Typeof_error" prompt="L_Typeof_error?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_String" value=""/>
+      <contextParameter comment="" name="L_MAX_BATCH_HOUR" prompt="L_MAX_BATCH_HOUR?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_Long" value=""/>
+      <contextParameter comment="" name="L_SOURCE_RECORDS_COUNT" prompt="L_SOURCE_RECORDS_COUNT?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_Integer" value=""/>
+      <contextParameter comment="" name="L_Error_message" prompt="L_Error_message?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_String" value=""/>
+      <contextParameter comment="" name="L_START_TIME" prompt="L_START_TIME?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_Date" value=""/>
+      <contextParameter comment="" name="L_TARGET_RECORDS_COUNT" prompt="L_TARGET_RECORDS_COUNT?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_Integer" value=""/>
+      <contextParameter comment="" name="L_MAX_AUD_TIME" prompt="L_MAX_AUD_TIME?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PUB_PAY_MODE" prompt="EBAO_T_PUB_PAY_MODE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IL_Application" prompt="IL_Application?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="MSSql_EBAO_HOST" prompt="MSSql_EBAO_HOST?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="WebDB_User_Renewal_Reason" prompt="WebDB_User_Renewal_Reason?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IL_sysarticlecolumns" prompt="IL_sysarticlecolumns?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PRD_PRODUCT_MASTER" prompt="EBAO_T_PRD_PRODUCT_MASTER?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PA_POLICY_LOG" prompt="EBAO_T_PA_POLICY_LOG?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PA_POLICY_LOB" prompt="EBAO_T_PA_POLICY_LOB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="WebDB_D2C_Customer_Consent_Map" prompt="WebDB_D2C_Customer_Consent_Map?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IL_TermLifeApplicant" prompt="IL_TermLifeApplicant?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="MSSql_cdc_SCHEMA" prompt="MSSql_cdc_SCHEMA?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PTY_ACCOUNT" prompt="EBAO_T_PTY_ACCOUNT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="Redshift_LOG_FILE" prompt="Redshift_LOG_FILE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_BCP_REVERSE" prompt="EBAO_T_BCP_REVERSE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IS_promo_master_discounts" prompt="IS_promo_master_discounts?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IL_UnderwritingPath" prompt="IL_UnderwritingPath?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="WebDB_Mapping" prompt="WebDB_Mapping?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IL_TermLifeApplication" prompt="IL_TermLifeApplication?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IS_promo_core_system_discounts" prompt="IS_promo_core_system_discounts?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IL_CholesterolLoading" prompt="IL_CholesterolLoading?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PA_POLICY_SCHEDULE" prompt="EBAO_T_PA_POLICY_SCHEDULE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="MSSql_CRM_HOST" prompt="MSSql_CRM_HOST?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IS_CRM_EZLINK_ENROLL" prompt="IS_CRM_EZLINK_ENROLL?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PA_ENDORSEMENT" prompt="EBAO_T_PA_ENDORSEMENT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IL_BmiLoading" prompt="IL_BmiLoading?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PTY_PARTY" prompt="EBAO_T_PTY_PARTY?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PUB_USER" prompt="EBAO_T_PUB_USER?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IL_ApplicantQuestionAudit" prompt="IL_ApplicantQuestionAudit?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IL_DpiApplication" prompt="IL_DpiApplication?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IL_QuestionHeader" prompt="IL_QuestionHeader?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_CLM_OBJECT" prompt="EBAO_T_CLM_OBJECT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_GL_VOUCHER_HEAD_LOG" prompt="EBAO_T_GL_VOUCHER_HEAD_LOG?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PA_POLICY_COVERAGE" prompt="EBAO_T_PA_POLICY_COVERAGE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PA_POLICY_ELEMENT_RELA" prompt="EBAO_T_PA_POLICY_ELEMENT_RELA?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_CLM_LOSSCAUSE" prompt="EBAO_T_CLM_LOSSCAUSE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PUB_CURRENCY" prompt="EBAO_T_PUB_CURRENCY?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="WebDB_Users_Ratings" prompt="WebDB_Users_Ratings?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_CLM_SETTLE_ITEM" prompt="EBAO_T_CLM_SETTLE_ITEM?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_CLM_RESERVE" prompt="EBAO_T_CLM_RESERVE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_CLM_DAMAGE_TYPE" prompt="EBAO_T_CLM_DAMAGE_TYPE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_FWD_GL_FEE" prompt="EBAO_T_FWD_GL_FEE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PUB_FEE_TYPE_DEFINITION" prompt="EBAO_T_PUB_FEE_TYPE_DEFINITION?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_BCP_PAYMENT_DETAIL" prompt="EBAO_T_BCP_PAYMENT_DETAIL?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PRD_PRODUCT_ELEM_HIERARCHY" prompt="EBAO_T_PRD_PRODUCT_ELEM_HIERARCHY?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IS_INT_RN_LINK" prompt="IS_INT_RN_LINK?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PA_NEWBIZ_STATUS" prompt="EBAO_T_PA_NEWBIZ_STATUS?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_BCP_OFFSET" prompt="EBAO_T_BCP_OFFSET?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IS_promo_discount_layering_permission" prompt="IS_promo_discount_layering_permission?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="PEM_KEY" prompt="PEM_KEY?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IL_Question" prompt="IL_Question?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IS_INT_REFERRAL_CODE" prompt="IS_INT_REFERRAL_CODE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_DD_BUSI_OBJECT" prompt="EBAO_T_DD_BUSI_OBJECT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="CDC_Operation" prompt="CDC_Operation?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IL_Applicant" prompt="IL_Applicant?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PA_POLICY_PLAN" prompt="EBAO_T_PA_POLICY_PLAN?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="Error_file_location" prompt="Error_file_location?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IL_ApplicantQuestionCache" prompt="IL_ApplicantQuestionCache?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_BCP_FEE" prompt="EBAO_T_BCP_FEE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="CDC_Seqval" prompt="CDC_Seqval?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IL_WorkflowTask" prompt="IL_WorkflowTask?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_CLM_SETTLE" prompt="EBAO_T_CLM_SETTLE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PRD_PRODUCT_ELEMENT" prompt="EBAO_T_PRD_PRODUCT_ELEMENT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IS_life_policy" prompt="IS_life_policy?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IL_UnderwritingWarning" prompt="IL_UnderwritingWarning?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_AP68_RENEWAL_EXTRACT" prompt="EBAO_T_AP68_RENEWAL_EXTRACT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PA_POLICY_COVERAGE_LOG" prompt="EBAO_T_PA_POLICY_COVERAGE_LOG?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_CLM_CASE" prompt="EBAO_T_CLM_CASE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IL_AvailableQuestionAnswer" prompt="IL_AvailableQuestionAnswer?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IL_QuestionHelp" prompt="IL_QuestionHelp?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_CLM_PARTY" prompt="EBAO_T_CLM_PARTY?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PUB_BANK" prompt="EBAO_T_PUB_BANK?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IL_QuestionQuestionHelp" prompt="IL_QuestionQuestionHelp?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IL_WorkflowTaskQuestionState" prompt="IL_WorkflowTaskQuestionState?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IS_life_coverage_special_reason" prompt="IS_life_coverage_special_reason?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="MSSql_LA_IL_IS_WebDB_EBAO_PORT" prompt="MSSql_LA_IL_IS_WebDB_EBAO_PORT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="Redshift_BATCH_CONTROL_TABLE_NAME" prompt="Redshift_BATCH_CONTROL_TABLE_NAME?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PUB_CURRENCY_EXCHANGE_RATE" prompt="EBAO_T_PUB_CURRENCY_EXCHANGE_RATE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PA_POLICY_CUSTOMER" prompt="EBAO_T_PA_POLICY_CUSTOMER?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="WebDB_D2C_Customer_Consent" prompt="WebDB_D2C_Customer_Consent?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IL_syssubscriptions" prompt="IL_syssubscriptions?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_CLM_PAYMENT_TYPE" prompt="EBAO_T_CLM_PAYMENT_TYPE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_AP68_COMMUNICATION_LOG" prompt="EBAO_T_AP68_COMMUNICATION_LOG?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="CDC_Timestamp" prompt="CDC_Timestamp?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IL_ApplicantQuestion" prompt="IL_ApplicantQuestion?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_BCP_COLLECTION" prompt="EBAO_T_BCP_COLLECTION?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_BCP_PAYMENT" prompt="EBAO_T_BCP_PAYMENT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IS_INT_PAYMENT_RESPONSE" prompt="IS_INT_PAYMENT_RESPONSE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PUB_REVISION_INFO" prompt="EBAO_T_PUB_REVISION_INFO?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PA_POLICY" prompt="EBAO_T_PA_POLICY?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="TODAY_DATE" prompt="TODAY_DATE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_GL_VOUCHER_DETAIL_LOG" prompt="EBAO_T_GL_VOUCHER_DETAIL_LOG?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="MSSql_dbo_SCHEMA" prompt="MSSql_dbo_SCHEMA?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="WebDB_D2C_URI_Mapping" prompt="WebDB_D2C_URI_Mapping?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PRD_PLAN_DEFINITION" prompt="EBAO_T_PRD_PLAN_DEFINITION?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IS_INT_PAYMENT_REQUEST" prompt="IS_INT_PAYMENT_REQUEST?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PRD_PRODUCT_LINE" prompt="EBAO_T_PRD_PRODUCT_LINE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PRD_PRODUCT_ELEMENT_TYPE" prompt="EBAO_T_PRD_PRODUCT_ELEMENT_TYPE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IS_life_coverage" prompt="IS_life_coverage?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PA_INSURED" prompt="EBAO_T_PA_INSURED?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_CLM_RESERVE_HIS" prompt="EBAO_T_CLM_RESERVE_HIS?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_CLM_NOTICE" prompt="EBAO_T_CLM_NOTICE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_CLM_SUBCLAIM_TYPE" prompt="EBAO_T_CLM_SUBCLAIM_TYPE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IL_ApplicantProduct" prompt="IL_ApplicantProduct?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_BCP_SUSPENSE" prompt="EBAO_T_BCP_SUSPENSE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_CLM_RESERVE_TYPE" prompt="EBAO_T_CLM_RESERVE_TYPE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_PRD_PRODUCT" prompt="EBAO_T_PRD_PRODUCT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="WebDB_D2C_Customer_Consent_Det" prompt="WebDB_D2C_Customer_Consent_Det?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_CLM_ITEM" prompt="EBAO_T_CLM_ITEM?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_BCP_OFFSET_DETAIL" prompt="EBAO_T_BCP_OFFSET_DETAIL?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_CLM_PARTY_ROLE" prompt="EBAO_T_CLM_PARTY_ROLE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_CLM_CLAIM_TYPE" prompt="EBAO_T_CLM_CLAIM_TYPE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="MSSql_CRM_PORT" prompt="MSSql_CRM_PORT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="IL_sysarticles" prompt="IL_sysarticles?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_CLM_SETTLE_PAYEE" prompt="EBAO_T_CLM_SETTLE_PAYEE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="WebDB_Users_Data" prompt="WebDB_Users_Data?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="EBAO_T_BCP_COLLECTION_DETAIL" prompt="EBAO_T_BCP_COLLECTION_DETAIL?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+      <contextParameter comment="" name="BATCH_MAX_TIME" prompt="BATCH_MAX_TIME?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value="null"/>
+      <contextParameter comment="" name="BATCH_MIN_TIME" prompt="BATCH_MIN_TIME?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value="null"/>
+      <contextParameter comment="" name="L_MAIL_SUBJECT" prompt="L_MAIL_SUBJECT?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_String" value=""/>
+      <contextParameter comment="" name="L_BATCH_END_TIME" prompt="L_BATCH_END_TIME?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_Date" value=""/>
+      <contextParameter comment="" name="L_BATCH_MAX_AUD_TIME" prompt="L_BATCH_MAX_AUD_TIME?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_Date" value=""/>
+      <contextParameter comment="" name="L_BATCH_START_TIME" prompt="L_BATCH_START_TIME?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_Date" value=""/>
+      <contextParameter comment="" name="L_BATCH_DAY" prompt="L_BATCH_DAY?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_Long" value=""/>
+    </context>
+    <parameters>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+      <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+      <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+      <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false" show="false"/>
+      <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000" show="false"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true"/>
+      <elementParameter field="ICON_SELECTION" name="ICONSELECTION" value=""/>
+      <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+      <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;C:/Softwares/Studio/Talend-Tools-Studio-20180116_1512-V6.5.1/Talend-Tools-Studio-20180116_1512-V6.5.1/workspace/in.csv&quot;" show="false"/>
+      <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="ORACLE_11" show="false"/>
+      <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+      <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+      <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+      <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true" show="false"/>
+      <elementParameter field="CHECK" name="DISABLE_INFO" value="true" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+      <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+      <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+      <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+      <routinesParameter id="_zzO_Eo5GEeioD_YFJ1cglQ" name="DataOperation"/>
+      <routinesParameter id="_z33AYI5GEeioD_YFJ1cglQ" name="Mathematical"/>
+      <routinesParameter id="_z5y6EI5GEeioD_YFJ1cglQ" name="Numeric"/>
+      <routinesParameter id="_z7b40I5GEeioD_YFJ1cglQ" name="Relational"/>
+      <routinesParameter id="_0FaUMI5GEeioD_YFJ1cglQ" name="SQLike"/>
+      <routinesParameter id="_z9EQgI5GEeioD_YFJ1cglQ" name="StringHandling"/>
+      <routinesParameter id="_z-tPQI5GEeioD_YFJ1cglQ" name="TalendDataGenerator"/>
+      <routinesParameter id="_0Ay58I5GEeioD_YFJ1cglQ" name="TalendDate"/>
+      <routinesParameter id="_0D7GcI5GEeioD_YFJ1cglQ" name="TalendStringUtil"/>
+      <routinesParameter id="_0Cb4sI5GEeioD_YFJ1cglQ" name="TalendString"/>
+    </parameters>
+    <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="224">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
+      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" name="tJava_1">
+        <column comment="" key="false" length="-1" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tRedshiftOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1184" posY="224">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftOutput_1" show="false"/>
+      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+      <elementParameter field="TEXT" name="HOST" value="context.Redshift_HOST"/>
+      <elementParameter field="TEXT" name="PORT" value="context.Redshift_PORT"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.Redshift_DB"/>
+      <elementParameter field="TEXT" name="TYPE" value="REDSHIFT" show="false"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Redshift_SCHEMA"/>
+      <elementParameter field="TEXT" name="USER" value="context.Redshift_USERNAME"/>
+      <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudyEgMBxwFCu3PJG9JFknT5Auuz5zwSz2g="/>
+      <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+      <elementParameter field="DBTABLE" name="TABLE" value="context.Redshift_MAIL_TABLE_NAME"/>
+      <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+      <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+      <elementParameter field="MAPPING_TYPE" name="MAPPING" value="redshift_id" show="false"/>
+      <elementParameter field="CHECK" name="EXTENDINSERT" value="true"/>
+      <elementParameter field="LABEL" name="NOTE" value="(Not compatible with reject links)"/>
+      <elementParameter field="TEXT" name="NB_ROWS_PER_INSERT" value="100"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+      <elementParameter field="TABLE" name="ADD_COLS"/>
+      <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+      <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+        <elementValue elementRef="SCHEMA_COLUMN" value="pid"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="job_name"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="project_name"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="email_type"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="email_to"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="email_sub"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="email_content"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="m_sent_date"/>
+        <elementValue elementRef="UPDATE_KEY" value="false"/>
+        <elementValue elementRef="DELETE_KEY" value="false"/>
+        <elementValue elementRef="UPDATABLE" value="true"/>
+        <elementValue elementRef="INSERTABLE" value="true"/>
+      </elementParameter>
+      <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+      <elementParameter field="CHECK" name="USE_BATCH" value="true" show="false"/>
+      <elementParameter field="TEXT" name="BATCH_SIZE" value="10000" show="false"/>
+      <elementParameter field="CHECK" name="TABLE_WITH_SCHEMA" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="Mail_info"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="batch_mail_info" name="tRedshiftOutput_1">
+        <column comment="" key="true" length="256" name="pid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="256" name="job_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="256" name="project_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="256" name="email_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="256" name="email_to" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="256" name="email_sub" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="5000" name="email_content" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="29" name="m_sent_date" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+      </metadata>
+      <metadata connector="REJECT" label="batch_mail_info" name="REJECT">
+        <column comment="" key="true" length="256" name="pid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="256" name="job_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="256" name="project_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="256" name="email_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="256" name="email_to" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="256" name="email_sub" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="5000" name="email_content" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="29" name="m_sent_date" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      </metadata>
+    </node>
+    <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="224">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+      <elementParameter field="EXTERNAL" name="MAP" value=""/>
+      <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+      <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_QzP2sJcQEeiJP45ZtBLS1Q-tMap_1-PREVIEW.bmp"/>
+      <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+      <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+      <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+      <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+      <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <metadata connector="FLOW" label="batch_mail_info" name="Store_Mail_Infoo">
+        <column comment="" key="true" length="256" name="pid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="256" name="job_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="256" name="project_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="256" name="email_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="256" name="email_to" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="256" name="email_sub" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="5000" name="email_content" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="29" name="m_sent_date" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+      </metadata>
+      <nodeData xsi:type="TalendMapper:MapperData">
+        <uiProperties shellMaximized="true"/>
+        <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+        <outputTables sizeState="INTERMEDIATE" name="Store_Mail_Infoo">
+          <mapperTableEntries name="pid" expression="context.L_pid" type="id_String"/>
+          <mapperTableEntries name="job_name" expression="jobName" type="id_String" nullable="true"/>
+          <mapperTableEntries name="project_name" expression="projectName" type="id_String" nullable="true"/>
+          <mapperTableEntries name="email_type" expression="&quot;ERROR&quot;" type="id_String" nullable="true"/>
+          <mapperTableEntries name="email_to" expression="context.RECEIVER_MAIL" type="id_String" nullable="true"/>
+          <mapperTableEntries name="email_sub" expression="context.Cc_MAIL" type="id_String" nullable="true"/>
+          <mapperTableEntries name="email_content" expression="StringHandling.LEFT(context.L_Error_message,4000) " type="id_String" nullable="true"/>
+          <mapperTableEntries name="m_sent_date" expression="TalendDate.getCurrentDate()" type="id_Date" nullable="true"/>
+        </outputTables>
+        <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+          <mapperTableEntries name="newColumn" type="id_String" nullable="true"/>
+        </inputTables>
+      </nodeData>
+    </node>
+    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="TRIGGER_INPUT_1" offsetLabelX="0" offsetLabelY="0" source="TRIGGER_INPUT_1" target="tJava_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tMap_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+    </connection>
+    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tRedshiftOutput_1" offsetLabelX="0" offsetLabelY="0" source="tRedshiftOutput_1" target="TRIGGER_OUTPUT_1">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+    </connection>
+    <connection connectorName="FLOW" label="Store_Mail_Infoo" lineStyle="0" metaname="Store_Mail_Infoo" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tRedshiftOutput_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="Store_Mail_Infoo" show="false"/>
+    </connection>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_OUTPUT_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;128;0" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_INPUT_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;128;0" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <subjob>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;128;0" show="false"/>
+      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+    </subjob>
+    <jobletNodes componentName="TRIGGER_OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1344" posY="224" trigger="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+      <elementParameter field="CHECK" name="START" value="false" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+    </jobletNodes>
+    <jobletNodes componentName="TRIGGER_INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="672" posY="224" input="true" trigger="true">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_INPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+      <elementParameter field="CHECK" name="START" value="true" show="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+    </jobletNodes>
+  </model:JobletProcess>
+  <TalendProperties:ByteArray/>
+</xmi:XMI>

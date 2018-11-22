@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_iiCBIO46EeihD7EfnUn4rQ" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_iiCBIe46EeihD7EfnUn4rQ" comment="" name="L_Job_name" prompt="L_Job_name?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_iiCBIu46EeihD7EfnUn4rQ" comment="" name="L_Project_name" prompt="L_Project_name?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_iiCBI-46EeihD7EfnUn4rQ" comment="" name="L_Error_message" prompt="L_Error_message?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_iiCBJO46EeihD7EfnUn4rQ" comment="" name="L_Typeof_error" prompt="L_Typeof_error?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_iiCBJe46EeihD7EfnUn4rQ" comment="" name="L_SOURCE_RECORDS_COUNT" prompt="L_SOURCE_RECORDS_COUNT?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_iiCBJu46EeihD7EfnUn4rQ" comment="" name="L_TARGET_RECORDS_COUNT" prompt="L_TARGET_RECORDS_COUNT?" promptNeeded="false" type="id_Integer" value=""/>
+  <contextParameter xmi:id="_iiCBJ-46EeihD7EfnUn4rQ" comment="" name="L_pid" prompt="L_pid?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_iiCBKO46EeihD7EfnUn4rQ" comment="" name="L_START_TIME" prompt="L_START_TIME?" promptNeeded="false" type="id_Date" value=""/>
+  <contextParameter xmi:id="_iiCBKe46EeihD7EfnUn4rQ" comment="" name="L_MAX_AUD_TIME" prompt="L_MAX_AUD_TIME?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_iiCBKu46EeihD7EfnUn4rQ" comment="" name="L_MAX_BATCH_HOUR" prompt="L_MAX_BATCH_HOUR?" promptNeeded="false" type="id_Long" value=""/>
+  <contextParameter xmi:id="_iiCBK-46EeihD7EfnUn4rQ" comment="" name="L_MAIL_SUBJECT" prompt="L_MAIL_SUBJECT?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_iiCBLO46EeihD7EfnUn4rQ" comment="" name="L_BATCH_MAX_AUD_TIME" prompt="L_BATCH_MAX_AUD_TIME?" promptNeeded="false" type="id_Date" value=""/>
+  <contextParameter xmi:id="_iiCBLe46EeihD7EfnUn4rQ" comment="" name="L_BATCH_START_TIME" prompt="L_BATCH_START_TIME?" promptNeeded="false" type="id_Date" value=""/>
+  <contextParameter xmi:id="_iiCBLu46EeihD7EfnUn4rQ" comment="" name="L_BATCH_END_TIME" prompt="L_BATCH_END_TIME?" promptNeeded="false" type="id_Date" value=""/>
+  <contextParameter xmi:id="_iiCBL-46EeihD7EfnUn4rQ" comment="" name="L_BATCH_DAY" prompt="L_BATCH_DAY?" promptNeeded="false" type="id_Long" value=""/>
+  <contextParameter xmi:id="_iiCBMO46EeihD7EfnUn4rQ" comment="" name="L_CURRENT_TIMESTAMP" prompt="L_CURRENT_TIMESTAMP?" promptNeeded="false" type="id_Date" value=""/>
+  <contextParameter xmi:id="_iiCBMe46EeihD7EfnUn4rQ" comment="" name="spark_memory_overhead" prompt="spark_memory_overhead?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_iiCBMu46EeihD7EfnUn4rQ" comment="" name="L_LA_BATCH_MAX_AUD_TIME" prompt="L_LA_BATCH_MAX_AUD_TIME?" promptNeeded="false" type="id_String" value=""/>
+</talendfile:ContextType>
