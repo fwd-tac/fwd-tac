@@ -191,7 +191,6 @@
       <relatedItems xmi:id="_i74rqu46EeihD7EfnUn4rQ" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_i74rq-46EeihD7EfnUn4rQ" id="Mathematical" version="Latest" type="routine"/>
     </ItemsRelations>
-    <deletedFolders>process_mr/Datalake/IS</deletedFolders>
     <migrationTask xmi:id="_IwRTQO46EeihD7EfnUn4rQ" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_IwRTQe46EeihD7EfnUn4rQ" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_IwR6UO46EeihD7EfnUn4rQ" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
