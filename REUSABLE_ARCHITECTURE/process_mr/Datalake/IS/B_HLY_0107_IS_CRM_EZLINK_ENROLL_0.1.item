@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_spypYe48EeihD7EfnUn4rQ" defaultContext="Default" jobType="Big_Data_Batch" framework="Spark">
+  <context xmi:id="_spypYu48EeihD7EfnUn4rQ" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_spypY-48EeihD7EfnUn4rQ" comment="" name="MSSql_LA_DB" prompt="MSSql_LA_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypZO48EeihD7EfnUn4rQ" comment="" name="MSSql_EBAO_DB" prompt="MSSql_EBAO_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypZe48EeihD7EfnUn4rQ" comment="" name="MSSql_IS_DB" prompt="MSSql_IS_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypZu48EeihD7EfnUn4rQ" comment="" name="MSSql_IL_DB" prompt="MSSql_IL_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypZ-48EeihD7EfnUn4rQ" comment="" name="MSSql_WebDB_DB" prompt="MSSql_WebDB_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypaO48EeihD7EfnUn4rQ" comment="" name="MSSql_CRM_DB" prompt="MSSql_CRM_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypae48EeihD7EfnUn4rQ" comment="" name="MSSql_LA_HOST" prompt="MSSql_LA_HOST?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypau48EeihD7EfnUn4rQ" comment="" name="MSSql_IS_WebDB_IL_HOST" prompt="MSSql_IS_WebDB_IL_HOST?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypa-48EeihD7EfnUn4rQ" comment="" name="MSSql_USERNAME" prompt="MSSql_USERNAME?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypbO48EeihD7EfnUn4rQ" comment="" name="MSSql_PASSWORD" prompt="MSSql_PASSWORD?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_Password" value="Le/mPyJBvGMIYVrvXoNiiA=="/>
+    <contextParameter xmi:id="_spypbe48EeihD7EfnUn4rQ" comment="" name="S3_ACCESS_KEY" prompt="S3_ACCESS_KEY?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypbu48EeihD7EfnUn4rQ" comment="" name="S3_SECRET_KEY" prompt="S3_SECRET_KEY?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypb-48EeihD7EfnUn4rQ" comment="" name="S3_BUCKET_NAME" prompt="S3_BUCKET_NAME?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypcO48EeihD7EfnUn4rQ" comment="" name="HDFS_NAMENODE" prompt="HDFS_NAMENODE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypce48EeihD7EfnUn4rQ" comment="" name="HDFS_USERNAME" prompt="HDFS_USERNAME?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypcu48EeihD7EfnUn4rQ" comment="" name="HDFS_LOCAL_DIR" prompt="HDFS_LOCAL_DIR?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypc-48EeihD7EfnUn4rQ" comment="" name="HDFS_DIR" prompt="HDFS_DIR?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypdO48EeihD7EfnUn4rQ" comment="" name="HOST" prompt="HOST?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypde48EeihD7EfnUn4rQ" comment="" name="Hive_EBAO_DB" prompt="Hive_EBAO_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypdu48EeihD7EfnUn4rQ" comment="" name="Hive_LA_DB" prompt="Hive_LA_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypd-48EeihD7EfnUn4rQ" comment="" name="Hive_IS_DB" prompt="Hive_IS_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypeO48EeihD7EfnUn4rQ" comment="" name="Hive_IL_DB" prompt="Hive_IL_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypee48EeihD7EfnUn4rQ" comment="" name="Hive_WebDB_DB" prompt="Hive_WebDB_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypeu48EeihD7EfnUn4rQ" comment="" name="Hive_CRM_DB" prompt="Hive_CRM_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spype-48EeihD7EfnUn4rQ" comment="" name="CDC_FILE_LOC" prompt="CDC_FILE_LOC?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypfO48EeihD7EfnUn4rQ" comment="" name="RECEIVER_MAIL" prompt="RECEIVER_MAIL?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypfe48EeihD7EfnUn4rQ" comment="" name="SENDER_MAIL" prompt="SENDER_MAIL?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypfu48EeihD7EfnUn4rQ" comment="" name="Cc_MAIL" prompt="Cc_MAIL?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypf-48EeihD7EfnUn4rQ" comment="" name="Bcc_MAIL" prompt="Bcc_MAIL?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypgO48EeihD7EfnUn4rQ" comment="" name="MAIL_SUBJECT" prompt="MAIL_SUBJECT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypge48EeihD7EfnUn4rQ" comment="" name="MAIL_MESSAGE" prompt="MAIL_MESSAGE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypgu48EeihD7EfnUn4rQ" comment="" name="SMTPHOST" prompt="SMTPHOST?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypg-48EeihD7EfnUn4rQ" comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyphO48EeihD7EfnUn4rQ" comment="" name="MAIL_USERNAME" prompt="MAIL_USERNAME?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyphe48EeihD7EfnUn4rQ" comment="" name="MAIL_PASSWORD" prompt="MAIL_PASSWORD?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_Password" value=""/>
+    <contextParameter xmi:id="_spyphu48EeihD7EfnUn4rQ" comment="" name="Redshift_HOST" prompt="Redshift_HOST?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyph-48EeihD7EfnUn4rQ" comment="" name="Redshift_PORT" prompt="Redshift_PORT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_spypiO48EeihD7EfnUn4rQ" comment="" name="Redshift_DB" prompt="Redshift_DB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypie48EeihD7EfnUn4rQ" comment="" name="Redshift_SCHEMA" prompt="Redshift_SCHEMA?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypiu48EeihD7EfnUn4rQ" comment="" name="Redshift_USERNAME" prompt="Redshift_USERNAME?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypi-48EeihD7EfnUn4rQ" comment="" name="Redshift_PASSWORD" prompt="Redshift_PASSWORD?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_Password" value="h8SMKxKM5NZ/+FdjcsN8XQ=="/>
+    <contextParameter xmi:id="_spypjO48EeihD7EfnUn4rQ" comment="" name="Redshift_BATCH_AUDIT_TABLE_NAME" prompt="Redshift_BATCH_AUDIT_TABLE_NAME?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypje48EeihD7EfnUn4rQ" comment="" name="Redshift_BATCH_CONTROL_TABLE_NAME" prompt="Redshift_BATCH_CONTROL_TABLE_NAME?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypju48EeihD7EfnUn4rQ" comment="" name="Redshift_MAIL_TABLE_NAME" prompt="Redshift_MAIL_TABLE_NAME?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypj-48EeihD7EfnUn4rQ" comment="" name="Hive_USERNAME" prompt="Hive_USERNAME?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypkO48EeihD7EfnUn4rQ" comment="" name="Hive_PASSWORD" prompt="Hive_PASSWORD?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_Password" value="MgJQ4tW6n8VWLozLEBjq6Q=="/>
+    <contextParameter xmi:id="_spypke48EeihD7EfnUn4rQ" comment="" name="MSSql_EBAO_HOST" prompt="MSSql_EBAO_HOST?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypku48EeihD7EfnUn4rQ" comment="" name="MSSql_CRM_HOST" prompt="MSSql_CRM_HOST?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypk-48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PUB_PAY_MODE" prompt="EBAO_T_PUB_PAY_MODE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyplO48EeihD7EfnUn4rQ" comment="" name="Error_file_location" prompt="Error_file_location?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyple48EeihD7EfnUn4rQ" comment="" name="IL_Application" prompt="IL_Application?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyplu48EeihD7EfnUn4rQ" comment="" name="WebDB_User_Renewal_Reason" prompt="WebDB_User_Renewal_Reason?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypl-48EeihD7EfnUn4rQ" comment="" name="IL_sysarticlecolumns" prompt="IL_sysarticlecolumns?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypmO48EeihD7EfnUn4rQ" comment="" name="BATCH_MAX_TIME" prompt="BATCH_MAX_TIME?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value="null"/>
+    <contextParameter xmi:id="_spypme48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PRD_PRODUCT_MASTER" prompt="EBAO_T_PRD_PRODUCT_MASTER?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypmu48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PA_POLICY_LOG" prompt="EBAO_T_PA_POLICY_LOG?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypm-48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PA_POLICY_LOB" prompt="EBAO_T_PA_POLICY_LOB?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypnO48EeihD7EfnUn4rQ" comment="" name="WebDB_D2C_Customer_Consent_Map" prompt="WebDB_D2C_Customer_Consent_Map?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypne48EeihD7EfnUn4rQ" comment="" name="IL_TermLifeApplicant" prompt="IL_TermLifeApplicant?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypnu48EeihD7EfnUn4rQ" comment="" name="MSSql_cdc_SCHEMA" prompt="MSSql_cdc_SCHEMA?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypn-48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PTY_ACCOUNT" prompt="EBAO_T_PTY_ACCOUNT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypoO48EeihD7EfnUn4rQ" comment="" name="Redshift_LOG_FILE" prompt="Redshift_LOG_FILE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypoe48EeihD7EfnUn4rQ" comment="" name="EBAO_T_BCP_REVERSE" prompt="EBAO_T_BCP_REVERSE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypou48EeihD7EfnUn4rQ" comment="" name="IS_promo_master_discounts" prompt="IS_promo_master_discounts?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypo-48EeihD7EfnUn4rQ" comment="" name="IL_UnderwritingPath" prompt="IL_UnderwritingPath?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyppO48EeihD7EfnUn4rQ" comment="" name="WebDB_Mapping" prompt="WebDB_Mapping?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyppe48EeihD7EfnUn4rQ" comment="" name="IL_TermLifeApplication" prompt="IL_TermLifeApplication?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyppu48EeihD7EfnUn4rQ" comment="" name="IS_promo_core_system_discounts" prompt="IS_promo_core_system_discounts?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypp-48EeihD7EfnUn4rQ" comment="" name="IL_CholesterolLoading" prompt="IL_CholesterolLoading?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypqO48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PA_POLICY_SCHEDULE" prompt="EBAO_T_PA_POLICY_SCHEDULE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypqe48EeihD7EfnUn4rQ" comment="" name="IS_CRM_EZLINK_ENROLL" prompt="IS_CRM_EZLINK_ENROLL?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypqu48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PA_ENDORSEMENT" prompt="EBAO_T_PA_ENDORSEMENT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypq-48EeihD7EfnUn4rQ" comment="" name="IL_BmiLoading" prompt="IL_BmiLoading?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyprO48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PTY_PARTY" prompt="EBAO_T_PTY_PARTY?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypre48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PUB_USER" prompt="EBAO_T_PUB_USER?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypru48EeihD7EfnUn4rQ" comment="" name="IL_ApplicantQuestionAudit" prompt="IL_ApplicantQuestionAudit?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypr-48EeihD7EfnUn4rQ" comment="" name="IL_DpiApplication" prompt="IL_DpiApplication?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypsO48EeihD7EfnUn4rQ" comment="" name="IL_QuestionHeader" prompt="IL_QuestionHeader?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypse48EeihD7EfnUn4rQ" comment="" name="EBAO_T_CLM_OBJECT" prompt="EBAO_T_CLM_OBJECT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypsu48EeihD7EfnUn4rQ" comment="" name="EBAO_T_GL_VOUCHER_HEAD_LOG" prompt="EBAO_T_GL_VOUCHER_HEAD_LOG?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyps-48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PA_POLICY_COVERAGE" prompt="EBAO_T_PA_POLICY_COVERAGE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyptO48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PA_POLICY_ELEMENT_RELA" prompt="EBAO_T_PA_POLICY_ELEMENT_RELA?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypte48EeihD7EfnUn4rQ" comment="" name="EBAO_T_CLM_LOSSCAUSE" prompt="EBAO_T_CLM_LOSSCAUSE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyptu48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PUB_CURRENCY" prompt="EBAO_T_PUB_CURRENCY?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypt-48EeihD7EfnUn4rQ" comment="" name="WebDB_Users_Ratings" prompt="WebDB_Users_Ratings?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypuO48EeihD7EfnUn4rQ" comment="" name="EBAO_T_CLM_SETTLE_ITEM" prompt="EBAO_T_CLM_SETTLE_ITEM?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypue48EeihD7EfnUn4rQ" comment="" name="EBAO_T_CLM_RESERVE" prompt="EBAO_T_CLM_RESERVE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypuu48EeihD7EfnUn4rQ" comment="" name="EBAO_T_CLM_DAMAGE_TYPE" prompt="EBAO_T_CLM_DAMAGE_TYPE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypu-48EeihD7EfnUn4rQ" comment="" name="EBAO_T_FWD_GL_FEE" prompt="EBAO_T_FWD_GL_FEE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypvO48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PUB_FEE_TYPE_DEFINITION" prompt="EBAO_T_PUB_FEE_TYPE_DEFINITION?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypve48EeihD7EfnUn4rQ" comment="" name="EBAO_T_BCP_PAYMENT_DETAIL" prompt="EBAO_T_BCP_PAYMENT_DETAIL?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypvu48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PRD_PRODUCT_ELEM_HIERARCHY" prompt="EBAO_T_PRD_PRODUCT_ELEM_HIERARCHY?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypv-48EeihD7EfnUn4rQ" comment="" name="IS_INT_RN_LINK" prompt="IS_INT_RN_LINK?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypwO48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PA_NEWBIZ_STATUS" prompt="EBAO_T_PA_NEWBIZ_STATUS?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypwe48EeihD7EfnUn4rQ" comment="" name="EBAO_T_BCP_OFFSET" prompt="EBAO_T_BCP_OFFSET?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypwu48EeihD7EfnUn4rQ" comment="" name="IS_promo_discount_layering_permission" prompt="IS_promo_discount_layering_permission?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypw-48EeihD7EfnUn4rQ" comment="" name="PEM_KEY" prompt="PEM_KEY?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypxO48EeihD7EfnUn4rQ" comment="" name="IL_Question" prompt="IL_Question?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypxe48EeihD7EfnUn4rQ" comment="" name="IS_INT_REFERRAL_CODE" prompt="IS_INT_REFERRAL_CODE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypxu48EeihD7EfnUn4rQ" comment="" name="EBAO_T_DD_BUSI_OBJECT" prompt="EBAO_T_DD_BUSI_OBJECT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypx-48EeihD7EfnUn4rQ" comment="" name="CDC_Operation" prompt="CDC_Operation?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypyO48EeihD7EfnUn4rQ" comment="" name="IL_Applicant" prompt="IL_Applicant?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypye48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PA_POLICY_PLAN" prompt="EBAO_T_PA_POLICY_PLAN?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypyu48EeihD7EfnUn4rQ" comment="" name="IL_ApplicantQuestionCache" prompt="IL_ApplicantQuestionCache?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypy-48EeihD7EfnUn4rQ" comment="" name="EBAO_T_BCP_FEE" prompt="EBAO_T_BCP_FEE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypzO48EeihD7EfnUn4rQ" comment="" name="CDC_Seqval" prompt="CDC_Seqval?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypze48EeihD7EfnUn4rQ" comment="" name="IL_WorkflowTask" prompt="IL_WorkflowTask?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypzu48EeihD7EfnUn4rQ" comment="" name="EBAO_T_CLM_SETTLE" prompt="EBAO_T_CLM_SETTLE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spypz-48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PRD_PRODUCT_ELEMENT" prompt="EBAO_T_PRD_PRODUCT_ELEMENT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp0O48EeihD7EfnUn4rQ" comment="" name="IS_life_policy" prompt="IS_life_policy?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp0e48EeihD7EfnUn4rQ" comment="" name="IL_UnderwritingWarning" prompt="IL_UnderwritingWarning?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp0u48EeihD7EfnUn4rQ" comment="" name="EBAO_T_AP68_RENEWAL_EXTRACT" prompt="EBAO_T_AP68_RENEWAL_EXTRACT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp0-48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PA_POLICY_COVERAGE_LOG" prompt="EBAO_T_PA_POLICY_COVERAGE_LOG?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp1O48EeihD7EfnUn4rQ" comment="" name="EBAO_T_CLM_CASE" prompt="EBAO_T_CLM_CASE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp1e48EeihD7EfnUn4rQ" comment="" name="IL_AvailableQuestionAnswer" prompt="IL_AvailableQuestionAnswer?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp1u48EeihD7EfnUn4rQ" comment="" name="IL_QuestionHelp" prompt="IL_QuestionHelp?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp1-48EeihD7EfnUn4rQ" comment="" name="EBAO_T_CLM_PARTY" prompt="EBAO_T_CLM_PARTY?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp2O48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PUB_BANK" prompt="EBAO_T_PUB_BANK?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp2e48EeihD7EfnUn4rQ" comment="" name="IL_QuestionQuestionHelp" prompt="IL_QuestionQuestionHelp?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp2u48EeihD7EfnUn4rQ" comment="" name="IL_WorkflowTaskQuestionState" prompt="IL_WorkflowTaskQuestionState?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp2-48EeihD7EfnUn4rQ" comment="" name="IS_life_coverage_special_reason" prompt="IS_life_coverage_special_reason?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp3O48EeihD7EfnUn4rQ" comment="" name="MSSql_LA_IL_IS_WebDB_EBAO_PORT" prompt="MSSql_LA_IL_IS_WebDB_EBAO_PORT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp3e48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PUB_CURRENCY_EXCHANGE_RATE" prompt="EBAO_T_PUB_CURRENCY_EXCHANGE_RATE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp3u48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PA_POLICY_CUSTOMER" prompt="EBAO_T_PA_POLICY_CUSTOMER?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp3-48EeihD7EfnUn4rQ" comment="" name="WebDB_D2C_Customer_Consent" prompt="WebDB_D2C_Customer_Consent?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp4O48EeihD7EfnUn4rQ" comment="" name="IL_syssubscriptions" prompt="IL_syssubscriptions?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp4e48EeihD7EfnUn4rQ" comment="" name="EBAO_T_CLM_PAYMENT_TYPE" prompt="EBAO_T_CLM_PAYMENT_TYPE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp4u48EeihD7EfnUn4rQ" comment="" name="EBAO_T_AP68_COMMUNICATION_LOG" prompt="EBAO_T_AP68_COMMUNICATION_LOG?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp4-48EeihD7EfnUn4rQ" comment="" name="CDC_Timestamp" prompt="CDC_Timestamp?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp5O48EeihD7EfnUn4rQ" comment="" name="IL_ApplicantQuestion" prompt="IL_ApplicantQuestion?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp5e48EeihD7EfnUn4rQ" comment="" name="EBAO_T_BCP_COLLECTION" prompt="EBAO_T_BCP_COLLECTION?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp5u48EeihD7EfnUn4rQ" comment="" name="EBAO_T_BCP_PAYMENT" prompt="EBAO_T_BCP_PAYMENT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp5-48EeihD7EfnUn4rQ" comment="" name="IS_INT_PAYMENT_RESPONSE" prompt="IS_INT_PAYMENT_RESPONSE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp6O48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PUB_REVISION_INFO" prompt="EBAO_T_PUB_REVISION_INFO?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp6e48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PA_POLICY" prompt="EBAO_T_PA_POLICY?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp6u48EeihD7EfnUn4rQ" comment="" name="TODAY_DATE" prompt="TODAY_DATE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp6-48EeihD7EfnUn4rQ" comment="" name="EBAO_T_GL_VOUCHER_DETAIL_LOG" prompt="EBAO_T_GL_VOUCHER_DETAIL_LOG?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp7O48EeihD7EfnUn4rQ" comment="" name="MSSql_dbo_SCHEMA" prompt="MSSql_dbo_SCHEMA?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp7e48EeihD7EfnUn4rQ" comment="" name="WebDB_D2C_URI_Mapping" prompt="WebDB_D2C_URI_Mapping?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp7u48EeihD7EfnUn4rQ" comment="" name="BATCH_MIN_TIME" prompt="BATCH_MIN_TIME?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value="null"/>
+    <contextParameter xmi:id="_spyp7-48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PRD_PLAN_DEFINITION" prompt="EBAO_T_PRD_PLAN_DEFINITION?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp8O48EeihD7EfnUn4rQ" comment="" name="IS_INT_PAYMENT_REQUEST" prompt="IS_INT_PAYMENT_REQUEST?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp8e48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PRD_PRODUCT_LINE" prompt="EBAO_T_PRD_PRODUCT_LINE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp8u48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PRD_PRODUCT_ELEMENT_TYPE" prompt="EBAO_T_PRD_PRODUCT_ELEMENT_TYPE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp8-48EeihD7EfnUn4rQ" comment="" name="IS_life_coverage" prompt="IS_life_coverage?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp9O48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PA_INSURED" prompt="EBAO_T_PA_INSURED?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp9e48EeihD7EfnUn4rQ" comment="" name="EBAO_T_CLM_RESERVE_HIS" prompt="EBAO_T_CLM_RESERVE_HIS?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp9u48EeihD7EfnUn4rQ" comment="" name="EBAO_T_CLM_NOTICE" prompt="EBAO_T_CLM_NOTICE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp9-48EeihD7EfnUn4rQ" comment="" name="EBAO_T_CLM_SUBCLAIM_TYPE" prompt="EBAO_T_CLM_SUBCLAIM_TYPE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp-O48EeihD7EfnUn4rQ" comment="" name="IL_ApplicantProduct" prompt="IL_ApplicantProduct?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp-e48EeihD7EfnUn4rQ" comment="" name="EBAO_T_BCP_SUSPENSE" prompt="EBAO_T_BCP_SUSPENSE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp-u48EeihD7EfnUn4rQ" comment="" name="EBAO_T_CLM_RESERVE_TYPE" prompt="EBAO_T_CLM_RESERVE_TYPE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp--48EeihD7EfnUn4rQ" comment="" name="EBAO_T_PRD_PRODUCT" prompt="EBAO_T_PRD_PRODUCT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp_O48EeihD7EfnUn4rQ" comment="" name="WebDB_D2C_Customer_Consent_Det" prompt="WebDB_D2C_Customer_Consent_Det?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp_e48EeihD7EfnUn4rQ" comment="" name="EBAO_T_CLM_ITEM" prompt="EBAO_T_CLM_ITEM?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp_u48EeihD7EfnUn4rQ" comment="" name="EBAO_T_BCP_OFFSET_DETAIL" prompt="EBAO_T_BCP_OFFSET_DETAIL?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyp_-48EeihD7EfnUn4rQ" comment="" name="EBAO_T_CLM_PARTY_ROLE" prompt="EBAO_T_CLM_PARTY_ROLE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyqAO48EeihD7EfnUn4rQ" comment="" name="EBAO_T_CLM_CLAIM_TYPE" prompt="EBAO_T_CLM_CLAIM_TYPE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyqAe48EeihD7EfnUn4rQ" comment="" name="MSSql_CRM_PORT" prompt="MSSql_CRM_PORT?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyqAu48EeihD7EfnUn4rQ" comment="" name="IL_sysarticles" prompt="IL_sysarticles?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyqA-48EeihD7EfnUn4rQ" comment="" name="EBAO_T_CLM_SETTLE_PAYEE" prompt="EBAO_T_CLM_SETTLE_PAYEE?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyqBO48EeihD7EfnUn4rQ" comment="" name="WebDB_Users_Data" prompt="WebDB_Users_Data?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyqBe48EeihD7EfnUn4rQ" comment="" name="EBAO_T_BCP_COLLECTION_DETAIL" prompt="EBAO_T_BCP_COLLECTION_DETAIL?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyqBu48EeihD7EfnUn4rQ" comment="" name="L_pid" prompt="L_pid?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyqB-48EeihD7EfnUn4rQ" comment="" name="L_Project_name" prompt="L_Project_name?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyqCO48EeihD7EfnUn4rQ" comment="" name="L_Job_name" prompt="L_Job_name?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyqCe48EeihD7EfnUn4rQ" comment="" name="L_MAX_BATCH_HOUR" prompt="L_MAX_BATCH_HOUR?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_Long" value=""/>
+    <contextParameter xmi:id="_spyqCu48EeihD7EfnUn4rQ" comment="" name="L_MAIL_SUBJECT" prompt="L_MAIL_SUBJECT?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyqC-48EeihD7EfnUn4rQ" comment="" name="L_BATCH_END_TIME" prompt="L_BATCH_END_TIME?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_Date" value=""/>
+    <contextParameter xmi:id="_spyqDO48EeihD7EfnUn4rQ" comment="" name="L_SOURCE_RECORDS_COUNT" prompt="L_SOURCE_RECORDS_COUNT?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_spyqDe48EeihD7EfnUn4rQ" comment="" name="L_TARGET_RECORDS_COUNT" prompt="L_TARGET_RECORDS_COUNT?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_Integer" value=""/>
+    <contextParameter xmi:id="_spyqDu48EeihD7EfnUn4rQ" comment="" name="L_MAX_AUD_TIME" prompt="L_MAX_AUD_TIME?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyqD-48EeihD7EfnUn4rQ" comment="" name="L_CURRENT_TIMESTAMP" prompt="L_CURRENT_TIMESTAMP?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_Date" value=""/>
+    <contextParameter xmi:id="_spyqEO48EeihD7EfnUn4rQ" comment="" name="L_BATCH_MAX_AUD_TIME" prompt="L_BATCH_MAX_AUD_TIME?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_Date" value=""/>
+    <contextParameter xmi:id="_spyqEe48EeihD7EfnUn4rQ" comment="" name="L_BATCH_START_TIME" prompt="L_BATCH_START_TIME?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_Date" value=""/>
+    <contextParameter xmi:id="_spyqEu48EeihD7EfnUn4rQ" comment="" name="L_Typeof_error" prompt="L_Typeof_error?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyqE-48EeihD7EfnUn4rQ" comment="" name="L_Error_message" prompt="L_Error_message?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyqFO48EeihD7EfnUn4rQ" comment="" name="L_START_TIME" prompt="L_START_TIME?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_Date" value=""/>
+    <contextParameter xmi:id="_spyqFe48EeihD7EfnUn4rQ" comment="" name="L_BATCH_DAY" prompt="L_BATCH_DAY?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_Long" value=""/>
+    <contextParameter xmi:id="_spyqFu48EeihD7EfnUn4rQ" comment="" name="IS_UW_QUESTION" prompt="IS_UW_QUESTION?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyqF-48EeihD7EfnUn4rQ" comment="" name="Redshift_LA_BATCH_CONTROL_TABLE_NAME" prompt="Redshift_LA_BATCH_CONTROL_TABLE_NAME?" promptNeeded="false" repositoryContextId="_WUIEIH6MEeiwupslVtVAHg" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyqGO48EeihD7EfnUn4rQ" comment="" name="L_LA_BATCH_MAX_AUD_TIME" prompt="L_LA_BATCH_MAX_AUD_TIME?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_String" value=""/>
+    <contextParameter xmi:id="_spyqGe48EeihD7EfnUn4rQ" comment="" name="spark_memory_overhead" prompt="spark_memory_overhead?" promptNeeded="false" repositoryContextId="_6fBCoIXXEeiYhZDuuFq6cA" type="id_String" value=""/>
+  </context>
+  <parameters xmi:id="_spyqGu48EeihD7EfnUn4rQ">
+    <elementParameter xmi:id="_spyqG-48EeihD7EfnUn4rQ" field="TEXT" name="JOB_RUN_VM_ARGUMENTS" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms256M&quot;,&quot;-Xmx2048M&quot;]}" show="false"/>
+    <elementParameter xmi:id="_spyqHO48EeihD7EfnUn4rQ" field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" value="true" show="false"/>
+    <elementParameter xmi:id="_spyqHe48EeihD7EfnUn4rQ" field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter xmi:id="_spyqHu48EeihD7EfnUn4rQ" field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter xmi:id="_spyqH-48EeihD7EfnUn4rQ" field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter xmi:id="_spyqIO48EeihD7EfnUn4rQ" field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter xmi:id="_spyqIe48EeihD7EfnUn4rQ" field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter xmi:id="_spyqIu48EeihD7EfnUn4rQ" field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter xmi:id="_spyqI-48EeihD7EfnUn4rQ" field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_spyqJO48EeihD7EfnUn4rQ" field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_spyqJe48EeihD7EfnUn4rQ" field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter xmi:id="_spyqJu48EeihD7EfnUn4rQ" field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter xmi:id="_spyqJ-48EeihD7EfnUn4rQ" field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter xmi:id="_spyqKO48EeihD7EfnUn4rQ" field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter xmi:id="_spyqKe48EeihD7EfnUn4rQ" field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter xmi:id="_spyqKu48EeihD7EfnUn4rQ" field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter xmi:id="_spyqK-48EeihD7EfnUn4rQ" field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_spyqLO48EeihD7EfnUn4rQ" field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter xmi:id="_spyqLe48EeihD7EfnUn4rQ" field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter xmi:id="_spyqLu48EeihD7EfnUn4rQ" field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter xmi:id="_spyqL-48EeihD7EfnUn4rQ" field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter xmi:id="_spyqMO48EeihD7EfnUn4rQ" field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter xmi:id="_spyqMe48EeihD7EfnUn4rQ" field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter xmi:id="_spyqMu48EeihD7EfnUn4rQ" field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter xmi:id="_spyqM-48EeihD7EfnUn4rQ" field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqNO48EeihD7EfnUn4rQ" field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqNe48EeihD7EfnUn4rQ" field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqNu48EeihD7EfnUn4rQ" field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqN-48EeihD7EfnUn4rQ" field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter xmi:id="_spyqOO48EeihD7EfnUn4rQ" field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value="" show="false"/>
+    <elementParameter xmi:id="_spyqOe48EeihD7EfnUn4rQ" field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter xmi:id="_spyqOu48EeihD7EfnUn4rQ" field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter xmi:id="_spyqO-48EeihD7EfnUn4rQ" field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqPO48EeihD7EfnUn4rQ" field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter xmi:id="_spyqPe48EeihD7EfnUn4rQ" field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqPu48EeihD7EfnUn4rQ" field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqP-48EeihD7EfnUn4rQ" field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqQO48EeihD7EfnUn4rQ" field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqQe48EeihD7EfnUn4rQ" field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqQu48EeihD7EfnUn4rQ" field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqQ-48EeihD7EfnUn4rQ" field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqRO48EeihD7EfnUn4rQ" field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqRe48EeihD7EfnUn4rQ" field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_spyqRu48EeihD7EfnUn4rQ" field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqR-48EeihD7EfnUn4rQ" field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqSO48EeihD7EfnUn4rQ" field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqSe48EeihD7EfnUn4rQ" field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter xmi:id="_spyqSu48EeihD7EfnUn4rQ" field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter xmi:id="_spyqS-48EeihD7EfnUn4rQ" field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqTO48EeihD7EfnUn4rQ" field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqTe48EeihD7EfnUn4rQ" field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqTu48EeihD7EfnUn4rQ" field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqT-48EeihD7EfnUn4rQ" field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter xmi:id="_spyqUO48EeihD7EfnUn4rQ" field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter xmi:id="_spyqUe48EeihD7EfnUn4rQ" field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter xmi:id="_spyqUu48EeihD7EfnUn4rQ" field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqU-48EeihD7EfnUn4rQ" field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqVO48EeihD7EfnUn4rQ" field="DIRECTORY" name="FILE_PATH" value="&quot;C:/Talend_Workspace/.metadata&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqVe48EeihD7EfnUn4rQ" field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqVu48EeihD7EfnUn4rQ" field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqV-48EeihD7EfnUn4rQ" field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqWO48EeihD7EfnUn4rQ" field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter xmi:id="_spyqWe48EeihD7EfnUn4rQ" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter xmi:id="_spyqWu48EeihD7EfnUn4rQ" field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqW-48EeihD7EfnUn4rQ" field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter xmi:id="_spyqXO48EeihD7EfnUn4rQ" field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11" show="false"/>
+    <elementParameter xmi:id="_spyqXe48EeihD7EfnUn4rQ" field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqXu48EeihD7EfnUn4rQ" field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter xmi:id="_spyqX-48EeihD7EfnUn4rQ" field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqYO48EeihD7EfnUn4rQ" field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqYe48EeihD7EfnUn4rQ" field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqYu48EeihD7EfnUn4rQ" field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqY-48EeihD7EfnUn4rQ" field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqZO48EeihD7EfnUn4rQ" field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqZe48EeihD7EfnUn4rQ" field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqZu48EeihD7EfnUn4rQ" field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqZ-48EeihD7EfnUn4rQ" field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqaO48EeihD7EfnUn4rQ" field="PASSWORD" name="PASS" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_spyqae48EeihD7EfnUn4rQ" field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqau48EeihD7EfnUn4rQ" field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqa-48EeihD7EfnUn4rQ" field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqbO48EeihD7EfnUn4rQ" field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqbe48EeihD7EfnUn4rQ" field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter xmi:id="_spyqbu48EeihD7EfnUn4rQ" field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter xmi:id="_spyqb-48EeihD7EfnUn4rQ" field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter xmi:id="_spyqcO48EeihD7EfnUn4rQ" field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqce48EeihD7EfnUn4rQ" field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter xmi:id="_spyqcu48EeihD7EfnUn4rQ" field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqc-48EeihD7EfnUn4rQ" field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter xmi:id="_spyqdO48EeihD7EfnUn4rQ" field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter xmi:id="_spyqde48EeihD7EfnUn4rQ" field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter xmi:id="_spyqdu48EeihD7EfnUn4rQ" field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter xmi:id="_spyqd-48EeihD7EfnUn4rQ" field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqeO48EeihD7EfnUn4rQ" field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter xmi:id="_spyqee48EeihD7EfnUn4rQ" field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter xmi:id="_spyqeu48EeihD7EfnUn4rQ" field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <elementParameter xmi:id="_spyqe-48EeihD7EfnUn4rQ" field="CHECK" name="SPARK_LOCAL_MODE" value="false"/>
+    <elementParameter xmi:id="_spyqfO48EeihD7EfnUn4rQ" field="CLOSED_LIST" name="SPARK_LOCAL_VERSION" value="SPARK_2_0_0" show="false"/>
+    <elementParameter xmi:id="_spyqfe48EeihD7EfnUn4rQ" field="CLOSED_LIST" name="SPARK_VERSION" value="EMR_5_5_0"/>
+    <elementParameter xmi:id="_spyqfu48EeihD7EfnUn4rQ" field="CLOSED_LIST" name="SUPPORTED_SPARK_VERSION" value="SPARK_2_1_0"/>
+    <elementParameter xmi:id="_spyqf-48EeihD7EfnUn4rQ" field="HADOOP_DISTRIBUTION" name="SPARKBATCH" value=""/>
+    <elementParameter xmi:id="_spyqgO48EeihD7EfnUn4rQ" field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter xmi:id="_spyqge48EeihD7EfnUn4rQ" field="LABEL" name="NOTE" value="** The version of Spark must be 1.3.0 or later." show="false"/>
+    <elementParameter xmi:id="_spyqgu48EeihD7EfnUn4rQ" field="CLOSED_LIST" name="SPARK_API_VERSION" value="SPARK_200" show="false"/>
+    <elementParameter xmi:id="_spyqg-48EeihD7EfnUn4rQ" field="CHECK" name="SET_HDP_VERSION" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqhO48EeihD7EfnUn4rQ" field="TEXT" name="HDP_VERSION" value="&quot;x.x.x.x-x&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqhe48EeihD7EfnUn4rQ" field="CLOSED_LIST" name="SPARK_MODE" value="YARN_CLIENT"/>
+    <elementParameter xmi:id="_spyqhu48EeihD7EfnUn4rQ" field="TEXT" name="RESOURCE_MANAGER" value="context.HOST+&quot;:8032&quot;"/>
+    <elementParameter xmi:id="_spyqh-48EeihD7EfnUn4rQ" field="CHECK" name="SET_SCHEDULER_ADDRESS" value="false"/>
+    <elementParameter xmi:id="_spyqiO48EeihD7EfnUn4rQ" field="TEXT" name="RESOURCEMANAGER_SCHEDULER_ADDRESS" value="context.HOST+&quot;:8030&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqie48EeihD7EfnUn4rQ" field="CHECK" name="SET_JOBHISTORY_ADDRESS" value="false"/>
+    <elementParameter xmi:id="_spyqiu48EeihD7EfnUn4rQ" field="TEXT" name="JOBHISTORY_ADDRESS" value="context.HOST+&quot;:10020&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqi-48EeihD7EfnUn4rQ" field="CHECK" name="SET_STAGING_DIRECTORY" value="false"/>
+    <elementParameter xmi:id="_spyqjO48EeihD7EfnUn4rQ" field="TEXT" name="STAGING_DIRECTORY" value="&quot;/user&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqje48EeihD7EfnUn4rQ" field="TEXT" name="HDINSIGHT_ENDPOINT" value="&quot;https://xxxx.azurehdinsight.net&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqju48EeihD7EfnUn4rQ" field="TEXT" name="HDINSIGHT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqj-48EeihD7EfnUn4rQ" field="PASSWORD" name="HDINSIGHT_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_spyqkO48EeihD7EfnUn4rQ" field="TEXT" name="LIVY_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqke48EeihD7EfnUn4rQ" field="TEXT" name="LIVY_PORT" value="&quot;443&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqku48EeihD7EfnUn4rQ" field="TEXT" name="LIVY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqk-48EeihD7EfnUn4rQ" field="TEXT" name="HDINSIGHT_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqlO48EeihD7EfnUn4rQ" field="PASSWORD" name="HDINSIGHT_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_spyqle48EeihD7EfnUn4rQ" field="TEXT" name="WASB_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqlu48EeihD7EfnUn4rQ" field="TEXT" name="WASB_CONTAINER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyql-48EeihD7EfnUn4rQ" field="TEXT" name="WASB_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqmO48EeihD7EfnUn4rQ" field="PASSWORD" name="WASB_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_spyqme48EeihD7EfnUn4rQ" field="TEXT" name="REMOTE_FOLDER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqmu48EeihD7EfnUn4rQ" field="TEXT" name="SPARK_HOST" value="&quot;spark://localhost:7077&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqm-48EeihD7EfnUn4rQ" field="TEXT" name="SPARK_HOME" value="&quot;/usr/lib/spark&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqnO48EeihD7EfnUn4rQ" field="CHECK" name="DEFINE_HADOOP_HOME_DIR" value="false"/>
+    <elementParameter xmi:id="_spyqne48EeihD7EfnUn4rQ" field="TEXT" name="HADOOP_HOME_DIR" value="&quot;C:/Talend/winutils&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqnu48EeihD7EfnUn4rQ" field="CHECK" name="DEFINE_SPARK_DRIVER_HOST" value="false"/>
+    <elementParameter xmi:id="_spyqn-48EeihD7EfnUn4rQ" field="TEXT" name="SPARK_DRIVER_HOST" value="&quot;127.0.0.1&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqoO48EeihD7EfnUn4rQ" field="TEXT" name="GOOGLE_PROJECT_ID" value="&quot;my-google-project&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqoe48EeihD7EfnUn4rQ" field="TEXT" name="GOOGLE_CLUSTER_ID" value="&quot;my-cluster-id&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqou48EeihD7EfnUn4rQ" field="TEXT" name="GOOGLE_REGION" value="&quot;global&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqo-48EeihD7EfnUn4rQ" field="TEXT" name="GOOGLE_JARS_BUCKET" value="&quot;gs://my-bucket/talend/jars&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqpO48EeihD7EfnUn4rQ" field="CHECK" name="DEFINE_PATH_TO_GOOGLE_CREDENTIALS" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqpe48EeihD7EfnUn4rQ" field="TEXT" name="PATH_TO_GOOGLE_CREDENTIALS" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqpu48EeihD7EfnUn4rQ" field="CHECK" name="ALTUS_SET_CREDENTIALS" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqp-48EeihD7EfnUn4rQ" field="TEXT" name="ALTUS_ACCESS_KEY" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqqO48EeihD7EfnUn4rQ" field="FILE" name="ALTUS_SECRET_KEY" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqqe48EeihD7EfnUn4rQ" field="TEXT" name="ALTUS_CLI_PATH" value="&quot;/opt/altuscli/altusclienv/bin/altus&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqqu48EeihD7EfnUn4rQ" field="CHECK" name="ALTUS_REUSE_CLUSTER" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqq-48EeihD7EfnUn4rQ" field="TEXT" name="ALTUS_CLUSTER_NAME" value="&quot;talend-altus-cluster&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqrO48EeihD7EfnUn4rQ" field="TEXT" name="ALTUS_ENVIRONMENT_NAME" value="&quot;talend-altus-cluster&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqre48EeihD7EfnUn4rQ" field="CLOSED_LIST" name="ALTUS_CLOUD_PROVIDER" value="&quot;AWS&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqru48EeihD7EfnUn4rQ" field="CHECK" name="ALTUS_DELETE_AFTER_EXECUTION" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqr-48EeihD7EfnUn4rQ" field="TEXT" name="ALTUS_S3_ACCESS_KEY" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqsO48EeihD7EfnUn4rQ" field="PASSWORD" name="ALTUS_S3_SECRET_KEY" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_spyqse48EeihD7EfnUn4rQ" field="OPENED_LIST" name="ALTUS_S3_REGION" value="&quot;us-east-1&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqsu48EeihD7EfnUn4rQ" field="TEXT" name="ALTUS_BUCKET_NAME" value="&quot;my-bucket&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqs-48EeihD7EfnUn4rQ" field="TEXT" name="ALTUS_JARS_BUCKET" value="&quot;talend/jars/&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqtO48EeihD7EfnUn4rQ" field="CHECK" name="ALTUS_USE_CUSTOM_JSON" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqte48EeihD7EfnUn4rQ" field="MEMO" name="ALTUS_CUSTOM_JSON" value="{}" show="false"/>
+    <elementParameter xmi:id="_spyqtu48EeihD7EfnUn4rQ" field="OPENED_LIST" name="ALTUS_INSTANCE_TYPE" value="&quot;c4.2xlarge&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqt-48EeihD7EfnUn4rQ" field="TEXT" name="ALTUS_WORKER_NODE" value="&quot;10&quot;" show="false"/>
+    <elementParameter xmi:id="_spyquO48EeihD7EfnUn4rQ" field="FILE" name="ALTUS_SSH_PRIVATE_KEY" value="" show="false"/>
+    <elementParameter xmi:id="_spyque48EeihD7EfnUn4rQ" field="TEXT" name="ALTUS_CLOUDERA_MANAGER_USERNAME" value="&quot;altus&quot;" show="false"/>
+    <elementParameter xmi:id="_spyquu48EeihD7EfnUn4rQ" field="PASSWORD" name="ALTUS_CLOUDERA_MANAGER_PASSWORD" value="" show="false"/>
+    <elementParameter xmi:id="_spyqu-48EeihD7EfnUn4rQ" field="CHECK" name="USE_KRB" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqvO48EeihD7EfnUn4rQ" field="TEXT" name="RESOURCEMANAGER_PRINCIPAL" value="&quot;yarn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqve48EeihD7EfnUn4rQ" field="TEXT" name="JOBHISTORY_PRINCIPAL" value="&quot;mapred/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqvu48EeihD7EfnUn4rQ" field="CHECK" name="USE_KEYTAB" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqv-48EeihD7EfnUn4rQ" field="TEXT" name="PRINCIPAL" value="&quot;hdfs&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqwO48EeihD7EfnUn4rQ" field="FILE" name="KEYTAB_PATH" value="&quot;/tmp/hdfs.headless.keytab&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqwe48EeihD7EfnUn4rQ" field="TEXT" name="USERNAME" value="context.HDFS_USERNAME"/>
+    <elementParameter xmi:id="_spyqwu48EeihD7EfnUn4rQ" field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqw-48EeihD7EfnUn4rQ" field="PASSWORD" name="MAPRTICKET_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_spyqxO48EeihD7EfnUn4rQ" field="TEXT" name="MAPRTICKET_CLUSTER" value="&quot;demo.mapr.com&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqxe48EeihD7EfnUn4rQ" field="TEXT" name="MAPRTICKET_DURATION" value="86400L" show="false"/>
+    <elementParameter xmi:id="_spyqxu48EeihD7EfnUn4rQ" field="CHECK" name="SET_MAPR_HOME_DIR" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqx-48EeihD7EfnUn4rQ" field="TEXT" name="MAPR_HOME_DIR" value="&quot;/opt/mapr&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqyO48EeihD7EfnUn4rQ" field="CHECK" name="SET_HADOOP_LOGIN" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqye48EeihD7EfnUn4rQ" field="TEXT" name="HADOOP_LOGIN" value="&quot;kerberos&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqyu48EeihD7EfnUn4rQ" field="CHECK" name="ADVANCED_SETTINGS_CHECK" value="false"/>
+    <elementParameter xmi:id="_spyqy-48EeihD7EfnUn4rQ" field="TEXT" name="SPARK_DRIVER_MEM" value="&quot;512m&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqzO48EeihD7EfnUn4rQ" field="TEXT" name="SPARK_DRIVER_CORES" value="&quot;1&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqze48EeihD7EfnUn4rQ" field="CHECK" name="SPARK_YARN_AM_SETTINGS_CHECK" value="false" show="false"/>
+    <elementParameter xmi:id="_spyqzu48EeihD7EfnUn4rQ" field="TEXT" name="SPARK_YARN_AM_MEM" value="&quot;512m&quot;" show="false"/>
+    <elementParameter xmi:id="_spyqz-48EeihD7EfnUn4rQ" field="TEXT" name="SPARK_YARN_AM_CORES" value="&quot;1&quot;" show="false"/>
+    <elementParameter xmi:id="_spyq0O48EeihD7EfnUn4rQ" field="TEXT" name="SPARK_EXECUTOR_MEM" value="&quot;512m&quot;" show="false"/>
+    <elementParameter xmi:id="_spyq0e48EeihD7EfnUn4rQ" field="CHECK" name="SET_SPARK_EXECUTOR_MEM_OVERHEAD" value="false" show="false"/>
+    <elementParameter xmi:id="_spyq0u48EeihD7EfnUn4rQ" field="TEXT" name="SPARK_EXECUTOR_MEM_OVERHEAD" value="&quot;384&quot;" show="false"/>
+    <elementParameter xmi:id="_spyq0-48EeihD7EfnUn4rQ" field="CHECK" name="SPARK_EXECUTOR_CORES_CHECK" value="false" show="false"/>
+    <elementParameter xmi:id="_spyq1O48EeihD7EfnUn4rQ" field="TEXT" name="SPARK_EXECUTOR_CORES" value="&quot;1&quot;" show="false"/>
+    <elementParameter xmi:id="_spyq1e48EeihD7EfnUn4rQ" field="CLOSED_LIST" name="SPARK_YARN_ALLOC_TYPE" value="AUTO" show="false"/>
+    <elementParameter xmi:id="_spyq1u48EeihD7EfnUn4rQ" field="TEXT" name="SPARK_EXECUTOR_INSTANCES" value="&quot;2&quot;" show="false"/>
+    <elementParameter xmi:id="_spyq1-48EeihD7EfnUn4rQ" field="TEXT" name="SPARK_YARN_DYN_INIT" value="&quot;1&quot;" show="false"/>
+    <elementParameter xmi:id="_spyq2O48EeihD7EfnUn4rQ" field="TEXT" name="SPARK_YARN_DYN_MIN" value="&quot;0&quot;" show="false"/>
+    <elementParameter xmi:id="_spyq2e48EeihD7EfnUn4rQ" field="TEXT" name="SPARK_YARN_DYN_MAX" value="&quot;MAX&quot;" show="false"/>
+    <elementParameter xmi:id="_spyq2u48EeihD7EfnUn4rQ" field="CHECK" name="WEB_UI_PORT_CHECK" value="false" show="false"/>
+    <elementParameter xmi:id="_spyq2-48EeihD7EfnUn4rQ" field="TEXT" name="WEB_UI_PORT" value="&quot;4040&quot;" show="false"/>
+    <elementParameter xmi:id="_spyq3O48EeihD7EfnUn4rQ" field="CLOSED_LIST" name="SPARK_BROADCAST_FACTORY" value="AUTO" show="false"/>
+    <elementParameter xmi:id="_spyq3e48EeihD7EfnUn4rQ" field="CHECK" name="CUSTOMIZE_SPARK_SERIALIZER" value="false" show="false"/>
+    <elementParameter xmi:id="_spyq3u48EeihD7EfnUn4rQ" field="TEXT" name="SPARK_SERIALIZER" value="&quot;org.apache.spark.serializer.KryoSerializer&quot;" show="false"/>
+    <elementParameter xmi:id="_spyq3-48EeihD7EfnUn4rQ" field="CHECK" name="ENABLE_SPARK_EVENT_LOGGING" value="false"/>
+    <elementParameter xmi:id="_spyq4O48EeihD7EfnUn4rQ" field="CHECK" name="COMPRESS_SPARK_EVENT_LOGS" value="false" show="false"/>
+    <elementParameter xmi:id="_spyq4e48EeihD7EfnUn4rQ" field="TEXT" name="SPARK_EVENT_LOG_DIR" value="&quot;hdfs://namenode:8020/user/spark/applicationHistory&quot;&#xA;&#x9;&#x9;&#x9;" show="false"/>
+    <elementParameter xmi:id="_spyq4u48EeihD7EfnUn4rQ" field="TEXT" name="SPARKHISTORY_ADDRESS" value="&quot;sparkHistoryServer:18080&quot;" show="false"/>
+    <elementParameter xmi:id="_spyq4-48EeihD7EfnUn4rQ" field="TEXT" name="SPARK_SCRATCH_DIR" value="&quot;/tmp&quot;"/>
+    <elementParameter xmi:id="_spyq5O48EeihD7EfnUn4rQ" field="CHECK" name="USE_CHECKPOINT" value="false"/>
+    <elementParameter xmi:id="_spyq5e48EeihD7EfnUn4rQ" field="TEXT" name="CHECKPOINT_DIR" value="&quot;file:///tmp/mycheckpoint&quot;" show="false"/>
+    <elementParameter xmi:id="_spyq5u48EeihD7EfnUn4rQ" field="TABLE" name="SPARK_ADVANCED_PROPERTIES"/>
+    <elementParameter xmi:id="_spyq5-48EeihD7EfnUn4rQ" field="CHECK" name="USE_CLOUDERA_NAVIGATOR" value="false" show="false"/>
+    <elementParameter xmi:id="_spyq6O48EeihD7EfnUn4rQ" field="TEXT" name="CLOUDERA_NAVIGATOR_USERNAME" value="&quot;username&quot;" show="false"/>
+    <elementParameter xmi:id="_spyq6e48EeihD7EfnUn4rQ" field="PASSWORD" name="CLOUDERA_NAVIGATOR_PASSWORD" value="PoLvNyVG2XWndNDdLn696A==" show="false"/>
+    <elementParameter xmi:id="_spyq6u48EeihD7EfnUn4rQ" field="TEXT" name="CLOUDERA_NAVIGATOR_URL" value="&quot;http://localhost:7187/api/v8/&quot;" show="false"/>
+    <elementParameter xmi:id="_spyq6-48EeihD7EfnUn4rQ" field="TEXT" name="CLOUDERA_NAVIGATOR_METADATA_URL" value="&quot;http://localhost:7187/api/v8/metadata/plugin&quot;" show="false"/>
+    <elementParameter xmi:id="_spyq7O48EeihD7EfnUn4rQ" field="TEXT" name="CLOUDERA_NAVIGATOR_CLIENT_URL" value="&quot;http://localhost&quot;" show="false"/>
+    <elementParameter xmi:id="_spyq7e48EeihD7EfnUn4rQ" field="CHECK" name="CLOUDERA_NAVIGATOR_AUTOCOMMIT" value="false" show="false"/>
+    <elementParameter xmi:id="_spyq7u48EeihD7EfnUn4rQ" field="CHECK" name="CLOUDERA_NAVIGATOR_DISABLE_SSL_VALIDATION" value="false" show="false"/>
+    <elementParameter xmi:id="_spyq7-48EeihD7EfnUn4rQ" field="CHECK" name="CLOUDERA_NAVIGATOR_DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter xmi:id="_spyq8O48EeihD7EfnUn4rQ" field="CHECK" name="USE_ATLAS" value="false" show="false"/>
+    <elementParameter xmi:id="_spyq8e48EeihD7EfnUn4rQ" field="TEXT" name="ATLAS_URL" value="&quot;http://localhost:21000&quot;" show="false"/>
+    <elementParameter xmi:id="_spyq8u48EeihD7EfnUn4rQ" field="TEXT" name="ATLAS_USERNAME" value="&quot;admin&quot;" show="false"/>
+    <elementParameter xmi:id="_spyq8-48EeihD7EfnUn4rQ" field="PASSWORD" name="ATLAS_PASSWORD" value="0RMsyjmybrE=" show="false"/>
+    <elementParameter xmi:id="_spyq9O48EeihD7EfnUn4rQ" field="CHECK" name="SET_ATLAS_APPLICATION_PROPERTIES" value="false" show="false"/>
+    <elementParameter xmi:id="_spyq9e48EeihD7EfnUn4rQ" field="TEXT" name="ATLAS_APPLICATION_PROPERTIES" value="&quot;/user/atlas/atlas-application.properties&quot;" show="false"/>
+    <elementParameter xmi:id="_spyq9u48EeihD7EfnUn4rQ" field="CHECK" name="ATLAS_DIE_ON_ERROR" value="false" show="false"/>
+    <routinesParameter xmi:id="_spyq9-48EeihD7EfnUn4rQ" id="_zzO_Eo5GEeioD_YFJ1cglQ" name="DataOperation"/>
+    <routinesParameter xmi:id="_spyq-O48EeihD7EfnUn4rQ" id="_z33AYI5GEeioD_YFJ1cglQ" name="Mathematical"/>
+    <routinesParameter xmi:id="_spyq-e48EeihD7EfnUn4rQ" id="_z5y6EI5GEeioD_YFJ1cglQ" name="Numeric"/>
+    <routinesParameter xmi:id="_spyq-u48EeihD7EfnUn4rQ" id="_z7b40I5GEeioD_YFJ1cglQ" name="Relational"/>
+    <routinesParameter xmi:id="_spyq--48EeihD7EfnUn4rQ" id="_0FaUMI5GEeioD_YFJ1cglQ" name="SQLike"/>
+    <routinesParameter xmi:id="_spyq_O48EeihD7EfnUn4rQ" id="_z9EQgI5GEeioD_YFJ1cglQ" name="StringHandling"/>
+    <routinesParameter xmi:id="_spyq_e48EeihD7EfnUn4rQ" id="_z-tPQI5GEeioD_YFJ1cglQ" name="TalendDataGenerator"/>
+    <routinesParameter xmi:id="_spyq_u48EeihD7EfnUn4rQ" id="_0Ay58I5GEeioD_YFJ1cglQ" name="TalendDate"/>
+    <routinesParameter xmi:id="_spyq_-48EeihD7EfnUn4rQ" id="_0D7GcI5GEeioD_YFJ1cglQ" name="TalendStringUtil"/>
+    <routinesParameter xmi:id="_spyrAO48EeihD7EfnUn4rQ" id="_0Cb4sI5GEeioD_YFJ1cglQ" name="TalendString"/>
+  </parameters>
+  <node xmi:id="_spyrAe48EeihD7EfnUn4rQ" componentName="tHDFSConfiguration" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="96">
+    <elementParameter xmi:id="_spyrAu48EeihD7EfnUn4rQ" field="TEXT" name="UNIQUE_NAME" value="tHDFSConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_spyrA-48EeihD7EfnUn4rQ" field="CLOSED_LIST" name="DB_VERSION" value="EMR_5_5_0"/>
+    <elementParameter xmi:id="_spyrBO48EeihD7EfnUn4rQ" field="HADOOP_DISTRIBUTION" name="HDFS" value=""/>
+    <elementParameter xmi:id="_spyrBe48EeihD7EfnUn4rQ" field="HADOOP_JARS_DIALOG" name="HADOOP_CUSTOM_JARS" value="" show="false"/>
+    <elementParameter xmi:id="_spyrBu48EeihD7EfnUn4rQ" field="TEXT" name="FS_DEFAULT_NAME" value="&quot;hdfs://&quot;+context.HOST+&quot;:8020&quot;"/>
+    <elementParameter xmi:id="_spyrB-48EeihD7EfnUn4rQ" field="CHECK" name="USE_KRB" value="false" show="false"/>
+    <elementParameter xmi:id="_spyrCO48EeihD7EfnUn4rQ" field="TEXT" name="NAMENODE_PRINCIPAL" value="&quot;nn/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter xmi:id="_spyrCe48EeihD7EfnUn4rQ" field="CHECK" name="USE_KEYTAB" value="false" show="false"/>
+    <elementParameter xmi:id="_spyrCu48EeihD7EfnUn4rQ" field="TEXT" name="PRINCIPAL" value="&quot;hdfs&quot;" show="false"/>
+    <elementParameter xmi:id="_spyrC-48EeihD7EfnUn4rQ" field="FILE" name="KEYTAB_PATH" value="&quot;/tmp/hdfs.headless.keytab&quot;" show="false"/>
+    <elementParameter xmi:id="_spyrDO48EeihD7EfnUn4rQ" field="TEXT" name="USERNAME" value="context.HDFS_USERNAME"/>
+    <elementParameter xmi:id="_spyrDe48EeihD7EfnUn4rQ" field="TEXT" name="GROUP" value="&quot;supergroup&quot;" show="false"/>
+    <elementParameter xmi:id="_spyrDu48EeihD7EfnUn4rQ" field="CHECK" name="USE_DATANODE_HOSTNAME" value="true"/>
+    <elementParameter xmi:id="_spyrD-48EeihD7EfnUn4rQ" field="TEXT" name="TEMP_FOLDER" value="&quot;/tmp&quot;"/>
+    <elementParameter xmi:id="_spyrEO48EeihD7EfnUn4rQ" field="CHECK" name="USE_HDFS_ENCRYPTION" value="false"/>
+    <elementParameter xmi:id="_spyrEe48EeihD7EfnUn4rQ" field="TEXT" name="HDFS_ENCRYPTION_KEY_PROVIDER" value="&quot;kms://http@localhost:16000/kms&quot;" show="false"/>
+    <elementParameter xmi:id="_spyrEu48EeihD7EfnUn4rQ" field="TABLE" name="HADOOP_ADVANCED_PROPERTIES"/>
+    <elementParameter xmi:id="_spyrE-48EeihD7EfnUn4rQ" field="TEXT" name="LABEL" value="HDFSConfig"/>
+    <elementParameter xmi:id="_spyrFO48EeihD7EfnUn4rQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_spyrFe48EeihD7EfnUn4rQ" componentName="tFileInputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="288">
+    <elementParameter xmi:id="_spyrFu48EeihD7EfnUn4rQ" field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter xmi:id="_spyrF-48EeihD7EfnUn4rQ" field="CHECK" name="DEFINE_STORAGE_CONFIGURATION" value="true"/>
+    <elementParameter xmi:id="_spyrGO48EeihD7EfnUn4rQ" field="COMPONENT_LIST" name="STORAGE_CONFIGURATION" value="tHDFSConfiguration_1"/>
+    <elementParameter xmi:id="_spyrGe48EeihD7EfnUn4rQ" field="TEXT" name="FIELD" value="line" show="false"/>
+    <elementParameter xmi:id="_spyrGu48EeihD7EfnUn4rQ" field="BOTH_HADOOP" name="FILENAME" value="context.HDFS_DIR+context.Hive_IS_DB+&quot;/crm_ezlink_enroll_&quot;+context.L_MAX_BATCH_HOUR+&quot;.csv&quot;"/>
+    <elementParameter xmi:id="_spyrG-48EeihD7EfnUn4rQ" field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter xmi:id="_spyrHO48EeihD7EfnUn4rQ" field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter xmi:id="_spyrHe48EeihD7EfnUn4rQ" field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter xmi:id="_spyrHu48EeihD7EfnUn4rQ" field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter xmi:id="_spyrH-48EeihD7EfnUn4rQ" field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter xmi:id="_spyrIO48EeihD7EfnUn4rQ" field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter xmi:id="_spyrIe48EeihD7EfnUn4rQ" field="CHECK" name="CSV_OPTION" value="true"/>
+    <elementParameter xmi:id="_spyrIu48EeihD7EfnUn4rQ" field="TEXT" name="HEADER" value="1"/>
+    <elementParameter xmi:id="_spyrI-48EeihD7EfnUn4rQ" field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter xmi:id="_spyrJO48EeihD7EfnUn4rQ" field="CHECK" name="USE_MIN_PARTITIONS" value="false"/>
+    <elementParameter xmi:id="_spyrJe48EeihD7EfnUn4rQ" field="TEXT" name="MIN_PARTITIONS" value="2" show="false"/>
+    <elementParameter xmi:id="_spyrJu48EeihD7EfnUn4rQ" field="CHECK" name="CUSTOM_ENCODING" value="false"/>
+    <elementParameter xmi:id="_spyrJ-48EeihD7EfnUn4rQ" field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;" show="false"/>
+    <elementParameter xmi:id="_spyrKO48EeihD7EfnUn4rQ" field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8" show="false"/>
+    <elementParameter xmi:id="_spyrKe48EeihD7EfnUn4rQ" field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter xmi:id="_spyrKu48EeihD7EfnUn4rQ" field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter xmi:id="_spyrK-48EeihD7EfnUn4rQ" field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter xmi:id="_spyrLO48EeihD7EfnUn4rQ" field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter xmi:id="_spyrLe48EeihD7EfnUn4rQ" field="TABLE" name="TRIMSELECT">
+      <elementValue xmi:id="_spyrLu48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="UUID"/>
+      <elementValue xmi:id="_spyrL-48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_spyrMO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="NRIC_NO"/>
+      <elementValue xmi:id="_spyrMe48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_spyrMu48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="FIRST_NAME"/>
+      <elementValue xmi:id="_spyrM-48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_spyrNO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="LAST_NAME"/>
+      <elementValue xmi:id="_spyrNe48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_spyrNu48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="POLICY_NO"/>
+      <elementValue xmi:id="_spyrN-48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_spyrOO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="ACTIVATE_DATE"/>
+      <elementValue xmi:id="_spyrOe48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_spyrOu48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="DATEOFBIRTH"/>
+      <elementValue xmi:id="_spyrO-48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_spyrPO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="MOBILE"/>
+      <elementValue xmi:id="_spyrPe48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_spyrPu48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="EMAIL"/>
+      <elementValue xmi:id="_spyrP-48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_spyrQO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="GENDER"/>
+      <elementValue xmi:id="_spyrQe48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_spyrQu48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="ADDRESS"/>
+      <elementValue xmi:id="_spyrQ-48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_spyrRO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="POSTCODE"/>
+      <elementValue xmi:id="_spyrRe48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_spyrRu48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="TYPE"/>
+      <elementValue xmi:id="_spyrR-48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_spyrSO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="MC_EMAIL"/>
+      <elementValue xmi:id="_spyrSe48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_spyrSu48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="UPDATETIME"/>
+      <elementValue xmi:id="_spyrS-48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_spyrTO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="MC_SMS"/>
+      <elementValue xmi:id="_spyrTe48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_spyrTu48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="MC_PHONE"/>
+      <elementValue xmi:id="_spyrT-48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_spyrUO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="CDC_Timestamp"/>
+      <elementValue xmi:id="_spyrUe48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_spyrUu48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="CDC_Seqval"/>
+      <elementValue xmi:id="_spyrU-48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_spyrVO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="CDC_Operation"/>
+      <elementValue xmi:id="_spyrVe48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_spyrVu48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="pid"/>
+      <elementValue xmi:id="_spyrV-48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_spyrWO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="Batch_inserttime"/>
+      <elementValue xmi:id="_spyrWe48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_spyrWu48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="Batch_day"/>
+      <elementValue xmi:id="_spyrW-48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+      <elementValue xmi:id="_spyrXO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="Batch_hour"/>
+      <elementValue xmi:id="_spyrXe48EeihD7EfnUn4rQ" elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter xmi:id="_spyrXu48EeihD7EfnUn4rQ" field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter xmi:id="_spyrX-48EeihD7EfnUn4rQ" field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter xmi:id="_spyrYO48EeihD7EfnUn4rQ" field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter xmi:id="_spyrYe48EeihD7EfnUn4rQ" field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue xmi:id="_spyrYu48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="UUID"/>
+      <elementValue xmi:id="_spyrY-48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_spyrZO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="NRIC_NO"/>
+      <elementValue xmi:id="_spyrZe48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_spyrZu48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="FIRST_NAME"/>
+      <elementValue xmi:id="_spyrZ-48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_spyraO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="LAST_NAME"/>
+      <elementValue xmi:id="_spyrae48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_spyrau48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="POLICY_NO"/>
+      <elementValue xmi:id="_spyra-48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_spyrbO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="ACTIVATE_DATE"/>
+      <elementValue xmi:id="_spyrbe48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_spyrbu48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="DATEOFBIRTH"/>
+      <elementValue xmi:id="_spyrb-48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_spyrcO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="MOBILE"/>
+      <elementValue xmi:id="_spyrce48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_spyrcu48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="EMAIL"/>
+      <elementValue xmi:id="_spyrc-48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_spyrdO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="GENDER"/>
+      <elementValue xmi:id="_spyrde48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_spyrdu48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="ADDRESS"/>
+      <elementValue xmi:id="_spyrd-48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_spyreO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="POSTCODE"/>
+      <elementValue xmi:id="_spyree48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_spyreu48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="TYPE"/>
+      <elementValue xmi:id="_spyre-48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_spyrfO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="MC_EMAIL"/>
+      <elementValue xmi:id="_spyrfe48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_spyrfu48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="UPDATETIME"/>
+      <elementValue xmi:id="_spyrf-48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_spyrgO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="MC_SMS"/>
+      <elementValue xmi:id="_spyrge48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_spyrgu48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="MC_PHONE"/>
+      <elementValue xmi:id="_spyrg-48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_spyrhO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="CDC_Timestamp"/>
+      <elementValue xmi:id="_spyrhe48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_spyrhu48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="CDC_Seqval"/>
+      <elementValue xmi:id="_spyrh-48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_spyriO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="CDC_Operation"/>
+      <elementValue xmi:id="_spyrie48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_spyriu48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="pid"/>
+      <elementValue xmi:id="_spyri-48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_spyrjO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="Batch_inserttime"/>
+      <elementValue xmi:id="_spyrje48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_spyrju48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="Batch_day"/>
+      <elementValue xmi:id="_spyrj-48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+      <elementValue xmi:id="_spyrkO48EeihD7EfnUn4rQ" elementRef="SCHEMA_COLUMN" value="Batch_hour"/>
+      <elementValue xmi:id="_spyrke48EeihD7EfnUn4rQ" elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter xmi:id="_spyrku48EeihD7EfnUn4rQ" field="TEXT" name="LABEL" value="CRM_EZLINK_ENROLL_HDFS_File"/>
+    <elementParameter xmi:id="_spyrk-48EeihD7EfnUn4rQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_spyrlO48EeihD7EfnUn4rQ" connector="FLOW" name="tFileInputDelimited_1">
+      <column xmi:id="_spyrle48EeihD7EfnUn4rQ" comment="" key="false" length="36" name="UUID" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyrlu48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyrl-48EeihD7EfnUn4rQ" comment="" key="false" length="20" name="NRIC_NO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyrmO48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyrme48EeihD7EfnUn4rQ" comment="" key="false" length="200" name="FIRST_NAME" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyrmu48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyrm-48EeihD7EfnUn4rQ" comment="" key="false" length="200" name="LAST_NAME" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyrnO48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyrne48EeihD7EfnUn4rQ" comment="" key="false" length="40" name="POLICY_NO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyrnu48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyrn-48EeihD7EfnUn4rQ" comment="" key="false" length="23" name="ACTIVATE_DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField xmi:id="_spyroO48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyroe48EeihD7EfnUn4rQ" comment="" key="false" length="10" name="DATEOFBIRTH" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField xmi:id="_spyrou48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyro-48EeihD7EfnUn4rQ" comment="" key="false" length="16" name="MOBILE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyrpO48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyrpe48EeihD7EfnUn4rQ" comment="" key="false" length="50" name="EMAIL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyrpu48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyrp-48EeihD7EfnUn4rQ" comment="" key="false" length="10" name="GENDER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyrqO48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyrqe48EeihD7EfnUn4rQ" comment="" key="false" length="200" name="ADDRESS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyrqu48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyrq-48EeihD7EfnUn4rQ" comment="" key="false" length="20" name="POSTCODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyrrO48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyrre48EeihD7EfnUn4rQ" comment="" key="false" length="80" name="TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyrru48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyrr-48EeihD7EfnUn4rQ" comment="" key="false" length="1" name="MC_EMAIL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyrsO48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyrse48EeihD7EfnUn4rQ" comment="" key="false" length="23" name="UPDATETIME" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField xmi:id="_spyrsu48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyrs-48EeihD7EfnUn4rQ" comment="" key="false" length="1" name="MC_SMS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyrtO48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyrte48EeihD7EfnUn4rQ" comment="" key="false" length="1" name="MC_PHONE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyrtu48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyrt-48EeihD7EfnUn4rQ" comment="" key="false" length="10" name="CDC_Timestamp" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" sourceType="BINARY" type="id_Date" usefulColumn="true">
+        <additionalField xmi:id="_spyruO48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyrue48EeihD7EfnUn4rQ" comment="" key="false" length="10" name="CDC_Seqval" nullable="false" pattern="" precision="0" sourceType="BINARY" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyruu48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyru-48EeihD7EfnUn4rQ" comment="" key="false" length="10" name="CDC_Operation" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField xmi:id="_spyrvO48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyrve48EeihD7EfnUn4rQ" comment="" key="false" length="-1" name="pid" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_spyrvu48EeihD7EfnUn4rQ" comment="" key="false" length="-1" name="Batch_inserttime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_spyrv-48EeihD7EfnUn4rQ" comment="" key="false" length="-1" name="Batch_day" nullable="true" pattern="&quot;yyyyMMdd&quot;" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_spyrwO48EeihD7EfnUn4rQ" comment="" key="false" length="-1" name="Batch_hour" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata xmi:id="_spyrwe48EeihD7EfnUn4rQ" connector="REJECT" name="REJECT">
+      <column xmi:id="_spyrwu48EeihD7EfnUn4rQ" comment="" key="false" length="36" name="UUID" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyrw-48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyrxO48EeihD7EfnUn4rQ" comment="" key="false" length="20" name="NRIC_NO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyrxe48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyrxu48EeihD7EfnUn4rQ" comment="" key="false" length="200" name="FIRST_NAME" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyrx-48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyryO48EeihD7EfnUn4rQ" comment="" key="false" length="200" name="LAST_NAME" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyrye48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyryu48EeihD7EfnUn4rQ" comment="" key="false" length="40" name="POLICY_NO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyry-48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyrzO48EeihD7EfnUn4rQ" comment="" key="false" length="23" name="ACTIVATE_DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField xmi:id="_spyrze48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyrzu48EeihD7EfnUn4rQ" comment="" key="false" length="10" name="DATEOFBIRTH" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField xmi:id="_spyrz-48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyr0O48EeihD7EfnUn4rQ" comment="" key="false" length="16" name="MOBILE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyr0e48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyr0u48EeihD7EfnUn4rQ" comment="" key="false" length="50" name="EMAIL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyr0-48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyr1O48EeihD7EfnUn4rQ" comment="" key="false" length="10" name="GENDER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyr1e48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyr1u48EeihD7EfnUn4rQ" comment="" key="false" length="200" name="ADDRESS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyr1-48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyr2O48EeihD7EfnUn4rQ" comment="" key="false" length="20" name="POSTCODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyr2e48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyr2u48EeihD7EfnUn4rQ" comment="" key="false" length="80" name="TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyr2-48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyr3O48EeihD7EfnUn4rQ" comment="" key="false" length="1" name="MC_EMAIL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyr3e48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyr3u48EeihD7EfnUn4rQ" comment="" key="false" length="23" name="UPDATETIME" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField xmi:id="_spyr3-48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyr4O48EeihD7EfnUn4rQ" comment="" key="false" length="1" name="MC_SMS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyr4e48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyr4u48EeihD7EfnUn4rQ" comment="" key="false" length="1" name="MC_PHONE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyr4-48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyr5O48EeihD7EfnUn4rQ" comment="" key="false" length="10" name="CDC_Timestamp" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" sourceType="BINARY" type="id_Date" usefulColumn="true">
+        <additionalField xmi:id="_spyr5e48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyr5u48EeihD7EfnUn4rQ" comment="" key="false" length="10" name="CDC_Seqval" nullable="false" pattern="" precision="0" sourceType="BINARY" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spyr5-48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyr6O48EeihD7EfnUn4rQ" comment="" key="false" length="10" name="CDC_Operation" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField xmi:id="_spyr6e48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spyr6u48EeihD7EfnUn4rQ" comment="" key="false" length="-1" name="pid" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_spyr6-48EeihD7EfnUn4rQ" comment="" key="false" length="-1" name="Batch_inserttime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_spyr7O48EeihD7EfnUn4rQ" comment="" key="false" length="-1" name="Batch_day" nullable="true" pattern="&quot;yyyyMMdd&quot;" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_spyr7e48EeihD7EfnUn4rQ" comment="" key="false" length="-1" name="Batch_hour" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_spyr7u48EeihD7EfnUn4rQ" defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_spyr7-48EeihD7EfnUn4rQ" defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_spyr8O48EeihD7EfnUn4rQ" defaultValue="" key="false" length="255" name="inputLine" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata xmi:id="_spyr8e48EeihD7EfnUn4rQ" connector="INTERMEDIATE" name="INTERMEDIATE">
+      <column xmi:id="_spyr8u48EeihD7EfnUn4rQ" defaultValue="" key="false" length="255" name="line" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node xmi:id="_spyr8-48EeihD7EfnUn4rQ" componentName="tHiveOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="288">
+    <elementParameter xmi:id="_spyr9O48EeihD7EfnUn4rQ" field="TEXT" name="UNIQUE_NAME" value="tHiveOutput_1" show="false"/>
+    <elementParameter xmi:id="_spyr9e48EeihD7EfnUn4rQ" field="COMPONENT_LIST" name="HIVE_STORAGE_CONFIGURATION" value="tHiveConfiguration_1"/>
+    <elementParameter xmi:id="_spyr9u48EeihD7EfnUn4rQ" field="COMPONENT_LIST" name="HDFS_STORAGE_CONFIGURATION" value="tHDFSConfiguration_1"/>
+    <elementParameter xmi:id="_spyr9-48EeihD7EfnUn4rQ" field="CLOSED_LIST" name="OUTPUT_SOURCE" value="HIVE_TABLE"/>
+    <elementParameter xmi:id="_spyr-O48EeihD7EfnUn4rQ" field="TEXT" name="HIVE_DATABASE_NAME" value="context.Hive_IS_DB"/>
+    <elementParameter xmi:id="_spyr-e48EeihD7EfnUn4rQ" field="DBTABLE" name="HIVE_TABLE_NAME" value="&quot;crm_ezlink_enroll&quot;"/>
+    <elementParameter xmi:id="_spyr-u48EeihD7EfnUn4rQ" field="CLOSED_LIST" name="TABLEFORMAT" value="parquet"/>
+    <elementParameter xmi:id="_spyr--48EeihD7EfnUn4rQ" field="TEXT" name="OUTPUT_FOLDER" value="&quot;&quot;" show="false"/>
+    <elementParameter xmi:id="_spyr_O48EeihD7EfnUn4rQ" field="CLOSED_LIST" name="SAVEMODE" value="Overwrite"/>
+    <elementParameter xmi:id="_spyr_e48EeihD7EfnUn4rQ" field="CHECK" name="HIVE_PARTITIONS_ENABLED" value="true"/>
+    <elementParameter xmi:id="_spyr_u48EeihD7EfnUn4rQ" field="TABLE" name="HIVE_PARTITIONS_KEYS">
+      <elementValue xmi:id="_spyr_-48EeihD7EfnUn4rQ" elementRef="KEY_COLUMN" value="Batch_day"/>
+    </elementParameter>
+    <elementParameter xmi:id="_spysAO48EeihD7EfnUn4rQ" field="TEXT" name="TYPE" value="Hive" show="false"/>
+    <elementParameter xmi:id="_spysAe48EeihD7EfnUn4rQ" field="TEXT" name="SPARK_CONFIGURATION" value="tSparkConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_spysAu48EeihD7EfnUn4rQ" field="CHECK" name="SORT_COLUMNS_ALPHABETICALLY" value="false"/>
+    <elementParameter xmi:id="_spysA-48EeihD7EfnUn4rQ" field="TEXT" name="LABEL" value="parquet"/>
+    <elementParameter xmi:id="_spysBO48EeihD7EfnUn4rQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata xmi:id="_spysBe48EeihD7EfnUn4rQ" connector="FLOW" name="tHiveOutput_1">
+      <column xmi:id="_spysBu48EeihD7EfnUn4rQ" comment="" key="false" length="36" name="UUID" nullable="true" pattern="" precision="0" sourceType="CHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spysB-48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spysCO48EeihD7EfnUn4rQ" comment="" key="false" length="20" name="NRIC_NO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spysCe48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spysCu48EeihD7EfnUn4rQ" comment="" key="false" length="200" name="FIRST_NAME" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spysC-48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spysDO48EeihD7EfnUn4rQ" comment="" key="false" length="200" name="LAST_NAME" nullable="true" pattern="" precision="0" sourceType="NVARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spysDe48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spysDu48EeihD7EfnUn4rQ" comment="" key="false" length="40" name="POLICY_NO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spysD-48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spysEO48EeihD7EfnUn4rQ" comment="" key="false" length="23" name="ACTIVATE_DATE" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField xmi:id="_spysEe48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spysEu48EeihD7EfnUn4rQ" comment="" key="false" length="10" name="DATEOFBIRTH" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField xmi:id="_spysE-48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spysFO48EeihD7EfnUn4rQ" comment="" key="false" length="16" name="MOBILE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spysFe48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spysFu48EeihD7EfnUn4rQ" comment="" key="false" length="50" name="EMAIL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spysF-48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spysGO48EeihD7EfnUn4rQ" comment="" key="false" length="10" name="GENDER" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spysGe48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spysGu48EeihD7EfnUn4rQ" comment="" key="false" length="200" name="ADDRESS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spysG-48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spysHO48EeihD7EfnUn4rQ" comment="" key="false" length="20" name="POSTCODE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spysHe48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spysHu48EeihD7EfnUn4rQ" comment="" key="false" length="80" name="TYPE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spysH-48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spysIO48EeihD7EfnUn4rQ" comment="" key="false" length="1" name="MC_EMAIL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spysIe48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spysIu48EeihD7EfnUn4rQ" comment="" key="false" length="23" name="UPDATETIME" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="3" sourceType="DATETIME" type="id_Date" usefulColumn="true">
+        <additionalField xmi:id="_spysI-48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spysJO48EeihD7EfnUn4rQ" comment="" key="false" length="1" name="MC_SMS" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spysJe48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spysJu48EeihD7EfnUn4rQ" comment="" key="false" length="1" name="MC_PHONE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spysJ-48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spysKO48EeihD7EfnUn4rQ" comment="" key="false" length="10" name="CDC_Timestamp" nullable="false" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="0" sourceType="BINARY" type="id_Date" usefulColumn="true">
+        <additionalField xmi:id="_spysKe48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spysKu48EeihD7EfnUn4rQ" comment="" key="false" length="10" name="CDC_Seqval" nullable="false" pattern="" precision="0" sourceType="BINARY" type="id_String" usefulColumn="true">
+        <additionalField xmi:id="_spysK-48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spysLO48EeihD7EfnUn4rQ" comment="" key="false" length="10" name="CDC_Operation" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true">
+        <additionalField xmi:id="_spysLe48EeihD7EfnUn4rQ" key="Comment" value=""/>
+      </column>
+      <column xmi:id="_spysLu48EeihD7EfnUn4rQ" comment="" key="false" length="-1" name="pid" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_spysL-48EeihD7EfnUn4rQ" comment="" key="false" length="-1" name="Batch_inserttime" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_spysMO48EeihD7EfnUn4rQ" comment="" key="false" length="-1" name="Batch_day" nullable="true" pattern="&quot;yyyyMMdd&quot;" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column xmi:id="_spysMe48EeihD7EfnUn4rQ" comment="" key="false" length="-1" name="Batch_hour" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node xmi:id="_spysMu48EeihD7EfnUn4rQ" componentName="tS3Configuration" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="96">
+    <elementParameter xmi:id="_spysM-48EeihD7EfnUn4rQ" field="TEXT" name="UNIQUE_NAME" value="tS3Configuration_1" show="false"/>
+    <elementParameter xmi:id="_spysNO48EeihD7EfnUn4rQ" field="HADOOP_LIBRARIES" name="SPARKBATCH" value="" show="false"/>
+    <elementParameter xmi:id="_spysNe48EeihD7EfnUn4rQ" field="TEXT" name="ACCESS_KEY" value="context.S3_ACCESS_KEY"/>
+    <elementParameter xmi:id="_spysNu48EeihD7EfnUn4rQ" field="PASSWORD" name="SECRET_KEY" value="8pW6Nmy2kuf4aZIHT9hn+qjsdmpYZWpC"/>
+    <elementParameter xmi:id="_spysN-48EeihD7EfnUn4rQ" field="TEXT" name="BUCKET_NAME" value="context.S3_BUCKET_NAME"/>
+    <elementParameter xmi:id="_spysOO48EeihD7EfnUn4rQ" field="TEXT" name="TEMP_FOLDER" value="&quot;/tmp&quot;"/>
+    <elementParameter xmi:id="_spysOe48EeihD7EfnUn4rQ" field="CHECK" name="USE_S3A" value="false"/>
+    <elementParameter xmi:id="_spysOu48EeihD7EfnUn4rQ" field="CHECK" name="SET_REGION" value="false"/>
+    <elementParameter xmi:id="_spysO-48EeihD7EfnUn4rQ" field="CLOSED_LIST" name="REGION" value="&quot;s3-external-1.amazonaws.com&quot;" show="false"/>
+    <elementParameter xmi:id="_spysPO48EeihD7EfnUn4rQ" field="CHECK" name="SET_ENDPOINT" value="false"/>
+    <elementParameter xmi:id="_spysPe48EeihD7EfnUn4rQ" field="TEXT" name="ENDPOINT" value="&quot;s3.eu-central-1.amazonaws.com&quot;" show="false"/>
+    <elementParameter xmi:id="_spysPu48EeihD7EfnUn4rQ" field="TEXT" name="STORAGE_CONFIGURATION" value="tSparkConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_spysP-48EeihD7EfnUn4rQ" field="TEXT" name="LABEL" value="S3Config"/>
+    <elementParameter xmi:id="_spysQO48EeihD7EfnUn4rQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node xmi:id="_spysQe48EeihD7EfnUn4rQ" componentName="tHiveConfiguration" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="608" posY="96">
+    <elementParameter xmi:id="_spysQu48EeihD7EfnUn4rQ" field="TEXT" name="UNIQUE_NAME" value="tHiveConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_spysQ-48EeihD7EfnUn4rQ" field="CLOSED_LIST" name="DB_VERSION" value="EMR_5_5_0"/>
+    <elementParameter xmi:id="_spysRO48EeihD7EfnUn4rQ" field="HADOOP_DISTRIBUTION" name="HIVEONSPARK" value=""/>
+    <elementParameter xmi:id="_spysRe48EeihD7EfnUn4rQ" field="TEXT" name="HOST" value="context.HOST"/>
+    <elementParameter xmi:id="_spysRu48EeihD7EfnUn4rQ" field="TEXT" name="PORT" value="&quot;9083&quot;"/>
+    <elementParameter xmi:id="_spysR-48EeihD7EfnUn4rQ" field="CHECK" name="USE_KRB" value="false" show="false"/>
+    <elementParameter xmi:id="_spysSO48EeihD7EfnUn4rQ" field="TEXT" name="HIVE_PRINCIPAL" value="&quot;hive/_HOST@EXAMPLE.COM&quot;" show="false"/>
+    <elementParameter xmi:id="_spysSe48EeihD7EfnUn4rQ" field="CHECK" name="USE_MAPRTICKET" value="false" show="false"/>
+    <elementParameter xmi:id="_spysSu48EeihD7EfnUn4rQ" field="TEXT" name="SPARK_CONFIGURATION" value="tSparkConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_spysS-48EeihD7EfnUn4rQ" field="TEXT" name="LABEL" value="HiveConfig"/>
+    <elementParameter xmi:id="_spysTO48EeihD7EfnUn4rQ" field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <connection xmi:id="_spysTe48EeihD7EfnUn4rQ" connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tHiveOutput_1">
+    <elementParameter xmi:id="_spysTu48EeihD7EfnUn4rQ" field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue xmi:id="_spysT-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="UPDATETIME"/>
+      <elementValue xmi:id="_spysUO48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysUe48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysUu48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="MC_PHONE"/>
+      <elementValue xmi:id="_spysU-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysVO48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysVe48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="POSTCODE"/>
+      <elementValue xmi:id="_spysVu48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysV-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysWO48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="___seqval"/>
+      <elementValue xmi:id="_spysWe48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysWu48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysW-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="Batch_hour"/>
+      <elementValue xmi:id="_spysXO48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysXe48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysXu48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="POLICY_NO"/>
+      <elementValue xmi:id="_spysX-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysYO48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysYe48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="LAST_NAME"/>
+      <elementValue xmi:id="_spysYu48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysY-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysZO48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="EMAIL"/>
+      <elementValue xmi:id="_spysZe48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysZu48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysZ-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="FIRST_NAME"/>
+      <elementValue xmi:id="_spysaO48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysae48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysau48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="MC_SMS"/>
+      <elementValue xmi:id="_spysa-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysbO48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysbe48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="load_time"/>
+      <elementValue xmi:id="_spysbu48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysb-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spyscO48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="GENDER"/>
+      <elementValue xmi:id="_spysce48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spyscu48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysc-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="MC_EMAIL"/>
+      <elementValue xmi:id="_spysdO48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysde48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysdu48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="UUID"/>
+      <elementValue xmi:id="_spysd-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spyseO48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysee48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="TYPE"/>
+      <elementValue xmi:id="_spyseu48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spyse-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysfO48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="___command_id"/>
+      <elementValue xmi:id="_spysfe48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysfu48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysf-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="___end_lsn"/>
+      <elementValue xmi:id="_spysgO48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysge48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysgu48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="___update_mask"/>
+      <elementValue xmi:id="_spysg-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spyshO48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spyshe48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="___start_lsn"/>
+      <elementValue xmi:id="_spyshu48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysh-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysiO48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="___operation"/>
+      <elementValue xmi:id="_spysie48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysiu48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysi-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="DATEOFBIRTH"/>
+      <elementValue xmi:id="_spysjO48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysje48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysju48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="ACTIVATE_DATE"/>
+      <elementValue xmi:id="_spysj-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spyskO48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spyske48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="ADDRESS"/>
+      <elementValue xmi:id="_spysku48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysk-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spyslO48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="NRIC_NO"/>
+      <elementValue xmi:id="_spysle48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spyslu48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysl-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="Batch_day"/>
+      <elementValue xmi:id="_spysmO48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysme48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysmu48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="MOBILE"/>
+      <elementValue xmi:id="_spysm-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysnO48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysne48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="CDC_Seqval"/>
+      <elementValue xmi:id="_spysnu48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysn-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysoO48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="CDC_Timestamp"/>
+      <elementValue xmi:id="_spysoe48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysou48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spyso-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="CDC_Operation"/>
+      <elementValue xmi:id="_spyspO48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spyspe48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spyspu48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="pid"/>
+      <elementValue xmi:id="_spysp-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysqO48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue xmi:id="_spysqe48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN" value="Batch_inserttime"/>
+      <elementValue xmi:id="_spysqu48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue xmi:id="_spysq-48EeihD7EfnUn4rQ" elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter xmi:id="_spysrO48EeihD7EfnUn4rQ" field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter xmi:id="_spysre48EeihD7EfnUn4rQ" field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <subjob xmi:id="_spysru48EeihD7EfnUn4rQ">
+    <elementParameter xmi:id="_spysr-48EeihD7EfnUn4rQ" field="TEXT" name="UNIQUE_NAME" value="tHDFSConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_spyssO48EeihD7EfnUn4rQ" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_spysse48EeihD7EfnUn4rQ" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_spyssu48EeihD7EfnUn4rQ">
+    <elementParameter xmi:id="_spyss-48EeihD7EfnUn4rQ" field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter xmi:id="_spystO48EeihD7EfnUn4rQ" field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter xmi:id="_spyste48EeihD7EfnUn4rQ" field="TEXT" name="SUBJOB_TITLE" value="HDFS to Parquet conversion"/>
+    <elementParameter xmi:id="_spystu48EeihD7EfnUn4rQ" field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;255;255"/>
+    <elementParameter xmi:id="_spyst-48EeihD7EfnUn4rQ" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_spysuO48EeihD7EfnUn4rQ">
+    <elementParameter xmi:id="_spysue48EeihD7EfnUn4rQ" field="TEXT" name="UNIQUE_NAME" value="tS3Configuration_1" show="false"/>
+    <elementParameter xmi:id="_spysuu48EeihD7EfnUn4rQ" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_spysu-48EeihD7EfnUn4rQ" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob xmi:id="_spysvO48EeihD7EfnUn4rQ">
+    <elementParameter xmi:id="_spysve48EeihD7EfnUn4rQ" field="TEXT" name="UNIQUE_NAME" value="tHiveConfiguration_1" show="false"/>
+    <elementParameter xmi:id="_spysvu48EeihD7EfnUn4rQ" field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter xmi:id="_spysv-48EeihD7EfnUn4rQ" field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>
