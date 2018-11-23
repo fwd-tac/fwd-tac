@@ -148,7 +148,7 @@
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
     <elementParameter field="MEMO" name="COMMENT" value=""/>
   </node>
-  <node componentName="jbl_error_log" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1280" posY="96">
+  <node componentName="jbl_error_log" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="jbl_error_log_1"/>
     <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
@@ -162,7 +162,7 @@
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
     <elementParameter field="MEMO" name="COMMENT" value=""/>
   </node>
-  <node componentName="jbl_audit_start_entry" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="96">
+  <node componentName="jbl_audit_start_entry" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="jbl_audit_start_entry_1"/>
     <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
@@ -196,7 +196,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_1"/>
   </node>
-  <node componentName="jbl_audit_success_update" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="608">
+  <node componentName="jbl_audit_success_update" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="jbl_audit_success_update_1"/>
     <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
