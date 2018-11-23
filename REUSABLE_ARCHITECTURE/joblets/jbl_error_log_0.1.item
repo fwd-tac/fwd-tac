@@ -194,7 +194,7 @@
         </column>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
-        <uiProperties shellMaximized="true"/>
+        <uiProperties/>
         <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
         <outputTables sizeState="INTERMEDIATE" name="Audit_Fail_Update">
           <mapperTableEntries name="pid" expression="context.aud_pid" type="id_String"/>
