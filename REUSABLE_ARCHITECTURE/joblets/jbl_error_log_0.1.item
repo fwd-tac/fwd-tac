@@ -74,7 +74,7 @@
       <routinesParameter id="_JJo1gO46EeihD7EfnUn4rQ" name="TalendStringUtil"/>
       <routinesParameter id="_JG8G0O46EeihD7EfnUn4rQ" name="TalendString"/>
     </parameters>
-    <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="96">
+    <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="192" posY="128">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
       <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
       <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
@@ -97,7 +97,7 @@
         <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </node>
-    <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="288" posY="96">
+    <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="128">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
       <elementParameter field="CHECK" name="USESTREAM" value="false"/>
       <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
@@ -143,7 +143,7 @@
         <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </node>
-    <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="96">
+    <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="128">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
       <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;context.aud_error_message = input_row.message;&#xD;&#xA;&#xD;&#xA;"/>
       <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -162,15 +162,6 @@
         <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
         <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
         <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
-      </metadata>
-    </node>
-    <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="96">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-      <elementParameter field="MEMO_JAVA" name="CODE" value="String foo = &quot;bar&quot;;"/>
-      <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-      <metadata connector="FLOW" name="tJava_1">
-        <column comment="" key="false" length="-1" name="Dummy" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </node>
     <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="800" posY="96">
@@ -203,17 +194,28 @@
         </column>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
-        <uiProperties/>
+        <uiProperties shellMaximized="true"/>
         <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
         <outputTables sizeState="INTERMEDIATE" name="Audit_Fail_Update">
-          <mapperTableEntries name="pid" expression="context.L_pid" type="id_String"/>
+          <mapperTableEntries name="pid" expression="context.aud_pid" type="id_String"/>
           <mapperTableEntries name="job_run_status" expression="&quot;FAILED&quot;" type="id_String" nullable="true"/>
           <mapperTableEntries name="job_end_time" expression="TalendDate.getCurrentDate()" type="id_Date" nullable="true"/>
           <mapperTableEntries name="duration_of_job" expression="" type="id_Long" nullable="true"/>
           <mapperTableEntries name="error_message" expression="StringHandling.LEFT(context.L_Error_message,4000) " type="id_String" nullable="true"/>
         </outputTables>
         <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-          <mapperTableEntries name="Dummy" type="id_String" nullable="true"/>
+          <mapperTableEntries name="moment" type="id_Date" nullable="true"/>
+          <mapperTableEntries name="pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="root_pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="father_pid" type="id_String" nullable="true"/>
+          <mapperTableEntries name="project" type="id_String" nullable="true"/>
+          <mapperTableEntries name="job" type="id_String" nullable="true"/>
+          <mapperTableEntries name="context" type="id_String" nullable="true"/>
+          <mapperTableEntries name="priority" type="id_Integer" nullable="true"/>
+          <mapperTableEntries name="type" type="id_String" nullable="true"/>
+          <mapperTableEntries name="origin" type="id_String" nullable="true"/>
+          <mapperTableEntries name="message" type="id_String" nullable="true"/>
+          <mapperTableEntries name="code" type="id_Integer" nullable="true"/>
         </inputTables>
       </nodeData>
     </node>
@@ -544,10 +546,7 @@
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
     </connection>
-    <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tJava_1">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
-    </connection>
-    <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tMap_1">
+    <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="tMap_1">
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
     </connection>
@@ -571,11 +570,6 @@
     </connection>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-    </subjob>
-    <subjob>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
       <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
       <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
     </subjob>
