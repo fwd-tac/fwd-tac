@@ -12,12 +12,16 @@
       <contextParameter comment="" name="conn_rs_port" prompt="conn_rs_port?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="conn_rs_schema" prompt="conn_rs_schema?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="conn_rs_username" prompt="conn_rs_username?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
-      <contextParameter comment="" name="email_bcc_address" prompt="email_bcc_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
-      <contextParameter comment="" name="email_cc_address" prompt="email_cc_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
-      <contextParameter comment="" name="email_failure_subject" prompt="email_failure_subject?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value="&quot;STAGING_JOB &quot;+jobName+&quot; FAILED&quot;"/>
-      <contextParameter comment="" name="email_from_address" prompt="email_from_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
-      <contextParameter comment="" name="email_to_address" prompt="email_to_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
-      <contextParameter comment="" name="new6" prompt="new6?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="email_failure_bcc_address" prompt="email_failure_bcc_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="email_failure_cc_address" prompt="email_failure_cc_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="email_failure_from_address" prompt="email_failure_from_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="email_failure_subject" prompt="email_failure_subject?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="email_failure_to_address" prompt="email_failure_to_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="email_success_bcc_address" prompt="email_success_bcc_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="email_success_cc_address" prompt="email_success_cc_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="email_success_subject" prompt="email_success_subject?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value="&quot;STAGING_JOB &quot;+jobName+&quot; FAILED&quot;"/>
+      <contextParameter comment="" name="email_success_to_address" prompt="email_success_to_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="email_sucess_from_address" prompt="email_sucess_from_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
     </context>
     <parameters>
       <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -410,16 +414,16 @@
         </column>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
-        <uiProperties/>
+        <uiProperties shellMaximized="true"/>
         <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
         <outputTables sizeState="INTERMEDIATE" name="Store_Mail_Infoo">
-          <mapperTableEntries name="pid" expression="context.L_pid" type="id_String"/>
+          <mapperTableEntries name="pid" expression="context.aud_pid" type="id_String"/>
           <mapperTableEntries name="job_name" expression="jobName" type="id_String" nullable="true"/>
           <mapperTableEntries name="project_name" expression="projectName" type="id_String" nullable="true"/>
           <mapperTableEntries name="email_type" expression="&quot;ERROR&quot;" type="id_String" nullable="true"/>
-          <mapperTableEntries name="email_to" expression="context.RECEIVER_MAIL" type="id_String" nullable="true"/>
-          <mapperTableEntries name="email_sub" expression="context.Cc_MAIL" type="id_String" nullable="true"/>
-          <mapperTableEntries name="email_content" expression="StringHandling.LEFT(context.L_Error_message,4000) " type="id_String" nullable="true"/>
+          <mapperTableEntries name="email_to" expression="context.email_failure_to_address" type="id_String" nullable="true"/>
+          <mapperTableEntries name="email_sub" expression="context.email_failure_subject" type="id_String" nullable="true"/>
+          <mapperTableEntries name="email_content" expression="StringHandling.LEFT(context.aud_error_message,4000) " type="id_String" nullable="true"/>
           <mapperTableEntries name="m_sent_date" expression="TalendDate.getCurrentDate()" type="id_Date" nullable="true"/>
         </outputTables>
         <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
