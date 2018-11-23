@@ -24,4 +24,6 @@
   <contextParameter xmi:id="_q1SRsO7zEeixOY2tY9_UhA" comment="" name="conn_rs_table_audit_log" prompt="conn_rs_table_audit_log?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_q1SRse7zEeixOY2tY9_UhA" comment="" name="conn_rs_table_mailinfo" prompt="conn_rs_table_mailinfo?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_q1SRsu7zEeixOY2tY9_UhA" comment="" name="conn_rs_table_batch_control" prompt="conn_rs_table_batch_control?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_xQEHUO70EeixOY2tY9_UhA" comment="" name="aud_batch_start_time" prompt="aud_batch_start_time?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_xQEHUe70EeixOY2tY9_UhA" comment="" name="new2" prompt="new2?" promptNeeded="false" type="id_String" value=""/>
 </talendfile:ContextType>
