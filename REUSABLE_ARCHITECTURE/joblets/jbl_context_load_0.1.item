@@ -2,6 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore">
   <model:JobletProcess defaultContext="Default" jobType="Standard">
     <context confirmationNeeded="false" name="Default">
+      <contextParameter comment="" name="aud_job_date" prompt="aud_job_date?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="conn_rs_database" prompt="conn_rs_database?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="conn_rs_host" prompt="conn_rs_host?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="conn_rs_password" prompt="conn_rs_password?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
@@ -323,7 +324,7 @@
     </node>
     <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="192">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
-      <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xA;output_row.key = &quot;host&quot;;&#xA;output_row.value = input_row.value;&#xA;&#xA;&#xA;&#xA;//To Storing jobname with current date to store error file&#xA;&#xA;String Job_name=jobName;&#xA;String Current_date=TalendDate.formatDate(&quot;yyyyMMdd HHmmss&quot;,TalendDate.getCurrentDate());&#xA;&#xA;&#xA;//context.aud_job_date=Job_name+&quot;_&quot; +Current_date+&quot;.csv&quot;;      //why is this needed&#xA;//System.out.println(&quot;Today_date-->&quot;+context.aud_job_date); "/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xA;output_row.key = &quot;host&quot;;&#xA;output_row.value = input_row.value;&#xA;&#xA;&#xA;&#xA;//To Storing jobname with current date to store error file&#xA;&#xA;//String Job_name=jobName;&#xA;//String Current_date=TalendDate.formatDate(&quot;yyyyMMdd HHmmss&quot;,TalendDate.getCurrentDate());&#xA;&#xA;&#xA;//context.aud_job_date=Job_name+&quot;_&quot; +Current_date+&quot;.csv&quot;;      //why is this needed&#xA;//System.out.println(&quot;Today_date-->&quot;+context.aud_job_date); "/>
       <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tJavaRow_1">
