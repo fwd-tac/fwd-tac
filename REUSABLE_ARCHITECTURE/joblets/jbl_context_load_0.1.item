@@ -334,13 +334,13 @@
     </node>
     <node componentName="tRedshiftConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="320">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftConnection_1" show="false"/>
-      <elementParameter field="TEXT" name="HOST" value="context.conn_rs_host"/>
+      <elementParameter field="TEXT" name="HOST" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="TYPE" value="Redshift" show="false"/>
-      <elementParameter field="TEXT" name="PORT" value="context.conn_rs_port"/>
-      <elementParameter field="TEXT" name="DBNAME" value="context.conn_rs_database"/>
-      <elementParameter field="TEXT" name="SCHEMA_DB" value="contect.context.conn_rs_schema"/>
-      <elementParameter field="TEXT" name="USER" value="context.conn_rs_username"/>
-      <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufzw1+lsxlfa9/5rkEtk0U/RHpaK4KEwBQ="/>
+      <elementParameter field="TEXT" name="PORT" value="&quot;5439&quot;"/>
+      <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+      <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+      <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE="/>
       <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
       <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
       <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
@@ -348,7 +348,7 @@
       <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
       <elementParameter field="FILE" name="LOG_FILE" value="&quot;C:/Softwares/Talend-Tools-Studio-20180116_1512-V6.5.1/Talend-Tools-Studio-20180116_1512-V6.5.1/workspace/redshift-jdbc.log&quot;"/>
       <elementParameter field="CLOSED_LIST" name="LOG_LEVEL" value="1"/>
-      <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
+      <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     </node>
     <connection connectorName="FLOW" label="row1" lineStyle="10" mergeOrder="1" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tUnite_1">
