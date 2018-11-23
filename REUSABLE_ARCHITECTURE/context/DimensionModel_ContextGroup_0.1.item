@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_mwVbUO4_EeihD7EfnUn4rQ" confirmationNeeded="false" name="Default">
-  <contextParameter xmi:id="_ps3d4O4_EeihD7EfnUn4rQ" comment="" name="new1" prompt="new1?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_ps3d4O4_EeihD7EfnUn4rQ" comment="" name="conn_rs_" prompt="conn_rs_?" promptNeeded="false" type="id_String" value=""/>
 </talendfile:ContextType>
