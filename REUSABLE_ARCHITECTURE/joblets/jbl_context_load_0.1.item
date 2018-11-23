@@ -345,7 +345,7 @@
       <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
       <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
       <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="true"/>
-      <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value=""/>
+      <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="MAIN_CONN"/>
       <elementParameter field="FILE" name="LOG_FILE" value="&quot;C:/Softwares/Talend-Tools-Studio-20180116_1512-V6.5.1/Talend-Tools-Studio-20180116_1512-V6.5.1/workspace/redshift-jdbc.log&quot;"/>
       <elementParameter field="CLOSED_LIST" name="LOG_LEVEL" value="1"/>
       <elementParameter field="CHECK" name="AUTO_COMMIT" value="true"/>
