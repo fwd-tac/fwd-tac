@@ -103,7 +103,7 @@
     </parameters>
     <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="224">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-      <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Audit recored was inserted for this job &quot;+jobName);&#xA;string a=&quot;b&quot;;"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value="string a=&quot;b&quot;;"/>
       <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
       <elementParameter field="TEXT" name="LABEL" value="Message"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
@@ -159,7 +159,7 @@
         </column>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
-        <uiProperties shellMaximized="true"/>
+        <uiProperties/>
         <varTables sizeState="INTERMEDIATE" name="Var">
           <mapperTableEntries name="var1" expression="context.aud_pid=pid" type="id_String"/>
           <mapperTableEntries name="var2" expression="context.aud_batch_start_time=TalendDate.getCurrentDate()" type="id_Date"/>
