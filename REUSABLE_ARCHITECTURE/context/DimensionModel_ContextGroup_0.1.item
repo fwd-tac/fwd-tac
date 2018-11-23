@@ -8,4 +8,5 @@
   <contextParameter xmi:id="_3THi1e7cEeiURcT2R7X8FA" comment="" name="conn_rs_password" prompt="conn_rs_password?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_pXjxcO7dEeiURcT2R7X8FA" comment="concated value of job_name and timestamp" name="aud_job_date" prompt="aud_job_date?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_B0798O7sEei6HLQsWVg96Q" comment="" name="aud_err_file_loc" prompt="aud_err_file_loc?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_8z7swO7sEei6HLQsWVg96Q" comment="stores the error message from the tlogcatcher" name="aud_error_message" prompt="aud_error_message?" promptNeeded="false" type="id_String" value=""/>
 </talendfile:ContextType>
