@@ -373,6 +373,14 @@
     <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="TRIGGER_INPUT_1" offsetLabelX="0" offsetLabelY="0" source="TRIGGER_INPUT_1" target="tFileInputDelimited_1">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
     </connection>
+    <note opaque="false" posX="736" posY="416" sizeHeight="129" sizeWidth="225" text="The purpose of treshift component is&#xD;&#xA; to read and write into the audit tables">
+      <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
+      <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
+      <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
+      <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
+      <elementParameter field="TEXT" name="NOTE_FONT" value="Calibri"/>
+      <elementParameter field="TEXT" name="FONT_SIZE" value="11"/>
+    </note>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
       <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="0;128;0" show="false"/>
