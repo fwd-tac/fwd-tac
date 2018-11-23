@@ -16,7 +16,6 @@
     <parameters xmi:id="_1NFwQI8-EeiHDOm_6nTffQ" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
   </TalendMetadata:DatabaseConnection>
   <orgomg.cwm.resource.relational:Catalog xmi:id="_4iuPUI8-EeiHDOm_6nTffQ" name="fwdredshift" dataManager="_Qr6SUI8-EeiHDOm_6nTffQ">
-    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_4iuPVI8-EeiHDOm_6nTffQ" name="public"/>
     <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_hmvTYLs-EeizLvKTJT4cYQ" name="batch_support">
       <ownedElement xsi:type="relational:TdTable" xmi:id="_q_wRMLs-EeizLvKTJT4cYQ" name="batch_audit_log" id="_q_qxoLs-EeizLvKTJT4cYQ" label="batch_audit_log" tableType="TABLE">
         <feature xsi:type="relational:TdColumn" xmi:id="_q_wRMbs-EeizLvKTJT4cYQ" name="execution_no" label="execution_no" length="19" sourceType="INT8" talendType="id_Long">
