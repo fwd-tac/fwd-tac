@@ -21,4 +21,7 @@
   <contextParameter xmi:id="_UO5JEu7yEeixOY2tY9_UhA" comment="" name="email_failure_cc_address" prompt="email_failure_cc_address?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_UO5JE-7yEeixOY2tY9_UhA" comment="" name="email_failure_from_address" prompt="email_failure_from_address?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_Kjkd0O7zEeixOY2tY9_UhA" comment="placeholder for any other redshift schema" name="conn_rs_schema" prompt="conn_rs_schema?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_q1SRsO7zEeixOY2tY9_UhA" comment="" name="conn_rs_table_audit_log" prompt="conn_rs_table_audit_log?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_q1SRse7zEeixOY2tY9_UhA" comment="" name="conn_rs_table_mailinfo" prompt="conn_rs_table_mailinfo?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_q1SRsu7zEeixOY2tY9_UhA" comment="" name="conn_rs_table_batch_control" prompt="conn_rs_table_batch_control?" promptNeeded="false" type="id_String" value=""/>
 </talendfile:ContextType>
