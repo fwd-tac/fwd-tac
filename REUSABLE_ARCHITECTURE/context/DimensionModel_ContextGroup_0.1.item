@@ -10,4 +10,10 @@
   <contextParameter xmi:id="_B0798O7sEei6HLQsWVg96Q" comment="" name="aud_err_file_loc" prompt="aud_err_file_loc?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_-IjWUO7sEei6HLQsWVg96Q" comment="stores the error message from the tlogcatcher" name="aud_error_message" prompt="aud_error_message?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_XwKpsO7tEei6HLQsWVg96Q" comment="talend generated pid" name="aud_pid" prompt="aud_pid?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_YGewkO7wEeixOY2tY9_UhA" comment="" name="email_to_address" prompt="email_to_address?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_YGewke7wEeixOY2tY9_UhA" comment="" name="email_from_address" prompt="email_from_address?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_YGewku7wEeixOY2tY9_UhA" comment="" name="email_cc_address" prompt="email_cc_address?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_YGewk-7wEeixOY2tY9_UhA" comment="" name="email_failure_subject" prompt="email_failure_subject?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_YGewlO7wEeixOY2tY9_UhA" comment="" name="email_bcc_address" prompt="email_bcc_address?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_YGewle7wEeixOY2tY9_UhA" comment="" name="new6" prompt="new6?" promptNeeded="false" type="id_String" value=""/>
 </talendfile:ContextType>
