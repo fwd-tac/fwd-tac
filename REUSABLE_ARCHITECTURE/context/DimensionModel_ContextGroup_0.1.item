@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_mwVbUO4_EeihD7EfnUn4rQ" confirmationNeeded="false" name="Default">
-  <contextParameter xmi:id="_ps3d4O4_EeihD7EfnUn4rQ" comment="" name="conn_rs_host" prompt="conn_rs_host?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_1JSIgO7cEeiURcT2R7X8FA" comment="" name="conn_rs_port" prompt="conn_rs_port?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_1JSIge7cEeiURcT2R7X8FA" comment="" name="conn_rs_database" prompt="conn_rs_database?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_1JSIgu7cEeiURcT2R7X8FA" comment="" name="conn_rs_schema" prompt="conn_rs_schema?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_1JSIg-7cEeiURcT2R7X8FA" comment="" name="conn_rs_username" prompt="conn_rs_username?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_1JSIhO7cEeiURcT2R7X8FA" comment="" name="conn_rs_password" prompt="conn_rs_password?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3THi0O7cEeiURcT2R7X8FA" comment="" name="conn_rs_host" prompt="conn_rs_host?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3THi0e7cEeiURcT2R7X8FA" comment="" name="conn_rs_port" prompt="conn_rs_port?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3THi0u7cEeiURcT2R7X8FA" comment="" name="conn_rs_database" prompt="conn_rs_database?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3THi0-7cEeiURcT2R7X8FA" comment="" name="conn_rs_schema" prompt="conn_rs_schema?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3THi1O7cEeiURcT2R7X8FA" comment="" name="conn_rs_username" prompt="conn_rs_username?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3THi1e7cEeiURcT2R7X8FA" comment="" name="conn_rs_password" prompt="conn_rs_password?" promptNeeded="false" type="id_String" value=""/>
 </talendfile:ContextType>
