@@ -89,7 +89,7 @@
       <elementParameter field="EXTERNAL" name="MAP" value=""/>
       <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
       <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-      <elementParameter field="IMAGE" name="PREVIEW" value="_w0Px0IM3Eeic0tyIGCFNlw-tMap_2-PREVIEW.bmp"/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_K38V4O70EeixOY2tY9_UhA-tMap_1-PREVIEW.bmp"/>
       <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
       <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
       <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
@@ -132,13 +132,13 @@
         </column>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
-        <uiProperties/>
+        <uiProperties shellMaximized="true"/>
         <varTables sizeState="INTERMEDIATE" name="Var">
           <mapperTableEntries name="var1" expression="context.L_pid=pid" type="id_String"/>
           <mapperTableEntries name="var2" expression="context.L_START_TIME=TalendDate.getCurrentDate()" type="id_Date"/>
         </varTables>
         <outputTables sizeState="INTERMEDIATE" name="Audit_Start">
-          <mapperTableEntries name="pid" expression="context.L_pid" type="id_String"/>
+          <mapperTableEntries name="pid" expression="context.aud_pid" type="id_String"/>
           <mapperTableEntries name="job_name" expression="jobName" type="id_String" nullable="true"/>
           <mapperTableEntries name="project_name" expression="projectName" type="id_String" nullable="true"/>
           <mapperTableEntries name="job_run_status" expression="&quot;STARTED&quot;" type="id_String" nullable="true"/>
