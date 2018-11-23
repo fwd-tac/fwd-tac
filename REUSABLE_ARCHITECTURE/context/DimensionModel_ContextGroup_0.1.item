@@ -6,5 +6,6 @@
   <contextParameter xmi:id="_3THi0-7cEeiURcT2R7X8FA" comment="" name="conn_rs_schema" prompt="conn_rs_schema?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_3THi1O7cEeiURcT2R7X8FA" comment="" name="conn_rs_username" prompt="conn_rs_username?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_3THi1e7cEeiURcT2R7X8FA" comment="" name="conn_rs_password" prompt="conn_rs_password?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_pXjxcO7dEeiURcT2R7X8FA" comment="" name="aud_job_date" prompt="aud_job_date?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_pXjxcO7dEeiURcT2R7X8FA" comment="concated value of job_name and timestamp" name="aud_job_date" prompt="aud_job_date?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_B0798O7sEei6HLQsWVg96Q" comment="" name="aud_err_file_loc" prompt="aud_err_file_loc?" promptNeeded="false" type="id_String" value=""/>
 </talendfile:ContextType>
