@@ -3,7 +3,7 @@
   <contextParameter xmi:id="_3THi0O7cEeiURcT2R7X8FA" comment="" name="conn_rs_host" prompt="conn_rs_host?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_3THi0e7cEeiURcT2R7X8FA" comment="" name="conn_rs_port" prompt="conn_rs_port?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_3THi0u7cEeiURcT2R7X8FA" comment="" name="conn_rs_database" prompt="conn_rs_database?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_3THi0-7cEeiURcT2R7X8FA" comment="" name="conn_rs_schema" prompt="conn_rs_schema?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3THi0-7cEeiURcT2R7X8FA" comment="" name="conn_rs_aud_schema" prompt="conn_rs_aud_schema?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_3THi1O7cEeiURcT2R7X8FA" comment="" name="conn_rs_username" prompt="conn_rs_username?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_3THi1e7cEeiURcT2R7X8FA" comment="" name="conn_rs_password" prompt="conn_rs_password?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_pXjxcO7dEeiURcT2R7X8FA" comment="concated value of job_name and timestamp" name="aud_job_date" prompt="aud_job_date?" promptNeeded="false" type="id_String" value=""/>
@@ -20,4 +20,5 @@
   <contextParameter xmi:id="_UO5JEe7yEeixOY2tY9_UhA" comment="" name="email_failure_subject" prompt="email_failure_subject?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_UO5JEu7yEeixOY2tY9_UhA" comment="" name="email_failure_cc_address" prompt="email_failure_cc_address?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_UO5JE-7yEeixOY2tY9_UhA" comment="" name="email_failure_from_address" prompt="email_failure_from_address?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_Kjkd0O7zEeixOY2tY9_UhA" comment="placeholder for any other redshift schema" name="conn_rs_schema" prompt="conn_rs_schema?" promptNeeded="false" type="id_String" value=""/>
 </talendfile:ContextType>
