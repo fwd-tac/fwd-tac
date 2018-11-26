@@ -108,6 +108,7 @@
     </parameters>
     <node componentName="tRedshiftInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="288">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftInput_1" show="false"/>
+      <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
       <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
       <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_KUgrYI8-EeiHDOm_6nTffQ" show="false"/>
       <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
@@ -222,7 +223,7 @@
       <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
       <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
       <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT max(batch_hour)&#xD;&#xA;FROM&#x9;batch_control&quot;"/>
+      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT min(aud_time) as min_aud_time,max(aud_time) as max_aud_time &#xA;FROM&#x9; &quot;+context.conn_rs_schema+&quot;.batch_control where max(batch_hour)=max(batch_hour)&quot;"/>
       <elementParameter field="MAPPING_TYPE" name="MAPPING" value="redshift_id" show="false"/>
       <elementParameter field="FILE" name="LOG_FILE" value="&quot;C:/Softwares/Talend-Tools-Studio-20180116_1512-V6.5.1/Talend-Tools-Studio-20180116_1512-V6.5.1/workspace/redshift-jdbc.log&quot;"/>
       <elementParameter field="CLOSED_LIST" name="LOG_LEVEL" value="1"/>
@@ -232,29 +233,34 @@
       <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
       <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
       <elementParameter field="TABLE" name="TRIM_COLUMN">
-        <elementValue elementRef="SCHEMA_COLUMN" value="batch_hour"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="min_aud_time"/>
+        <elementValue elementRef="TRIM" value="false"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="max_aud_time"/>
         <elementValue elementRef="TRIM" value="false"/>
       </elementParameter>
-      <elementParameter field="TEXT" name="LABEL" value="max_batch_hour"/>
+      <elementParameter field="TEXT" name="LABEL" value="extract_date_range"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-      <metadata connector="FLOW" label="batch_control" name="tRedshiftInput_2">
-        <column comment="" key="false" length="19" name="batch_hour" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
+      <metadata connector="FLOW" name="tRedshiftInput_2">
+        <column comment="" key="false" length="-1" name="min_aud_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="max_aud_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </node>
     <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="128">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
-      <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;context.range_batch_hour = input_row.batch_hour;&#xA;&#xA;TalendDate.parseDate(&quot;yyyy-mm-dd HH&quot;, context.range_batch_hour.toString())&#xA;&#xA;context.range_threshold_batch_hour=TalendDate.addDate(TalendDate.parseDate(&quot;yyyy-mm-dd HH&quot;, context.range_batch_hour.toString()),context.range_threshold_hour,&quot;HH&quot;)&#xA;&#xA;&#xD;&#xA;"/>
+      <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;context.range_min_start_time = input_row.min_aud_time;&#xD;&#xA;context.range_max_end_time = input_row.max_aud_time;&#xA;&#xA;&#xA;context.range_threshold_min_start_time=TalendDate.addDate(input_row.min_aud_time,context.range_threshold_hour,&quot;HH&quot;)&#xA;"/>
       <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tJavaRow_1">
-        <column comment="" key="false" length="19" name="batch_hour" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
+        <column comment="" key="false" length="-1" name="min_aud_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="max_aud_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </node>
     <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tRedshiftInput_2" offsetLabelX="0" offsetLabelY="0" source="tRedshiftInput_2" target="tJavaRow_1">
+      <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+        <elementValue elementRef="TRACE_COLUMN" value="max_aud_time"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      </elementParameter>
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
     </connection>
