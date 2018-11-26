@@ -338,7 +338,7 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="store_end_time">
         <mapperTableEntries name="pid" expression="pid" type="id_String" nullable="true"/>
@@ -511,7 +511,7 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="batch_hour"/>
       <elementValue elementRef="TRIM" value="false"/>
     </elementParameter>
-    <elementParameter field="TEXT" name="LABEL" value="MAX_BATCH_HOUR"/>
+    <elementParameter field="TEXT" name="LABEL" value="max_batch_hour"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="batch_control" name="tRedshiftInput_1">
       <column comment="" key="false" length="-1" name="batch_hour" nullable="true" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
