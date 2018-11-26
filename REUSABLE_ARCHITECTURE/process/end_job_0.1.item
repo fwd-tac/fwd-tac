@@ -338,11 +338,11 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="store_end_time">
         <mapperTableEntries name="pid" expression="pid" type="id_String" nullable="true"/>
-        <mapperTableEntries name="job_name" expression="&quot;END_JOB&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="job_name" expression="&quot;END_DL_BATCH&quot;" type="id_String" nullable="true"/>
         <mapperTableEntries name="project_name" expression="projectName" type="id_String" nullable="true"/>
         <mapperTableEntries name="table_name" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="aud_time" expression="TalendDate.getCurrentDate()" type="id_Date" nullable="true"/>
