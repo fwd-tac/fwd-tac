@@ -25,5 +25,10 @@
   <contextParameter xmi:id="_q1SRse7zEeixOY2tY9_UhA" comment="" name="conn_rs_table_mailinfo" prompt="conn_rs_table_mailinfo?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_q1SRsu7zEeixOY2tY9_UhA" comment="" name="conn_rs_table_batch_control" prompt="conn_rs_table_batch_control?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_xQEHUO70EeixOY2tY9_UhA" comment="" name="aud_batch_start_time" prompt="aud_batch_start_time?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_xQEHUe70EeixOY2tY9_UhA" comment="" name="new2" prompt="new2?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_xQEHUe70EeixOY2tY9_UhA" comment="" name="range_batch_hour" prompt="range_batch_hour?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3e_N4PFIEeiBCukp6FD7SA" comment="" name="range_threshold_batch_hour" prompt="range_threshold_batch_hour?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3e_N4fFIEeiBCukp6FD7SA" comment="" name="range_threshold_hour" prompt="range_threshold_hour?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3e_N4vFIEeiBCukp6FD7SA" comment="" name="range_min_start_time" prompt="range_min_start_time?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3e_N4_FIEeiBCukp6FD7SA" comment="" name="range_max_end_time" prompt="range_max_end_time?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_3e_N5PFIEeiBCukp6FD7SA" comment="" name="new2" prompt="new2?" promptNeeded="false" type="id_String" value=""/>
 </talendfile:ContextType>
