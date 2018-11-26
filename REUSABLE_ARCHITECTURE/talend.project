@@ -388,7 +388,6 @@
       <relatedItems xmi:id="_URI4u_FLEeiBCukp6FD7SA" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_URI4vPFLEeiBCukp6FD7SA" id="Relational" version="Latest" type="routine"/>
       <relatedItems xmi:id="_URI4vfFLEeiBCukp6FD7SA" id="TalendStringUtil" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_URI4vvFLEeiBCukp6FD7SA" id="_KUgrYI8-EeiHDOm_6nTffQ - batch_audit_log" version="Latest" type="schema"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_a2zssPFtEeiBCukp6FD7SA">
       <baseItem xmi:id="_a2zssfFtEeiBCukp6FD7SA" id="_VKffkPFsEeiBCukp6FD7SA" version="0.1" type="job"/>

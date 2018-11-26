@@ -106,104 +106,6 @@
       <routinesParameter id="_JJo1gO46EeihD7EfnUn4rQ" name="TalendStringUtil"/>
       <routinesParameter id="_JG8G0O46EeihD7EfnUn4rQ" name="TalendString"/>
     </parameters>
-    <node componentName="tRedshiftInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="96">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftInput_1" show="false"/>
-      <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
-      <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
-      <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_KUgrYI8-EeiHDOm_6nTffQ" show="false"/>
-      <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
-      <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-      <elementParameter field="TEXT" name="HOST" value="&quot;fwdredshift.c7pnttyzgkaa.ap-southeast-1.redshift.amazonaws.com&quot;"/>
-      <elementParameter field="TEXT" name="TYPE" value="REDSHIFT" show="false"/>
-      <elementParameter field="TEXT" name="PORT" value="&quot;5439&quot;"/>
-      <elementParameter field="TEXT" name="DBNAME" value="&quot;fwdredshift&quot;"/>
-      <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;batch_support&quot;"/>
-      <elementParameter field="TEXT" name="USER" value="&quot;dwuser&quot;"/>
-      <elementParameter field="PASSWORD" name="PASS" value="JlCpEJM780qZHQUg7tAflhirN+2ccjU0"/>
-      <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
-      <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-      <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_KUgrYI8-EeiHDOm_6nTffQ - batch_audit_log" show="false"/>
-      <elementParameter field="DBTABLE" name="TABLE" value="&quot;batch_audit_log&quot;"/>
-      <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
-      <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
-      <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-      <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-      <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT execution_no,&#xD;&#xA;&#x9;&#x9;pid,&#xD;&#xA;&#x9;&#x9;job_name,&#xD;&#xA;&#x9;&#x9;project_name,&#xD;&#xA;&#x9;&#x9;job_run_status,&#xD;&#xA;&#x9;&#x9;job_start_time,&#xD;&#xA;&#x9;&#x9;job_end_time,&#xD;&#xA;&#x9;&#x9;duration_of_job,&#xD;&#xA;&#x9;&#x9;source_records,&#xD;&#xA;&#x9;&#x9;target_records,&#xD;&#xA;&#x9;&#x9;rejected_records,&#xD;&#xA;&#x9;&#x9;error_message&#xD;&#xA;FROM&#x9;batch_audit_log&quot;"/>
-      <elementParameter field="MAPPING_TYPE" name="MAPPING" value="redshift_id" show="false"/>
-      <elementParameter field="FILE" name="LOG_FILE" value="&quot;C:/Softwares/Talend-Tools-Studio-20180116_1512-V6.5.1/Talend-Tools-Studio-20180116_1512-V6.5.1/workspace/redshift-jdbc.log&quot;"/>
-      <elementParameter field="CLOSED_LIST" name="LOG_LEVEL" value="1"/>
-      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
-      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
-      <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
-      <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
-      <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
-      <elementParameter field="TABLE" name="TRIM_COLUMN">
-        <elementValue elementRef="SCHEMA_COLUMN" value="execution_no"/>
-        <elementValue elementRef="TRIM" value="false"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="pid"/>
-        <elementValue elementRef="TRIM" value="false"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="job_name"/>
-        <elementValue elementRef="TRIM" value="false"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="project_name"/>
-        <elementValue elementRef="TRIM" value="false"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="job_run_status"/>
-        <elementValue elementRef="TRIM" value="false"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="job_start_time"/>
-        <elementValue elementRef="TRIM" value="false"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="job_end_time"/>
-        <elementValue elementRef="TRIM" value="false"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="duration_of_job"/>
-        <elementValue elementRef="TRIM" value="false"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="source_records"/>
-        <elementValue elementRef="TRIM" value="false"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="target_records"/>
-        <elementValue elementRef="TRIM" value="false"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="rejected_records"/>
-        <elementValue elementRef="TRIM" value="false"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="error_message"/>
-        <elementValue elementRef="TRIM" value="false"/>
-      </elementParameter>
-      <elementParameter field="TEXT" name="LABEL" value="date_range"/>
-      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-      <metadata connector="FLOW" label="batch_audit_log" name="tRedshiftInput_1">
-        <column comment="" defaultValue="identity&quot;(129114, 0, ('1,1'::character varying)::text)" key="false" length="19" name="execution_no" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="true" length="256" name="pid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="256" name="job_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="256" name="project_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="256" name="job_run_status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="29" name="job_start_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="29" name="job_end_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="19" name="duration_of_job" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="19" name="source_records" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="19" name="target_records" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="19" name="rejected_records" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="1000" name="error_message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-      </metadata>
-    </node>
     <node componentName="tRedshiftInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="128">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftInput_2" show="false"/>
       <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
@@ -275,11 +177,6 @@
     <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="TRIGGER_INPUT_1" offsetLabelX="0" offsetLabelY="0" source="TRIGGER_INPUT_1" target="tRedshiftInput_2">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
     </connection>
-    <subjob>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftInput_1" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-    </subjob>
     <subjob>
       <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftInput_2" show="false"/>
