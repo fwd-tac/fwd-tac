@@ -27,6 +27,11 @@
     <contextParameter comment="" name="conn_rs_table_mailinfo" prompt="conn_rs_table_mailinfo?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
     <contextParameter comment="" name="aud_batch_start_time" prompt="aud_batch_start_time?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
     <contextParameter comment="" name="new2" prompt="new2?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+    <contextParameter comment="" name="scv_batch_hour" prompt="scv_batch_hour?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+    <contextParameter comment="" name="scv_max_end_time" prompt="scv_max_end_time?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+    <contextParameter comment="" name="scv_min_start_time" prompt="scv_min_start_time?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+    <contextParameter comment="" name="scv_threshold_batch_hour" prompt="scv_threshold_batch_hour?" promptNeeded="false" repositoryContextId="_9E5xsPFBEeiBCukp6FD7SA" type="id_String" value=""/>
+    <contextParameter comment="" name="scv_threshold_hour" prompt="scv_threshold_hour?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -148,7 +153,7 @@
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
     <elementParameter field="MEMO" name="COMMENT" value=""/>
   </node>
-  <node componentName="jbl_error_log" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="896" posY="96">
+  <node componentName="jbl_error_log" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="1056" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="jbl_error_log_1"/>
     <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
@@ -162,7 +167,7 @@
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
     <elementParameter field="MEMO" name="COMMENT" value=""/>
   </node>
-  <node componentName="jbl_audit_start_entry" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="96">
+  <node componentName="jbl_audit_start_entry" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="jbl_audit_start_entry_1"/>
     <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
@@ -178,11 +183,12 @@
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
     <elementParameter field="MEMO" name="COMMENT" value=""/>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="256">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="256">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
     <elementParameter field="PROCESS_TYPE" name="PROCESS" value=""/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value=""/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value=""/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
     <elementParameter field="TEXT" name="CONTEXT_NAME" value="Default" show="false"/>
@@ -196,7 +202,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_1"/>
   </node>
-  <node componentName="jbl_audit_success_update" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="384">
+  <node componentName="jbl_audit_success_update" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="704" posY="384">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="jbl_audit_success_update_1"/>
     <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
@@ -212,14 +218,33 @@
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
     <elementParameter field="MEMO" name="COMMENT" value=""/>
   </node>
+  <node componentName="jbl_scv_range_calculation" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="704" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="jbl_scv_range_calculation_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="CLOSED_LIST" name="TRIGGER_INPUT_1" value="SUBJOB_OK"/>
+    <elementParameter field="COMPONENT_LIST" name="TRIGGER_INPUT_1:COMPONENT_LIST" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="jbl_scv_range_calculation"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
   <connection connectorName="TRIGGER_OUTPUT_1" label="OnComponentOk (TRIGGER_OUTPUT_1)" lineStyle="3" metaname="jbl_context_load_1" offsetLabelX="0" offsetLabelY="0" source="jbl_context_load_1" target="jbl_audit_start_entry_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
   </connection>
-  <connection connectorName="TRIGGER_OUTPUT_1" label="OnComponentOk (TRIGGER_OUTPUT_1)" lineStyle="3" metaname="jbl_audit_start_entry_1" offsetLabelX="0" offsetLabelY="0" source="jbl_audit_start_entry_1" target="tRunJob_1">
+  <connection connectorName="TRIGGER_OUTPUT_1" label="OnComponentOk (TRIGGER_OUTPUT_1)" lineStyle="3" metaname="jbl_audit_start_entry_1" offsetLabelX="0" offsetLabelY="0" source="jbl_audit_start_entry_1" target="jbl_scv_range_calculation_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="jbl_audit_success_update_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="TRIGGER_OUTPUT_1" label="OnComponentOk (TRIGGER_OUTPUT_1)" lineStyle="3" metaname="jbl_scv_range_calculation_1" offsetLabelX="0" offsetLabelY="0" source="jbl_scv_range_calculation_1" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
@@ -250,6 +275,13 @@
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="jbl_audit_success_update_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="jbl_scv_range_calculation_1" show="false"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="scv_range_calculation"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;128"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
 </talendfile:ProcessType>
