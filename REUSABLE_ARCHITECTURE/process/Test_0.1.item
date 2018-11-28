@@ -125,7 +125,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Time is-&quot;+TalendDate.formatDateInUTC(&quot;yyyy-mm-dd HH:mm:ss.SSS&quot;, TalendDate.addDate(TalendDate.parseDate(&quot;yyyy-mm-dd HH:mm:ss.SSS&quot;, &quot;2018-05-24 01:34:23.234&quot;),-2,&quot;HH&quot;))&#xA;);&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Time is-&quot;+TalendDate.formatDateInUTC(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, TalendDate.addDate(TalendDate.parseDate(&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;, &quot;2018-05-24 01:34:23.234&quot;),-2,&quot;HH&quot;))&#xA;);&#xA;&#xA;//2018-34-23 23:34:23.234"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
