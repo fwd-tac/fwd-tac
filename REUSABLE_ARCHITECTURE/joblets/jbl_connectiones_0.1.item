@@ -9,6 +9,14 @@
       <contextParameter comment="" name="conn_rs_aud_schema" prompt="conn_rs_aud_schema?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="conn_rs_username" prompt="conn_rs_username?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
     </context>
+    <context confirmationNeeded="false" name="DEV">
+      <contextParameter comment="" name="conn_rs_host" prompt="conn_rs_host?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="conn_rs_port" prompt="conn_rs_port?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="conn_rs_database" prompt="conn_rs_database?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="conn_rs_aud_schema" prompt="conn_rs_aud_schema?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="conn_rs_username" prompt="conn_rs_username?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="conn_rs_password" prompt="conn_rs_password?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+    </context>
     <parameters>
       <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
       <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
