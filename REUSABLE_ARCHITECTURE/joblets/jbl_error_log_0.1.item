@@ -153,8 +153,8 @@
       <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
       <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
       <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
-      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
-      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
       <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
       <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true" show="false"/>
       <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
@@ -221,21 +221,21 @@
         <column comment="" key="false" length="256" name="job_run_status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" key="false" length="29" name="job_start_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <column comment="" key="false" length="29" name="job_start_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" key="false" length="29" name="job_end_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <column comment="" key="false" length="29" name="job_end_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
         <column comment="" key="false" length="19" name="duration_of_job" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" key="false" length="4000" name="error_message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <column comment="" key="false" length="256" name="error_message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
-        <uiProperties shellMaximized="true"/>
+        <uiProperties/>
         <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
         <outputTables sizeState="INTERMEDIATE" name="lnk_audit_error_log">
           <mapperTableEntries name="pid" expression="context.aud_pid" type="id_String"/>
@@ -294,22 +294,7 @@
         <elementValue elementRef="DELETE_KEY" value="false"/>
         <elementValue elementRef="UPDATABLE" value="true"/>
         <elementValue elementRef="INSERTABLE" value="true"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="job_name"/>
-        <elementValue elementRef="UPDATE_KEY" value="false"/>
-        <elementValue elementRef="DELETE_KEY" value="false"/>
-        <elementValue elementRef="UPDATABLE" value="true"/>
-        <elementValue elementRef="INSERTABLE" value="true"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="project_name"/>
-        <elementValue elementRef="UPDATE_KEY" value="false"/>
-        <elementValue elementRef="DELETE_KEY" value="false"/>
-        <elementValue elementRef="UPDATABLE" value="true"/>
-        <elementValue elementRef="INSERTABLE" value="true"/>
         <elementValue elementRef="SCHEMA_COLUMN" value="job_run_status"/>
-        <elementValue elementRef="UPDATE_KEY" value="false"/>
-        <elementValue elementRef="DELETE_KEY" value="false"/>
-        <elementValue elementRef="UPDATABLE" value="true"/>
-        <elementValue elementRef="INSERTABLE" value="true"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="job_start_time"/>
         <elementValue elementRef="UPDATE_KEY" value="false"/>
         <elementValue elementRef="DELETE_KEY" value="false"/>
         <elementValue elementRef="UPDATABLE" value="true"/>
@@ -336,20 +321,11 @@
       <elementParameter field="CHECK" name="TABLE_WITH_SCHEMA" value="false"/>
       <elementParameter field="TEXT" name="LABEL" value="Batch_Audit_log"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-      <metadata connector="FLOW" name="tRedshiftOutput_1">
+      <metadata connector="FLOW" label="batch_audit_log" name="tRedshiftOutput_1">
         <column comment="" key="true" length="256" name="pid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" key="false" length="256" name="job_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="256" name="project_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
         <column comment="" key="false" length="256" name="job_run_status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="29" name="job_start_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
         <column comment="" key="false" length="29" name="job_end_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
@@ -358,24 +334,15 @@
         <column comment="" key="false" length="19" name="duration_of_job" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" key="false" length="4000" name="error_message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <column comment="" key="false" length="5000" name="error_message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
       </metadata>
-      <metadata connector="REJECT" name="REJECT">
+      <metadata connector="REJECT" label="batch_audit_log" name="REJECT">
         <column comment="" key="true" length="256" name="pid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" key="false" length="256" name="job_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="256" name="project_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
         <column comment="" key="false" length="256" name="job_run_status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="29" name="job_start_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
         <column comment="" key="false" length="29" name="job_end_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
@@ -384,7 +351,7 @@
         <column comment="" key="false" length="19" name="duration_of_job" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" key="false" length="4000" name="error_message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <column comment="" key="false" length="5000" name="error_message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
         <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
