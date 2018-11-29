@@ -24,14 +24,14 @@
   <contextParameter xmi:id="_q1SRsO7zEeixOY2tY9_UhA" comment="" name="conn_rs_table_audit_log" prompt="conn_rs_table_audit_log?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_q1SRse7zEeixOY2tY9_UhA" comment="" name="conn_rs_table_mailinfo" prompt="conn_rs_table_mailinfo?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_q1SRsu7zEeixOY2tY9_UhA" comment="" name="conn_rs_table_batch_control" prompt="conn_rs_table_batch_control?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_xQEHUO70EeixOY2tY9_UhA" comment="" name="aud_batch_start_time" prompt="aud_batch_start_time?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_xQEHUO70EeixOY2tY9_UhA" comment="" name="aud_batch_start_time" prompt="aud_batch_start_time?" promptNeeded="false" type="id_Date" value=""/>
   <contextParameter xmi:id="_xQEHUe70EeixOY2tY9_UhA" comment="" name="scv_batch_hour" prompt="scv_batch_hour?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_3e_N4fFIEeiBCukp6FD7SA" comment="" name="scv_threshold_hour" prompt="scv_threshold_hour?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_3e_N4vFIEeiBCukp6FD7SA" comment="" name="scv_min_start_time" prompt="scv_min_start_time?" promptNeeded="false" type="id_Date" value=""/>
   <contextParameter xmi:id="_3e_N4_FIEeiBCukp6FD7SA" comment="" name="scv_max_end_time" prompt="scv_max_end_time?" promptNeeded="false" type="id_Date" value=""/>
   <contextParameter xmi:id="_3e_N5PFIEeiBCukp6FD7SA" comment="" name="contextdir" prompt="contextdir?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_4i0pcPO5Eei_yNMjRzrGLQ" comment="" name="contextfile" prompt="contextfile?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_V2ihgPPCEei_yNMjRzrGLQ" comment="" name="aud_batch_end_time" prompt="aud_batch_end_time?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_V2ihgPPCEei_yNMjRzrGLQ" comment="" name="aud_batch_end_time" prompt="aud_batch_end_time?" promptNeeded="false" type="id_Date" value=""/>
   <contextParameter xmi:id="_0ROQYPPEEei_yNMjRzrGLQ" comment="" name="scv_threshold_batch_hour" prompt="scv_threshold_batch_hour?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_0ROQYfPEEei_yNMjRzrGLQ" comment="" name="email_smtp_host" prompt="email_smtp_host?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_7jdAgPPHEei_yNMjRzrGLQ" comment="" name="email_smtp_port" prompt="email_smtp_port?" promptNeeded="false" type="id_String" value=""/>
