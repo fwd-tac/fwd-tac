@@ -235,7 +235,7 @@
         </column>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
-        <uiProperties shellMaximized="true"/>
+        <uiProperties/>
         <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
         <outputTables sizeState="INTERMEDIATE" name="lnk_audit_error_log">
           <mapperTableEntries name="pid" expression="context.aud_pid" type="id_String"/>
@@ -470,7 +470,7 @@
         </column>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
-        <uiProperties shellMaximized="true"/>
+        <uiProperties/>
         <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
         <outputTables sizeState="INTERMEDIATE" name="Store_Mail_Infoo">
           <mapperTableEntries name="pid" expression="context.aud_pid" type="id_String"/>
@@ -491,13 +491,13 @@
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftOutput_2" show="false"/>
       <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
       <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
-      <elementParameter field="TEXT" name="HOST" value="context.Redshift_HOST"/>
-      <elementParameter field="TEXT" name="PORT" value="context.Redshift_PORT"/>
-      <elementParameter field="TEXT" name="DBNAME" value="context.Redshift_DB"/>
+      <elementParameter field="TEXT" name="HOST" value="context.conn_rs_host"/>
+      <elementParameter field="TEXT" name="PORT" value="context.conn_rs_port"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.conn_rs_database"/>
       <elementParameter field="TEXT" name="TYPE" value="REDSHIFT" show="false"/>
-      <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Redshift_SCHEMA"/>
-      <elementParameter field="TEXT" name="USER" value="context.Redshift_USERNAME"/>
-      <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudyEgMBxwFCu3PJG9JFknT5Auuz5zwSz2g="/>
+      <elementParameter field="TEXT" name="SCHEMA_DB" value="context.conn_rs_schema"/>
+      <elementParameter field="TEXT" name="USER" value="context.conn_rs_username"/>
+      <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufzw1+lsxlfa9/5rkEtk0U/RHpaK4KEwBQ="/>
       <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
       <elementParameter field="DBTABLE" name="TABLE" value="context.conn_rs_table_mailinfo"/>
       <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
