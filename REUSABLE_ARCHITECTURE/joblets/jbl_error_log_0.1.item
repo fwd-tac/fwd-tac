@@ -399,14 +399,14 @@
     </node>
     <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="224">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
-      <elementParameter field="TEXT" name="TO" value="context.RECEIVER_MAIL"/>
-      <elementParameter field="TEXT" name="FROM" value="context.SENDER_MAIL"/>
+      <elementParameter field="TEXT" name="TO" value="context.email_failure_to_address"/>
+      <elementParameter field="TEXT" name="FROM" value="context.email_failure_from_address"/>
       <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="false"/>
       <elementParameter field="TEXT" name="PERSONAL_NAME" value="&quot;sender&quot;" show="false"/>
-      <elementParameter field="TEXT" name="CC" value="context.Cc_MAIL"/>
-      <elementParameter field="TEXT" name="BCC" value="context.Bcc_MAIL"/>
-      <elementParameter field="TEXT" name="SUBJECT" value="&quot;STAGING_JOB &quot;+jobName+&quot; FAILED&quot;"/>
-      <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;&lt;html>&lt;body>&lt;table>&lt;tr>&lt;td>Hi Team,&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>Staging job &quot;+jobName+&quot; was failed due to &quot;+context.L_Error_message+&quot;&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>Thanks.&lt;/td>&lt;/tr>&lt;/table>&lt;/body>&lt;/html>&quot;"/>
+      <elementParameter field="TEXT" name="CC" value="context.email_failure_cc_address"/>
+      <elementParameter field="TEXT" name="BCC" value="context.email_failure_bcc_address"/>
+      <elementParameter field="TEXT" name="SUBJECT" value="&quot;DATA MODEL JOB &quot;+jobName+&quot; FAILED&quot;"/>
+      <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;&lt;html>&lt;body>&lt;table>&lt;tr>&lt;td>Hi Team,&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>Data Model Job &quot;+jobName+&quot; was failed due to &quot;+context.L_Error_message+&quot;&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>Thanks.&lt;/td>&lt;/tr>&lt;/table>&lt;/body>&lt;/html>&quot;"/>
       <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
       <elementParameter field="TABLE" name="ATTACHMENTS"/>
       <elementParameter field="TABLE" name="HEADERS"/>
