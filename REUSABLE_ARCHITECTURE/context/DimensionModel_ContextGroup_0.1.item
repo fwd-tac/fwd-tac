@@ -31,4 +31,5 @@
   <contextParameter xmi:id="_3e_N4_FIEeiBCukp6FD7SA" comment="" name="scv_max_end_time" prompt="scv_max_end_time?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_3e_N5PFIEeiBCukp6FD7SA" comment="" name="contextdir" prompt="contextdir?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_4i0pcPO5Eei_yNMjRzrGLQ" comment="" name="contextfile" prompt="contextfile?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_V2ihgPPCEei_yNMjRzrGLQ" comment="" name="aud_batch_end_time" prompt="aud_batch_end_time?" promptNeeded="false" type="id_String" value=""/>
 </talendfile:ContextType>
