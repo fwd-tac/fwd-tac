@@ -169,7 +169,7 @@
           <mapperTableEntries name="duration_of_job" expression="TalendDate.diffDate(TalendDate.getCurrentDate(),context.aud_batch_start_time,&quot;ss&quot;) " type="id_Long" nullable="true"/>
           <mapperTableEntries name="error_message" type="id_String" nullable="true"/>
         </outputTables>
-        <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <inputTables sizeState="INTERMEDIATE" name="lnk_main" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
           <mapperTableEntries name="Dummy" type="id_String" nullable="true"/>
         </inputTables>
       </nodeData>
@@ -305,9 +305,9 @@
     <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="TRIGGER_INPUT_1" offsetLabelX="0" offsetLabelY="0" source="TRIGGER_INPUT_1" target="tJava_1">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
     </connection>
-    <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tMap_1">
+    <connection connectorName="FLOW" label="lnk_main" lineStyle="0" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tMap_1">
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="lnk_main" show="false"/>
     </connection>
     <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="TRIGGER_OUTPUT_1">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError1" show="false"/>
