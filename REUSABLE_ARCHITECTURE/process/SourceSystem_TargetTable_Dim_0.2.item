@@ -183,7 +183,7 @@
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
     <elementParameter field="MEMO" name="COMMENT" value=""/>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="256">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
@@ -217,7 +217,7 @@
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
     <elementParameter field="MEMO" name="COMMENT" value=""/>
   </node>
-  <node componentName="jbl_audit_failure_update" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="960" posY="384">
+  <node componentName="jbl_audit_failure_update" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="704" posY="544">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="jbl_audit_failure_update_5"/>
     <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
@@ -233,7 +233,7 @@
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
     <elementParameter field="MEMO" name="COMMENT" value=""/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="288">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="context.success_flag=1;&#xA;System.out.println(&quot;Mail job completed with flag&quot;+context.flag)&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -256,6 +256,38 @@
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
     <elementParameter field="MEMO" name="COMMENT" value=""/>
   </node>
+  <node componentName="tRedshiftRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftRow_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5439&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="Redshift" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE="/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select id, name from employee&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
+    <elementParameter field="CHECK" name="USE_PREPAREDSTATEMENT" value="false"/>
+    <elementParameter field="TABLE" name="SET_PREPAREDSTATEMENT_PARAMETERS" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRedshiftRow_1"/>
+    <metadata connector="REJECT" name="REJECT">
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
   <connection connectorName="TRIGGER_OUTPUT_1" label="OnComponentOk (TRIGGER_OUTPUT_1)" lineStyle="3" metaname="jbl_context_load_1" offsetLabelX="0" offsetLabelY="0" source="jbl_context_load_1" target="jbl_audit_start_entry_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
   </connection>
@@ -265,7 +297,7 @@
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tJava_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
-  <connection connectorName="TRIGGER_OUTPUT_1" label="OnComponentOk (TRIGGER_OUTPUT_1)" lineStyle="3" metaname="jbl_scv_range_calculation_1" offsetLabelX="0" offsetLabelY="0" source="jbl_scv_range_calculation_1" target="tRunJob_1">
+  <connection connectorName="TRIGGER_OUTPUT_1" label="OnComponentOk (TRIGGER_OUTPUT_1)" lineStyle="3" metaname="jbl_scv_range_calculation_1" offsetLabelX="0" offsetLabelY="0" source="jbl_scv_range_calculation_1" target="tRedshiftRow_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="jbl_audit_success_update_1">
@@ -273,6 +305,9 @@
   </connection>
   <connection connectorName="TRIGGER_OUTPUT_1" label="OnSubjobError (TRIGGER_OUTPUT_1)" lineStyle="4" metaname="jbl_audit_success_update_1" offsetLabelX="0" offsetLabelY="0" source="jbl_audit_success_update_1" target="jbl_audit_failure_update_5">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tRedshiftRow_1" offsetLabelX="0" offsetLabelY="0" source="tRedshiftRow_1" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
   </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
@@ -321,6 +356,11 @@
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="jbl_audit_success_update_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;128"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftRow_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
 </talendfile:ProcessType>
