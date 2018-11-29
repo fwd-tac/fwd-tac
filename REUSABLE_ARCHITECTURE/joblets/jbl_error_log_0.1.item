@@ -470,7 +470,7 @@
         </column>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
-        <uiProperties/>
+        <uiProperties shellMaximized="true"/>
         <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
         <outputTables sizeState="INTERMEDIATE" name="Store_Mail_Infoo">
           <mapperTableEntries name="pid" expression="context.aud_pid" type="id_String"/>
