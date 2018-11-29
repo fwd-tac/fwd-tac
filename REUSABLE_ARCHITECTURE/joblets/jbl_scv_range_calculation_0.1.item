@@ -171,11 +171,11 @@
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
     </connection>
+    <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRedshiftInput_2" offsetLabelX="0" offsetLabelY="0" source="tRedshiftInput_2" target="TRIGGER_OUTPUT_2">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError1" show="false"/>
+    </connection>
     <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="TRIGGER_OUTPUT_1">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
-    </connection>
-    <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tJavaRow_1" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_1" target="TRIGGER_OUTPUT_2">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentError1" show="false"/>
     </connection>
     <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="TRIGGER_INPUT_1" offsetLabelX="0" offsetLabelY="0" source="TRIGGER_INPUT_1" target="tRedshiftInput_2">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
