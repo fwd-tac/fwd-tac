@@ -126,7 +126,7 @@
       <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
       <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-      <metadata connector="FLOW" label="batch_audit_log" name="Audit_Start">
+      <metadata connector="FLOW" label="batch_audit_log" name="lnk_main_start">
         <column comment="" key="true" length="256" name="pid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
@@ -158,7 +158,7 @@
           <mapperTableEntries name="var1" expression="context.aud_pid=pid" type="id_String"/>
           <mapperTableEntries name="var2" expression="context.aud_batch_start_time=TalendDate.getCurrentDate()" type="id_Date"/>
         </varTables>
-        <outputTables sizeState="INTERMEDIATE" name="Audit_Start">
+        <outputTables sizeState="INTERMEDIATE" name="lnk_main_start">
           <mapperTableEntries name="pid" expression="context.aud_pid" type="id_String"/>
           <mapperTableEntries name="job_name" expression="jobName" type="id_String" nullable="true"/>
           <mapperTableEntries name="project_name" expression="projectName" type="id_String" nullable="true"/>
@@ -168,7 +168,7 @@
           <mapperTableEntries name="duration_of_job" expression="" type="id_Long" nullable="true"/>
           <mapperTableEntries name="error_message" type="id_String" nullable="true"/>
         </outputTables>
-        <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <inputTables sizeState="INTERMEDIATE" name="lnk_main" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
           <mapperTableEntries name="Dummy" type="id_String" nullable="true"/>
         </inputTables>
       </nodeData>
@@ -311,13 +311,13 @@
         <column comment="" key="false" length="-1" name="Dummy" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </node>
-    <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tMap_1">
+    <connection connectorName="FLOW" label="lnk_main" lineStyle="0" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tMap_1">
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="lnk_main" show="false"/>
     </connection>
-    <connection connectorName="FLOW" label="Audit_Start" lineStyle="0" metaname="Audit_Start" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tRedshiftOutput_1">
+    <connection connectorName="FLOW" label="lnk_main_start" lineStyle="0" metaname="lnk_main_start" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tRedshiftOutput_1">
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="Audit_Start" show="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="lnk_main_start" show="false"/>
     </connection>
     <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tRedshiftOutput_1" offsetLabelX="0" offsetLabelY="0" source="tRedshiftOutput_1" target="tJava_2">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
