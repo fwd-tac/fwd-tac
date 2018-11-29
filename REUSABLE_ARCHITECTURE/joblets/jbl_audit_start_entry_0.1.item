@@ -139,10 +139,10 @@
         <column comment="" key="false" length="256" name="job_run_status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" key="false" length="29" name="job_start_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <column comment="" key="false" length="29" name="job_start_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" key="false" length="29" name="job_end_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <column comment="" key="false" length="29" name="job_end_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
         <column comment="" key="false" length="19" name="duration_of_job" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
@@ -259,10 +259,10 @@
         <column comment="" key="false" length="256" name="job_run_status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" key="false" length="29" name="job_start_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <column comment="" key="false" length="29" name="job_start_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" key="false" length="29" name="job_end_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <column comment="" key="false" length="29" name="job_end_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
         <column comment="" key="false" length="19" name="duration_of_job" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
@@ -285,10 +285,10 @@
         <column comment="" key="false" length="256" name="job_run_status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" key="false" length="29" name="job_start_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <column comment="" key="false" length="29" name="job_start_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" key="false" length="29" name="job_end_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+        <column comment="" key="false" length="29" name="job_end_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
         <column comment="" key="false" length="19" name="duration_of_job" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
