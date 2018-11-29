@@ -188,9 +188,8 @@
     <elementParameter field="CHECK" name="INFORMATION" value="false"/>
     <elementParameter field="MEMO" name="COMMENT" value=""/>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="128">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRunJob_1" show="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" value="" show="false"/>
     <elementParameter field="PROCESS_TYPE" name="PROCESS" value=""/>
@@ -269,11 +268,9 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tJava_1">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
   </connection>
   <connection connectorName="TRIGGER_OUTPUT_1" label="OnComponentOk (TRIGGER_OUTPUT_1)" lineStyle="3" metaname="jbl_scv_range_calculation_1" offsetLabelX="0" offsetLabelY="0" source="jbl_scv_range_calculation_1" target="tRunJob_1">
-    <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
   </connection>
   <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="jbl_audit_success_update_1">
