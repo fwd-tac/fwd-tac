@@ -2,6 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore">
   <model:JobletProcess defaultContext="Default" jobType="Standard">
     <context confirmationNeeded="false" name="Default">
+      <contextParameter comment="" name="aud_batch_start_time" prompt="aud_batch_start_time?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="aud_err_file_loc" prompt="aud_err_file_loc?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="stores the error message from the tlogcatcher" name="aud_error_message" prompt="aud_error_message?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="concated value of job_name and timestamp" name="aud_job_date" prompt="aud_job_date?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
@@ -16,6 +17,8 @@
       <contextParameter comment="" name="conn_rs_table_batch_control" prompt="conn_rs_table_batch_control?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="conn_rs_table_mailinfo" prompt="conn_rs_table_mailinfo?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="conn_rs_username" prompt="conn_rs_username?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="contextdir" prompt="contextdir?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="contextfile" prompt="contextfile?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="email_failure_bcc_address" prompt="email_failure_bcc_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="email_failure_cc_address" prompt="email_failure_cc_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="email_failure_from_address" prompt="email_failure_from_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
@@ -26,6 +29,10 @@
       <contextParameter comment="" name="email_success_subject" prompt="email_success_subject?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value="&quot;STAGING_JOB &quot;+jobName+&quot; FAILED&quot;"/>
       <contextParameter comment="" name="email_success_to_address" prompt="email_success_to_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="email_sucess_from_address" prompt="email_sucess_from_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="scv_batch_hour" prompt="scv_batch_hour?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="scv_max_end_time" prompt="scv_max_end_time?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="scv_min_start_time" prompt="scv_min_start_time?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="scv_threshold_hour" prompt="scv_threshold_hour?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
     </context>
     <parameters>
       <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
@@ -201,24 +208,7 @@
       <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
       <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-      <metadata connector="FLOW" label="batch_audit_log" name="Audit_Fail_Update">
-        <column comment="" key="true" length="256" name="pid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="256" name="job_run_status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="29" name="job_end_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="19" name="duration_of_job" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-        <column comment="" key="false" length="5000" name="error_message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
-          <additionalField key="Comment" value=""/>
-        </column>
-      </metadata>
-      <metadata name="out1">
+      <metadata connector="FLOW" name="lnk_audit_error_log">
         <column comment="" key="true" length="256" name="pid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
@@ -247,21 +237,14 @@
       <nodeData xsi:type="TalendMapper:MapperData">
         <uiProperties shellMaximized="true"/>
         <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
-        <outputTables sizeState="INTERMEDIATE" name="Audit_Fail_Update">
-          <mapperTableEntries name="pid" expression="context.aud_pid" type="id_String"/>
-          <mapperTableEntries name="job_run_status" expression="&quot;FAILED&quot;" type="id_String" nullable="true"/>
-          <mapperTableEntries name="job_end_time" expression="TalendDate.getCurrentDate()" type="id_Date" nullable="true"/>
-          <mapperTableEntries name="duration_of_job" expression="" type="id_Long" nullable="true"/>
-          <mapperTableEntries name="error_message" expression="StringHandling.LEFT(context.L_Error_message,4000) " type="id_String" nullable="true"/>
-        </outputTables>
-        <outputTables sizeState="INTERMEDIATE" name="out1">
+        <outputTables sizeState="INTERMEDIATE" name="lnk_audit_error_log">
           <mapperTableEntries name="pid" expression="context.aud_pid" type="id_String"/>
           <mapperTableEntries name="job_name" type="id_String" nullable="true"/>
           <mapperTableEntries name="project_name" type="id_String" nullable="true"/>
           <mapperTableEntries name="job_run_status" expression="&quot;FAILED&quot;" type="id_String" nullable="true"/>
           <mapperTableEntries name="job_start_time" type="id_Date" nullable="true"/>
           <mapperTableEntries name="job_end_time" expression="TalendDate.getCurrentDate()" type="id_Date" nullable="true"/>
-          <mapperTableEntries name="duration_of_job" type="id_Long" nullable="true"/>
+          <mapperTableEntries name="duration_of_job" expression="TalendDate.diffDate(TalendDate.getCurrentDate(),context.aud_batch_start_time,&quot;ss&quot;) " type="id_Long" nullable="true"/>
           <mapperTableEntries name="error_message" expression="StringHandling.LEFT(context.L_Error_message,4000) " type="id_String" nullable="true"/>
         </outputTables>
         <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
@@ -611,9 +594,9 @@
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
     </connection>
-    <connection connectorName="FLOW" label="Audit_Fail_Update" lineStyle="0" metaname="Audit_Fail_Update" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tRedshiftOutput_1">
+    <connection connectorName="FLOW" label="lnk_audit_error_log" lineStyle="0" metaname="lnk_audit_error_log" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tRedshiftOutput_1">
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="Audit_Fail_Update" show="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="lnk_audit_error_log" show="false"/>
     </connection>
     <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tRedshiftOutput_1" offsetLabelX="0" offsetLabelY="0" source="tRedshiftOutput_1" target="tSendMail_1">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
