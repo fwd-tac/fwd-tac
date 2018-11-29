@@ -349,8 +349,8 @@
       <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="8pW6Nmy2kuffxyAkcsr1a2D4vyT4AnQr" show="false"/>
       <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
       <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="html"/>
-      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
-      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+      <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+      <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
       <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
       <elementParameter field="TEXT" name="LOCALHOST" value="&quot;localhost&quot;" show="false"/>
       <elementParameter field="TEXT" name="LABEL" value="Mail"/>
