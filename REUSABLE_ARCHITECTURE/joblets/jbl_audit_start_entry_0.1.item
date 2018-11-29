@@ -2,11 +2,13 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendProperties="http://www.talend.org/properties" xmlns:model="http://www.talend.com/joblet.ecore">
   <model:JobletProcess defaultContext="Default" jobType="Standard">
     <context confirmationNeeded="false" name="Default">
+      <contextParameter comment="" name="aud_batch_end_time" prompt="aud_batch_end_time?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="aud_batch_start_time" prompt="aud_batch_start_time?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="aud_err_file_loc" prompt="aud_err_file_loc?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="stores the error message from the tlogcatcher" name="aud_error_message" prompt="aud_error_message?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="concated value of job_name and timestamp" name="aud_job_date" prompt="aud_job_date?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="talend generated pid" name="aud_pid" prompt="aud_pid?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="conn_rs_aud_schema" prompt="conn_rs_aud_schema?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="conn_rs_database" prompt="conn_rs_database?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="conn_rs_host" prompt="conn_rs_host?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="conn_rs_password" prompt="conn_rs_password?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
@@ -16,20 +18,25 @@
       <contextParameter comment="" name="conn_rs_table_batch_control" prompt="conn_rs_table_batch_control?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="conn_rs_table_mailinfo" prompt="conn_rs_table_mailinfo?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="conn_rs_username" prompt="conn_rs_username?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="context_host_file" prompt="context_host_file?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="contextdir" prompt="contextdir?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="contextfile" prompt="contextfile?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="email_failure_bcc_address" prompt="email_failure_bcc_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="email_failure_cc_address" prompt="email_failure_cc_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="email_failure_from_address" prompt="email_failure_from_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="email_failure_subject" prompt="email_failure_subject?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="email_failure_to_address" prompt="email_failure_to_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="email_smtp_host" prompt="email_smtp_host?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
+      <contextParameter comment="" name="email_smtp_port" prompt="email_smtp_port?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="email_success_bcc_address" prompt="email_success_bcc_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="email_success_cc_address" prompt="email_success_cc_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="email_success_subject" prompt="email_success_subject?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value="&quot;STAGING_JOB &quot;+jobName+&quot; FAILED&quot;"/>
       <contextParameter comment="" name="email_success_to_address" prompt="email_success_to_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="email_sucess_from_address" prompt="email_sucess_from_address?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
-      <contextParameter comment="" name="contextdir" prompt="contextdir?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="scv_batch_hour" prompt="scv_batch_hour?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="scv_max_end_time" prompt="scv_max_end_time?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_Date" value=""/>
       <contextParameter comment="" name="scv_min_start_time" prompt="scv_min_start_time?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_Date" value=""/>
+      <contextParameter comment="" name="scv_threshold_batch_hour" prompt="scv_threshold_batch_hour?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
       <contextParameter comment="" name="scv_threshold_hour" prompt="scv_threshold_hour?" promptNeeded="false" repositoryContextId="_mwLqUO4_EeihD7EfnUn4rQ" type="id_String" value=""/>
     </context>
     <parameters>
@@ -177,12 +184,12 @@
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRedshiftOutput_1" show="false"/>
       <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
       <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tRedshiftConnection_1" show="false"/>
-      <elementParameter field="TEXT" name="HOST" value="context.Redshift_HOST"/>
-      <elementParameter field="TEXT" name="PORT" value="context.Redshift_PORT"/>
-      <elementParameter field="TEXT" name="DBNAME" value="context.Redshift_DB"/>
+      <elementParameter field="TEXT" name="HOST" value="context.conn_rs_host"/>
+      <elementParameter field="TEXT" name="PORT" value="context.conn_rs_port"/>
+      <elementParameter field="TEXT" name="DBNAME" value="context.conn_rs_database"/>
       <elementParameter field="TEXT" name="TYPE" value="REDSHIFT" show="false"/>
-      <elementParameter field="TEXT" name="SCHEMA_DB" value="context.Redshift_SCHEMA"/>
-      <elementParameter field="TEXT" name="USER" value="context.Redshift_USERNAME"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB" value="context.conn_rs_aud_schema"/>
+      <elementParameter field="TEXT" name="USER" value="context.conn_rs_username"/>
       <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kudyEgMBxwFCu3PJG9JFknT5Auuz5zwSz2g="/>
       <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
       <elementParameter field="DBTABLE" name="TABLE" value="context.conn_rs_table_audit_log"/>
