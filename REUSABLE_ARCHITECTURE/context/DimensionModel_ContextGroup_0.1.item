@@ -36,4 +36,5 @@
   <contextParameter xmi:id="_0ROQYfPEEei_yNMjRzrGLQ" comment="" name="email_smtp_host" prompt="email_smtp_host?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_7jdAgPPHEei_yNMjRzrGLQ" comment="" name="email_smtp_port" prompt="email_smtp_port?" promptNeeded="false" type="id_String" value=""/>
   <contextParameter xmi:id="_7jdAgfPHEei_yNMjRzrGLQ" comment="" name="context_host_file" prompt="context_host_file?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_8-zDgPPPEei_yNMjRzrGLQ" comment="to mark the completion of actual data processing" name="success_flag" prompt="success_flag?" promptNeeded="false" type="id_String" value=""/>
 </talendfile:ContextType>
