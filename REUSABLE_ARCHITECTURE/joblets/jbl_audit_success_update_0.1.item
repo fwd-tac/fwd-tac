@@ -142,9 +142,37 @@
           <additionalField key="Comment" value=""/>
         </column>
       </metadata>
+      <metadata name="out1">
+        <column comment="" key="true" length="256" name="pid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="256" name="job_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="256" name="project_name" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="256" name="job_run_status" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="29" name="job_start_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="29" name="job_end_time" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="6" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="19" name="duration_of_job" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+        <column comment="" key="false" length="256" name="error_message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+          <additionalField key="Comment" value=""/>
+        </column>
+      </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
-        <uiProperties/>
-        <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+        <uiProperties shellMaximized="true"/>
+        <varTables sizeState="INTERMEDIATE" name="Var">
+          <mapperTableEntries name="var1" expression="context.aud_batch_end_time=TalendDate.getCurrentDate()" type="id_String"/>
+        </varTables>
         <outputTables sizeState="INTERMEDIATE" name="Audit_Success">
           <mapperTableEntries name="pid" expression="context.aud_pid" type="id_String"/>
           <mapperTableEntries name="job_run_status" expression="&quot;SUCCESS&quot;" type="id_String" nullable="true"/>
@@ -152,6 +180,16 @@
           <mapperTableEntries name="duration_of_job" expression="TalendDate.diffDate(TalendDate.getCurrentDate(),context.aud_batch_start_time,&quot;ss&quot;) " type="id_Long" nullable="true"/>
           <mapperTableEntries name="source_records" expression="" type="id_Integer" nullable="true"/>
           <mapperTableEntries name="target_records" expression="" type="id_Integer" nullable="true"/>
+        </outputTables>
+        <outputTables sizeState="INTERMEDIATE" name="out1">
+          <mapperTableEntries name="pid" expression="context.aud_pid" type="id_String"/>
+          <mapperTableEntries name="job_name" type="id_String" nullable="true"/>
+          <mapperTableEntries name="project_name" type="id_String" nullable="true"/>
+          <mapperTableEntries name="job_run_status" expression="&quot;SUCCESS&quot;" type="id_String" nullable="true"/>
+          <mapperTableEntries name="job_start_time" type="id_Date" nullable="true"/>
+          <mapperTableEntries name="job_end_time" expression="context.aud_batch_end_time" type="id_Date" nullable="true"/>
+          <mapperTableEntries name="duration_of_job" expression="TalendDate.diffDate(TalendDate.getCurrentDate(),context.aud_batch_start_time,&quot;ss&quot;) " type="id_Long" nullable="true"/>
+          <mapperTableEntries name="error_message" type="id_String" nullable="true"/>
         </outputTables>
         <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
           <mapperTableEntries name="Dummy" type="id_String" nullable="true"/>
@@ -324,7 +362,7 @@
       <elementParameter field="CHECK" name="INFORMATION" value="false"/>
       <elementParameter field="MEMO" name="COMMENT" value=""/>
     </jobletNodes>
-    <jobletNodes componentName="TRIGGER_OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="896" posY="352" trigger="true">
+    <jobletNodes componentName="TRIGGER_OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="544" trigger="true">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_OUTPUT_1"/>
       <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
       <elementParameter field="CHECK" name="START" value="false" show="false"/>
