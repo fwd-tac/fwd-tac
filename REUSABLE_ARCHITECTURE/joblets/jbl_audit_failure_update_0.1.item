@@ -335,7 +335,7 @@
       <elementParameter field="TEXT" name="CC" value="context.email_failure_cc_address"/>
       <elementParameter field="TEXT" name="BCC" value="context.email_failure_bcc_address"/>
       <elementParameter field="TEXT" name="SUBJECT" value="&quot;DATA MODEL JOB &quot;+jobName+&quot; FAILED&quot;"/>
-      <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;&lt;html>&lt;body>&lt;table>&lt;tr>&lt;td>Hi Team,&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>Data Model job &quot;+jobName+&quot; was failed due to &quot;+context.L_Error_message+&quot;&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>Thanks.&lt;/td>&lt;/tr>&lt;/table>&lt;/body>&lt;/html>&quot;"/>
+      <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;&lt;html>&lt;body>&lt;table>&lt;tr>&lt;td>Hi Team,&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>Data Model job&quot;+jobName+&quot; data processing completed, and failed while updating the audit status&quot;&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>Thanks.&lt;/td>&lt;/tr>&lt;/table>&lt;/body>&lt;/html>&quot;"/>
       <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
       <elementParameter field="TABLE" name="ATTACHMENTS"/>
       <elementParameter field="TABLE" name="HEADERS"/>
@@ -357,7 +357,7 @@
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tSendMail_1"/>
     </node>
-    <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="TRIGGER_INPUT_1" offsetLabelX="0" offsetLabelY="0" source="TRIGGER_INPUT_1" target="tJava_1">
+    <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="TRIGGER_INPUT_1" offsetLabelX="0" offsetLabelY="0" source="TRIGGER_INPUT_1" target="tSendMail_1">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError1" show="false"/>
     </connection>
     <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tMap_1">
