@@ -406,7 +406,7 @@
       <elementParameter field="TEXT" name="CC" value="context.email_failure_cc_address"/>
       <elementParameter field="TEXT" name="BCC" value="context.email_failure_bcc_address"/>
       <elementParameter field="TEXT" name="SUBJECT" value="&quot;DATA MODEL JOB &quot;+jobName+&quot; FAILED&quot;"/>
-      <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;&lt;html>&lt;body>&lt;table>&lt;tr>&lt;td>Hi Team,&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>Data Model Job &quot;+jobName+&quot; was failed due to &quot;+context.L_Error_message+&quot;&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>Thanks.&lt;/td>&lt;/tr>&lt;/table>&lt;/body>&lt;/html>&quot;"/>
+      <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;&lt;html>&lt;body>&lt;table>&lt;tr>&lt;td>Hi Team,&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>Data Model Job &quot;+jobName+&quot; was failed due to &quot;+context.aud_error_message+&quot;&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>&lt;/td>&lt;/tr>&#xD;&#xA;&lt;tr>&lt;td>Thanks.&lt;/td>&lt;/tr>&lt;/table>&lt;/body>&lt;/html>&quot;"/>
       <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
       <elementParameter field="TABLE" name="ATTACHMENTS"/>
       <elementParameter field="TABLE" name="HEADERS"/>
