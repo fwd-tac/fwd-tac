@@ -34,7 +34,7 @@
     </context>
     <parameters>
       <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
-      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="64" show="false"/>
       <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
       <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
       <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -329,6 +329,7 @@
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
     </connection>
     <note opaque="false" posX="384" posY="0" sizeHeight="193" sizeWidth="353" text="&#xD;&#xA;source count&#xD;&#xA;target count&#xD;&#xA;reject count needs to be deceided&#xD;&#xA;"/>
+    <note opaque="false" posX="1088" posY="-64" sizeHeight="321" sizeWidth="385" text="REVISION_UPDATES&#xD;&#xA;29-11-2018&#xD;&#xA;1) BATCH_CONTROL TABLE STRUCTURE DECEIDED&#xD;&#xA;2) START AND END TIME STORED UPTO MILLI SECONDS&#xD;&#xA;&#xD;&#xA;"/>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
       <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
