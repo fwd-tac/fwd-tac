@@ -28,8 +28,8 @@
     <contextParameter xmi:id="_mkqu6fSKEeiJYsgpEdgRHA" comment="" name="aud_batch_start_time" prompt="aud_batch_start_time?" promptNeeded="false" type="id_Date" value="null"/>
     <contextParameter xmi:id="_mkqu6vSKEeiJYsgpEdgRHA" comment="" name="scv_batch_hour" prompt="scv_batch_hour?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_mkqu6_SKEeiJYsgpEdgRHA" comment="" name="scv_threshold_hour" prompt="scv_threshold_hour?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_mkqu7PSKEeiJYsgpEdgRHA" comment="" name="scv_min_start_time" prompt="scv_min_start_time?" promptNeeded="false" type="id_Date" value=""/>
-    <contextParameter xmi:id="_mkqu7fSKEeiJYsgpEdgRHA" comment="" name="scv_max_end_time" prompt="scv_max_end_time?" promptNeeded="false" type="id_Date" value=""/>
+    <contextParameter xmi:id="_mkqu7PSKEeiJYsgpEdgRHA" comment="" name="scv_min_start_time" prompt="scv_min_start_time?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu7fSKEeiJYsgpEdgRHA" comment="" name="scv_max_end_time" prompt="scv_max_end_time?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_mkqu7vSKEeiJYsgpEdgRHA" comment="" name="contextdir" prompt="contextdir?" promptNeeded="false" type="id_String" value="&quot;/home/ubuntu/SCV/context_files/&quot;"/>
     <contextParameter xmi:id="_mkqu7_SKEeiJYsgpEdgRHA" comment="" name="contextfile" prompt="contextfile?" promptNeeded="false" type="id_String" value="&quot;context.properties&quot;"/>
     <contextParameter xmi:id="_mkqu8PSKEeiJYsgpEdgRHA" comment="" name="aud_batch_end_time" prompt="aud_batch_end_time?" promptNeeded="false" type="id_Date" value=""/>
@@ -68,8 +68,8 @@
     <contextParameter xmi:id="_vQFU-fSMEeiJYsgpEdgRHA" comment="" name="aud_batch_start_time" prompt="aud_batch_start_time?" promptNeeded="false" type="id_Date" value="null"/>
     <contextParameter xmi:id="_vQFU-vSMEeiJYsgpEdgRHA" comment="" name="scv_batch_hour" prompt="scv_batch_hour?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_vQFU-_SMEeiJYsgpEdgRHA" comment="" name="scv_threshold_hour" prompt="scv_threshold_hour?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_vQFU_PSMEeiJYsgpEdgRHA" comment="" name="scv_min_start_time" prompt="scv_min_start_time?" promptNeeded="false" type="id_Date" value=""/>
-    <contextParameter xmi:id="_vQFU_fSMEeiJYsgpEdgRHA" comment="" name="scv_max_end_time" prompt="scv_max_end_time?" promptNeeded="false" type="id_Date" value=""/>
+    <contextParameter xmi:id="_vQFU_PSMEeiJYsgpEdgRHA" comment="" name="scv_min_start_time" prompt="scv_min_start_time?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU_fSMEeiJYsgpEdgRHA" comment="" name="scv_max_end_time" prompt="scv_max_end_time?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_vQFU_vSMEeiJYsgpEdgRHA" comment="" name="contextdir" prompt="contextdir?" promptNeeded="false" type="id_String" value="&quot;C:\contextfiles\&quot;"/>
     <contextParameter xmi:id="_vQFU__SMEeiJYsgpEdgRHA" comment="" name="contextfile" prompt="contextfile?" promptNeeded="false" type="id_String" value="&quot;context.properties&quot;"/>
     <contextParameter xmi:id="_vQFVAPSMEeiJYsgpEdgRHA" comment="" name="aud_batch_end_time" prompt="aud_batch_end_time?" promptNeeded="false" type="id_Date" value=""/>
