@@ -1,41 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_mkqu0PSKEeiJYsgpEdgRHA" confirmationNeeded="false" name="Default">
-  <contextParameter xmi:id="_mkqu0fSKEeiJYsgpEdgRHA" comment="" name="conn_rs_host" prompt="conn_rs_host?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu0vSKEeiJYsgpEdgRHA" comment="" name="conn_rs_port" prompt="conn_rs_port?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu0_SKEeiJYsgpEdgRHA" comment="" name="conn_rs_database" prompt="conn_rs_database?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu1PSKEeiJYsgpEdgRHA" comment="" name="conn_rs_aud_schema" prompt="conn_rs_aud_schema?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu1fSKEeiJYsgpEdgRHA" comment="" name="conn_rs_username" prompt="conn_rs_username?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu1vSKEeiJYsgpEdgRHA" comment="" name="conn_rs_password" prompt="conn_rs_password?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu1_SKEeiJYsgpEdgRHA" comment="concated value of job_name and timestamp" name="aud_job_date" prompt="aud_job_date?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu2PSKEeiJYsgpEdgRHA" comment="" name="aud_err_file_loc" prompt="aud_err_file_loc?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu2fSKEeiJYsgpEdgRHA" comment="stores the error message from the tlogcatcher" name="aud_error_message" prompt="aud_error_message?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu2vSKEeiJYsgpEdgRHA" comment="talend generated pid" name="aud_pid" prompt="aud_pid?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu2_SKEeiJYsgpEdgRHA" comment="" name="email_success_to_address" prompt="email_success_to_address?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu3PSKEeiJYsgpEdgRHA" comment="" name="email_sucess_from_address" prompt="email_sucess_from_address?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu3fSKEeiJYsgpEdgRHA" comment="" name="email_success_cc_address" prompt="email_success_cc_address?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu3vSKEeiJYsgpEdgRHA" comment="" name="email_success_subject" prompt="email_success_subject?" promptNeeded="false" type="id_String" value="&quot;STAGING_JOB &quot;+jobName+&quot; FAILED&quot;"/>
-  <contextParameter xmi:id="_mkqu3_SKEeiJYsgpEdgRHA" comment="" name="email_success_bcc_address" prompt="email_success_bcc_address?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu4PSKEeiJYsgpEdgRHA" comment="" name="email_failure_bcc_address" prompt="email_failure_bcc_address?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu4fSKEeiJYsgpEdgRHA" comment="" name="email_failure_to_address" prompt="email_failure_to_address?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu4vSKEeiJYsgpEdgRHA" comment="" name="email_failure_subject" prompt="email_failure_subject?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu4_SKEeiJYsgpEdgRHA" comment="" name="email_failure_cc_address" prompt="email_failure_cc_address?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu5PSKEeiJYsgpEdgRHA" comment="" name="email_failure_from_address" prompt="email_failure_from_address?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu5fSKEeiJYsgpEdgRHA" comment="placeholder for any other redshift schema" name="conn_rs_schema" prompt="conn_rs_schema?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu5vSKEeiJYsgpEdgRHA" comment="" name="conn_rs_table_audit_log" prompt="conn_rs_table_audit_log?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu5_SKEeiJYsgpEdgRHA" comment="" name="conn_rs_table_mailinfo" prompt="conn_rs_table_mailinfo?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu6PSKEeiJYsgpEdgRHA" comment="" name="conn_rs_table_batch_control" prompt="conn_rs_table_batch_control?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu6fSKEeiJYsgpEdgRHA" comment="" name="aud_batch_start_time" prompt="aud_batch_start_time?" promptNeeded="false" type="id_Date" value="null"/>
-  <contextParameter xmi:id="_mkqu6vSKEeiJYsgpEdgRHA" comment="" name="scv_batch_hour" prompt="scv_batch_hour?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu6_SKEeiJYsgpEdgRHA" comment="" name="scv_threshold_hour" prompt="scv_threshold_hour?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu7PSKEeiJYsgpEdgRHA" comment="" name="scv_min_start_time" prompt="scv_min_start_time?" promptNeeded="false" type="id_Date" value=""/>
-  <contextParameter xmi:id="_mkqu7fSKEeiJYsgpEdgRHA" comment="" name="scv_max_end_time" prompt="scv_max_end_time?" promptNeeded="false" type="id_Date" value=""/>
-  <contextParameter xmi:id="_mkqu7vSKEeiJYsgpEdgRHA" comment="" name="contextdir" prompt="contextdir?" promptNeeded="false" type="id_String" value="&quot;/home/ubuntu/SCV/context_files/&quot;"/>
-  <contextParameter xmi:id="_mkqu7_SKEeiJYsgpEdgRHA" comment="" name="contextfile" prompt="contextfile?" promptNeeded="false" type="id_String" value="&quot;context.properties&quot;"/>
-  <contextParameter xmi:id="_mkqu8PSKEeiJYsgpEdgRHA" comment="" name="aud_batch_end_time" prompt="aud_batch_end_time?" promptNeeded="false" type="id_Date" value=""/>
-  <contextParameter xmi:id="_mkqu8fSKEeiJYsgpEdgRHA" comment="" name="scv_threshold_batch_hour" prompt="scv_threshold_batch_hour?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu8vSKEeiJYsgpEdgRHA" comment="" name="email_smtp_host" prompt="email_smtp_host?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu8_SKEeiJYsgpEdgRHA" comment="" name="email_smtp_port" prompt="email_smtp_port?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu9PSKEeiJYsgpEdgRHA" comment="" name="context_host_file" prompt="context_host_file?" promptNeeded="false" type="id_String" value="&quot;context_host.properties&quot;"/>
-  <contextParameter xmi:id="_mkqu9fSKEeiJYsgpEdgRHA" comment="to mark the completion of actual data processing" name="success_flag" prompt="success_flag?" promptNeeded="false" type="id_String" value=""/>
-  <contextParameter xmi:id="_mkqu9vSKEeiJYsgpEdgRHA" comment="" name="conn_rs_log" prompt="conn_rs_log?" promptNeeded="false" type="id_String" value=""/>
-</talendfile:ContextType>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd">
+  <talendfile:ContextType xmi:id="_mkqu0PSKEeiJYsgpEdgRHA" confirmationNeeded="false" name="Default">
+    <contextParameter xmi:id="_mkqu0fSKEeiJYsgpEdgRHA" comment="" name="conn_rs_host" prompt="conn_rs_host?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu0vSKEeiJYsgpEdgRHA" comment="" name="conn_rs_port" prompt="conn_rs_port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu0_SKEeiJYsgpEdgRHA" comment="" name="conn_rs_database" prompt="conn_rs_database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu1PSKEeiJYsgpEdgRHA" comment="" name="conn_rs_aud_schema" prompt="conn_rs_aud_schema?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu1fSKEeiJYsgpEdgRHA" comment="" name="conn_rs_username" prompt="conn_rs_username?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu1vSKEeiJYsgpEdgRHA" comment="" name="conn_rs_password" prompt="conn_rs_password?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu1_SKEeiJYsgpEdgRHA" comment="concated value of job_name and timestamp" name="aud_job_date" prompt="aud_job_date?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu2PSKEeiJYsgpEdgRHA" comment="" name="aud_err_file_loc" prompt="aud_err_file_loc?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu2fSKEeiJYsgpEdgRHA" comment="stores the error message from the tlogcatcher" name="aud_error_message" prompt="aud_error_message?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu2vSKEeiJYsgpEdgRHA" comment="talend generated pid" name="aud_pid" prompt="aud_pid?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu2_SKEeiJYsgpEdgRHA" comment="" name="email_success_to_address" prompt="email_success_to_address?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu3PSKEeiJYsgpEdgRHA" comment="" name="email_sucess_from_address" prompt="email_sucess_from_address?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu3fSKEeiJYsgpEdgRHA" comment="" name="email_success_cc_address" prompt="email_success_cc_address?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu3vSKEeiJYsgpEdgRHA" comment="" name="email_success_subject" prompt="email_success_subject?" promptNeeded="false" type="id_String" value="&quot;STAGING_JOB &quot;+jobName+&quot; FAILED&quot;"/>
+    <contextParameter xmi:id="_mkqu3_SKEeiJYsgpEdgRHA" comment="" name="email_success_bcc_address" prompt="email_success_bcc_address?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu4PSKEeiJYsgpEdgRHA" comment="" name="email_failure_bcc_address" prompt="email_failure_bcc_address?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu4fSKEeiJYsgpEdgRHA" comment="" name="email_failure_to_address" prompt="email_failure_to_address?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu4vSKEeiJYsgpEdgRHA" comment="" name="email_failure_subject" prompt="email_failure_subject?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu4_SKEeiJYsgpEdgRHA" comment="" name="email_failure_cc_address" prompt="email_failure_cc_address?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu5PSKEeiJYsgpEdgRHA" comment="" name="email_failure_from_address" prompt="email_failure_from_address?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu5fSKEeiJYsgpEdgRHA" comment="placeholder for any other redshift schema" name="conn_rs_schema" prompt="conn_rs_schema?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu5vSKEeiJYsgpEdgRHA" comment="" name="conn_rs_table_audit_log" prompt="conn_rs_table_audit_log?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu5_SKEeiJYsgpEdgRHA" comment="" name="conn_rs_table_mailinfo" prompt="conn_rs_table_mailinfo?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu6PSKEeiJYsgpEdgRHA" comment="" name="conn_rs_table_batch_control" prompt="conn_rs_table_batch_control?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu6fSKEeiJYsgpEdgRHA" comment="" name="aud_batch_start_time" prompt="aud_batch_start_time?" promptNeeded="false" type="id_Date" value="null"/>
+    <contextParameter xmi:id="_mkqu6vSKEeiJYsgpEdgRHA" comment="" name="scv_batch_hour" prompt="scv_batch_hour?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu6_SKEeiJYsgpEdgRHA" comment="" name="scv_threshold_hour" prompt="scv_threshold_hour?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu7PSKEeiJYsgpEdgRHA" comment="" name="scv_min_start_time" prompt="scv_min_start_time?" promptNeeded="false" type="id_Date" value=""/>
+    <contextParameter xmi:id="_mkqu7fSKEeiJYsgpEdgRHA" comment="" name="scv_max_end_time" prompt="scv_max_end_time?" promptNeeded="false" type="id_Date" value=""/>
+    <contextParameter xmi:id="_mkqu7vSKEeiJYsgpEdgRHA" comment="" name="contextdir" prompt="contextdir?" promptNeeded="false" type="id_String" value="&quot;/home/ubuntu/SCV/context_files/&quot;"/>
+    <contextParameter xmi:id="_mkqu7_SKEeiJYsgpEdgRHA" comment="" name="contextfile" prompt="contextfile?" promptNeeded="false" type="id_String" value="&quot;context.properties&quot;"/>
+    <contextParameter xmi:id="_mkqu8PSKEeiJYsgpEdgRHA" comment="" name="aud_batch_end_time" prompt="aud_batch_end_time?" promptNeeded="false" type="id_Date" value=""/>
+    <contextParameter xmi:id="_mkqu8fSKEeiJYsgpEdgRHA" comment="" name="scv_threshold_batch_hour" prompt="scv_threshold_batch_hour?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu8vSKEeiJYsgpEdgRHA" comment="" name="email_smtp_host" prompt="email_smtp_host?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu8_SKEeiJYsgpEdgRHA" comment="" name="email_smtp_port" prompt="email_smtp_port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu9PSKEeiJYsgpEdgRHA" comment="" name="context_host_file" prompt="context_host_file?" promptNeeded="false" type="id_String" value="&quot;context_host.properties&quot;"/>
+    <contextParameter xmi:id="_mkqu9fSKEeiJYsgpEdgRHA" comment="to mark the completion of actual data processing" name="success_flag" prompt="success_flag?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_mkqu9vSKEeiJYsgpEdgRHA" comment="" name="conn_rs_log" prompt="conn_rs_log?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+  <talendfile:ContextType xmi:id="_vQFU4PSMEeiJYsgpEdgRHA" confirmationNeeded="false" name="win_dev">
+    <contextParameter xmi:id="_vQFU4fSMEeiJYsgpEdgRHA" comment="" name="conn_rs_host" prompt="conn_rs_host?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU4vSMEeiJYsgpEdgRHA" comment="" name="conn_rs_port" prompt="conn_rs_port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU4_SMEeiJYsgpEdgRHA" comment="" name="conn_rs_database" prompt="conn_rs_database?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU5PSMEeiJYsgpEdgRHA" comment="" name="conn_rs_aud_schema" prompt="conn_rs_aud_schema?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU5fSMEeiJYsgpEdgRHA" comment="" name="conn_rs_username" prompt="conn_rs_username?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU5vSMEeiJYsgpEdgRHA" comment="" name="conn_rs_password" prompt="conn_rs_password?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU5_SMEeiJYsgpEdgRHA" comment="concated value of job_name and timestamp" name="aud_job_date" prompt="aud_job_date?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU6PSMEeiJYsgpEdgRHA" comment="" name="aud_err_file_loc" prompt="aud_err_file_loc?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU6fSMEeiJYsgpEdgRHA" comment="stores the error message from the tlogcatcher" name="aud_error_message" prompt="aud_error_message?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU6vSMEeiJYsgpEdgRHA" comment="talend generated pid" name="aud_pid" prompt="aud_pid?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU6_SMEeiJYsgpEdgRHA" comment="" name="email_success_to_address" prompt="email_success_to_address?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU7PSMEeiJYsgpEdgRHA" comment="" name="email_sucess_from_address" prompt="email_sucess_from_address?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU7fSMEeiJYsgpEdgRHA" comment="" name="email_success_cc_address" prompt="email_success_cc_address?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU7vSMEeiJYsgpEdgRHA" comment="" name="email_success_subject" prompt="email_success_subject?" promptNeeded="false" type="id_String" value="&quot;STAGING_JOB &quot;+jobName+&quot; FAILED&quot;"/>
+    <contextParameter xmi:id="_vQFU7_SMEeiJYsgpEdgRHA" comment="" name="email_success_bcc_address" prompt="email_success_bcc_address?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU8PSMEeiJYsgpEdgRHA" comment="" name="email_failure_bcc_address" prompt="email_failure_bcc_address?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU8fSMEeiJYsgpEdgRHA" comment="" name="email_failure_to_address" prompt="email_failure_to_address?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU8vSMEeiJYsgpEdgRHA" comment="" name="email_failure_subject" prompt="email_failure_subject?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU8_SMEeiJYsgpEdgRHA" comment="" name="email_failure_cc_address" prompt="email_failure_cc_address?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU9PSMEeiJYsgpEdgRHA" comment="" name="email_failure_from_address" prompt="email_failure_from_address?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU9fSMEeiJYsgpEdgRHA" comment="placeholder for any other redshift schema" name="conn_rs_schema" prompt="conn_rs_schema?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU9vSMEeiJYsgpEdgRHA" comment="" name="conn_rs_table_audit_log" prompt="conn_rs_table_audit_log?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU9_SMEeiJYsgpEdgRHA" comment="" name="conn_rs_table_mailinfo" prompt="conn_rs_table_mailinfo?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU-PSMEeiJYsgpEdgRHA" comment="" name="conn_rs_table_batch_control" prompt="conn_rs_table_batch_control?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU-fSMEeiJYsgpEdgRHA" comment="" name="aud_batch_start_time" prompt="aud_batch_start_time?" promptNeeded="false" type="id_Date" value="null"/>
+    <contextParameter xmi:id="_vQFU-vSMEeiJYsgpEdgRHA" comment="" name="scv_batch_hour" prompt="scv_batch_hour?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU-_SMEeiJYsgpEdgRHA" comment="" name="scv_threshold_hour" prompt="scv_threshold_hour?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFU_PSMEeiJYsgpEdgRHA" comment="" name="scv_min_start_time" prompt="scv_min_start_time?" promptNeeded="false" type="id_Date" value=""/>
+    <contextParameter xmi:id="_vQFU_fSMEeiJYsgpEdgRHA" comment="" name="scv_max_end_time" prompt="scv_max_end_time?" promptNeeded="false" type="id_Date" value=""/>
+    <contextParameter xmi:id="_vQFU_vSMEeiJYsgpEdgRHA" comment="" name="contextdir" prompt="contextdir?" promptNeeded="false" type="id_String" value="&quot;C:\contextfiles&quot;"/>
+    <contextParameter xmi:id="_vQFU__SMEeiJYsgpEdgRHA" comment="" name="contextfile" prompt="contextfile?" promptNeeded="false" type="id_String" value="&quot;context.properties&quot;"/>
+    <contextParameter xmi:id="_vQFVAPSMEeiJYsgpEdgRHA" comment="" name="aud_batch_end_time" prompt="aud_batch_end_time?" promptNeeded="false" type="id_Date" value=""/>
+    <contextParameter xmi:id="_vQFVAfSMEeiJYsgpEdgRHA" comment="" name="scv_threshold_batch_hour" prompt="scv_threshold_batch_hour?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFVAvSMEeiJYsgpEdgRHA" comment="" name="email_smtp_host" prompt="email_smtp_host?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFVA_SMEeiJYsgpEdgRHA" comment="" name="email_smtp_port" prompt="email_smtp_port?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFVBPSMEeiJYsgpEdgRHA" comment="" name="context_host_file" prompt="context_host_file?" promptNeeded="false" type="id_String" value="&quot;context_host.properties&quot;"/>
+    <contextParameter xmi:id="_vQFVBfSMEeiJYsgpEdgRHA" comment="to mark the completion of actual data processing" name="success_flag" prompt="success_flag?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_vQFVBvSMEeiJYsgpEdgRHA" comment="" name="conn_rs_log" prompt="conn_rs_log?" promptNeeded="false" type="id_String" value=""/>
+  </talendfile:ContextType>
+</xmi:XMI>
