@@ -171,6 +171,7 @@
     <contextParameter xmi:id="_2jLvD_oNEeib74B00RIUrA" comment="" name="stg_subclaim_status_history" prompt="stg_subclaim_status_history?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_2jLvEPoNEeib74B00RIUrA" comment="" name="stg_subclaim_workflow_status" prompt="stg_subclaim_workflow_status?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_2jLvEfoNEeib74B00RIUrA" comment="" name="stg_web" prompt="stg_web?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_8DMTYPoQEeib74B00RIUrA" comment="" name="host" prompt="host?" promptNeeded="false" type="id_String" value=""/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_vQFU4PSMEeiJYsgpEdgRHA" confirmationNeeded="false" name="win_dev">
     <contextParameter xmi:id="_vQFU4fSMEeiJYsgpEdgRHA" comment="" name="conn_rs_host" prompt="conn_rs_host?" promptNeeded="false" type="id_String" value=""/>
@@ -343,5 +344,6 @@
     <contextParameter xmi:id="_2jLvYPoNEeib74B00RIUrA" comment="" name="stg_subclaim_status_history" prompt="stg_subclaim_status_history?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_2jLvYfoNEeib74B00RIUrA" comment="" name="stg_subclaim_workflow_status" prompt="stg_subclaim_workflow_status?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_2jLvYvoNEeib74B00RIUrA" comment="" name="stg_web" prompt="stg_web?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_8DMTYfoQEeib74B00RIUrA" comment="" name="host" prompt="host?" promptNeeded="false" type="id_String" value=""/>
   </talendfile:ContextType>
 </xmi:XMI>
