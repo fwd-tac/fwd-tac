@@ -343,7 +343,7 @@
       <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
       <elementParameter field="RADIO" name="NOTETXT_TOP" value="true"/>
     </note>
-    <note opaque="false" posX="-32" posY="-160" sizeHeight="193" sizeWidth="385" text="JOBLET TO CALCULATE THE DATE RANGE&#xD;&#xA;Author: Bigtapp pte ltd&#xD;&#xA;version: 0.2&#xD;&#xA;&#xD;&#xA;change control:&#xD;&#xA;1) 29-11-2018 - BATCH_CONTROL TABLE STRUCTURE DECEIDED&#xD;&#xA;2) START AND END TIME STORED UPTO MILLI SECONDS in string &#xD;&#xA;format&#xD;&#xA;Version 0.1: Calculates the date range and assigns it in the context variables&#xD;&#xA;Version 0.2: Added feature to store the min and max time in the audit table">
+    <note opaque="false" posX="-32" posY="-160" sizeHeight="193" sizeWidth="385" text="JOBLET TO CALCULATE THE DATE RANGE&#xD;&#xA;Author: Bigtapp pte ltd&#xD;&#xA;version: 0.2&#xD;&#xA;change control:&#xD;&#xA;1) 29-11-2018 - BATCH_CONTROL TABLE STRUCTURE DECEIDED&#xD;&#xA;2) START AND END TIME STORED UPTO MILLI SECONDS in string &#xD;&#xA;format&#xD;&#xA;Version 0.1: Calculates the date range and assigns it in the context variables&#xD;&#xA;Version 0.2: Added feature to store the min and max time in the audit table">
       <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
       <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
       <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
