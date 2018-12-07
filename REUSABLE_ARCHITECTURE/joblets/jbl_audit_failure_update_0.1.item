@@ -466,6 +466,7 @@
     </node>
     <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="288">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSendMail_1" show="false"/>
+      <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
       <elementParameter field="TEXT" name="TO" value="context.email_failure_to_address"/>
       <elementParameter field="TEXT" name="FROM" value="context.email_failure_from_address"/>
       <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="false"/>
@@ -496,6 +497,7 @@
       <metadata connector="FLOW" name="tSendMail_1"/>
     </node>
     <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="TRIGGER_INPUT_1" offsetLabelX="0" offsetLabelY="0" source="TRIGGER_INPUT_1" target="tSendMail_1">
+      <elementParameter field="CHECK" name="ACTIVATE" value="false" show="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError1" show="false"/>
     </connection>
     <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tMap_1">
