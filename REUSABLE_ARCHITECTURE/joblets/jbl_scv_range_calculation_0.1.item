@@ -199,11 +199,11 @@
         <column comment="" key="false" length="256" name="error_message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" key="false" length="-1" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="newColumn1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="min_aud_time" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="max_aud_time" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
-        <uiProperties/>
+        <uiProperties shellMaximized="true"/>
         <varTables sizeState="INTERMEDIATE" name="Var">
           <mapperTableEntries name="var1" expression="context.aud_pid=pid" type="id_String"/>
           <mapperTableEntries name="var2" expression="context.aud_batch_start_time=TalendDate.getCurrentDate()" type="id_Date"/>
@@ -217,8 +217,8 @@
           <mapperTableEntries name="job_end_time" expression="" type="id_Date" nullable="true"/>
           <mapperTableEntries name="duration_of_job" expression="" type="id_Long" nullable="true"/>
           <mapperTableEntries name="error_message" expression="" type="id_String" nullable="true"/>
-          <mapperTableEntries name="newColumn" expression="row2.min_aud_time " type="id_String" nullable="true"/>
-          <mapperTableEntries name="newColumn1" expression="row2.max_aud_time " type="id_String" nullable="true"/>
+          <mapperTableEntries name="min_aud_time" expression="row2.min_aud_time " type="id_String" nullable="true"/>
+          <mapperTableEntries name="max_aud_time" expression="row2.max_aud_time " type="id_String" nullable="true"/>
         </outputTables>
         <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
           <mapperTableEntries name="min_aud_time" type="id_Date" nullable="true"/>
@@ -292,12 +292,12 @@
         <elementValue elementRef="DELETE_KEY" value="false"/>
         <elementValue elementRef="UPDATABLE" value="true"/>
         <elementValue elementRef="INSERTABLE" value="true"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="newColumn"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="min_aud_time"/>
         <elementValue elementRef="UPDATE_KEY" value="false"/>
         <elementValue elementRef="DELETE_KEY" value="false"/>
         <elementValue elementRef="UPDATABLE" value="true"/>
         <elementValue elementRef="INSERTABLE" value="true"/>
-        <elementValue elementRef="SCHEMA_COLUMN" value="newColumn1"/>
+        <elementValue elementRef="SCHEMA_COLUMN" value="max_aud_time"/>
         <elementValue elementRef="UPDATE_KEY" value="false"/>
         <elementValue elementRef="DELETE_KEY" value="false"/>
         <elementValue elementRef="UPDATABLE" value="true"/>
@@ -334,8 +334,8 @@
         <column comment="" key="false" length="256" name="error_message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" key="false" length="-1" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="newColumn1" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="min_aud_time" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="max_aud_time" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
       <metadata connector="REJECT" label="batch_audit_log" name="REJECT">
         <column comment="" key="true" length="256" name="pid" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
@@ -362,8 +362,8 @@
         <column comment="" key="false" length="256" name="error_message" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
           <additionalField key="Comment" value=""/>
         </column>
-        <column comment="" key="false" length="-1" name="newColumn" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="newColumn1" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="min_aud_time" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="max_aud_time" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
         <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
         <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
@@ -381,7 +381,10 @@
         <elementValue elementRef="TRACE_COLUMN" value="newColumn"/>
         <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
         <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-        <elementValue elementRef="TRACE_COLUMN" value="newColumn1"/>
+        <elementValue elementRef="TRACE_COLUMN" value="max_aud_time"/>
+        <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+        <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+        <elementValue elementRef="TRACE_COLUMN" value="min_aud_time"/>
         <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
         <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
       </elementParameter>
