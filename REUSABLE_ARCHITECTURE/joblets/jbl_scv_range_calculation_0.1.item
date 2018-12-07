@@ -43,7 +43,7 @@
     </context>
     <parameters>
       <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
-      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="128" show="false"/>
+      <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
       <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
       <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
       <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
@@ -397,7 +397,7 @@
     <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="TRIGGER_INPUT_1" offsetLabelX="0" offsetLabelY="0" source="TRIGGER_INPUT_1" target="tRedshiftInput_1">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
     </connection>
-    <note opaque="true" posX="32" posY="-128" sizeHeight="321" sizeWidth="385" text="JOBLET TO CALCULATE THE DATE RANGE&#xD;&#xA;Author: Bigtapp pte ltd&#xD;&#xA;version: 0.2&#xD;&#xA;&#xD;&#xA;change control:&#xD;&#xA;Version 0.1: Calculates the date range and assigns &#xD;&#xA;it in the context variables&#xD;&#xA;&#xD;&#xA;Version 0.2: Added feature to store the min and &#xD;&#xA;max time in the audit table">
+    <note opaque="true" posX="64" posY="0" sizeHeight="193" sizeWidth="385" text="JOBLET TO CALCULATE THE DATE RANGE&#xD;&#xA;Author: Bigtapp pte ltd&#xD;&#xA;version: 0.2&#xD;&#xA;&#xD;&#xA;change control:&#xD;&#xA;Version 0.1: Calculates the date range and assigns &#xD;&#xA;it in the context variables&#xD;&#xA;&#xD;&#xA;Version 0.2: Added feature to store the min and &#xD;&#xA;max time in the audit table">
       <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
       <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
       <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
