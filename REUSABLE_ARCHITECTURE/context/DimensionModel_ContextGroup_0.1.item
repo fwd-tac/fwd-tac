@@ -108,22 +108,22 @@
     <contextParameter xmi:id="_ZRtY_PoNEeib74B00RIUrA" comment="" name="new4" prompt="new4?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_ZRtY_foNEeib74B00RIUrA" comment="" name="new5" prompt="new5?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_ZRtY_voNEeib74B00RIUrA" comment="" name="new6" prompt="new6?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_2jLu0PoNEeib74B00RIUrA" comment="" name="new1" prompt="new1?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_2jLu0PoNEeib74B00RIUrA" comment="" name="stg_agent" prompt="stg_agent?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_2jLu0foNEeib74B00RIUrA" comment="" name="new2" prompt="new2?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_2jLu0voNEeib74B00RIUrA" comment="" name="new3" prompt="new3?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_2jLu0_oNEeib74B00RIUrA" comment="" name="new7" prompt="new7?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_2jLu1PoNEeib74B00RIUrA" comment="" name="new8" prompt="new8?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_2jLu1foNEeib74B00RIUrA" comment="" name="new9" prompt="new9?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_2jLu1voNEeib74B00RIUrA" comment="" name="new10" prompt="new10?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_2jLu1_oNEeib74B00RIUrA" comment="" name="new11" prompt="new11?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_2jLu2PoNEeib74B00RIUrA" comment="" name="new12" prompt="new12?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_2jLu2foNEeib74B00RIUrA" comment="" name="new13" prompt="new13?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_2jLu2voNEeib74B00RIUrA" comment="" name="new14" prompt="new14?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_2jLu2_oNEeib74B00RIUrA" comment="" name="new15" prompt="new15?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_2jLu3PoNEeib74B00RIUrA" comment="" name="new16" prompt="new16?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_2jLu3foNEeib74B00RIUrA" comment="" name="new17" prompt="new17?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_2jLu3voNEeib74B00RIUrA" comment="" name="new18" prompt="new18?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_2jLu3_oNEeib74B00RIUrA" comment="" name="new19" prompt="new19?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_2jLu1voNEeib74B00RIUrA" comment="" name="stg_campaign" prompt="stg_campaign?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_2jLu1_oNEeib74B00RIUrA" comment="" name="stg_campaign_summary" prompt="stg_campaign_summary?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_2jLu2PoNEeib74B00RIUrA" comment="" name="stg_campaign_wave" prompt="stg_campaign_wave?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_2jLu2foNEeib74B00RIUrA" comment="" name="stg_channel" prompt="stg_channel?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_2jLu2voNEeib74B00RIUrA" comment="" name="stg_claim" prompt="stg_claim?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_2jLu2_oNEeib74B00RIUrA" comment="" name="stg_claim_party" prompt="stg_claim_party?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_2jLu3PoNEeib74B00RIUrA" comment="" name="stg_claim_party_address" prompt="stg_claim_party_address?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_2jLu3foNEeib74B00RIUrA" comment="" name="stg_claim_party_contact" prompt="stg_claim_party_contact?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_2jLu3voNEeib74B00RIUrA" comment="" name="stg_claim_status_history" prompt="stg_claim_status_history?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_2jLu3_oNEeib74B00RIUrA" comment="" name="stg_claim_summary" prompt="stg_claim_summary?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_2jLu4PoNEeib74B00RIUrA" comment="" name="new20" prompt="new20?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_2jLu4foNEeib74B00RIUrA" comment="" name="new21" prompt="new21?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_2jLu4voNEeib74B00RIUrA" comment="" name="new22" prompt="new22?" promptNeeded="false" type="id_String" value=""/>
@@ -298,22 +298,22 @@
     <contextParameter xmi:id="_ZRtZK_oNEeib74B00RIUrA" comment="" name="new4" prompt="new4?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_ZRtZLPoNEeib74B00RIUrA" comment="" name="new5" prompt="new5?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_ZRtZLfoNEeib74B00RIUrA" comment="" name="new6" prompt="new6?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_2jLvIfoNEeib74B00RIUrA" comment="" name="new1" prompt="new1?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_2jLvIfoNEeib74B00RIUrA" comment="" name="stg_agent" prompt="stg_agent?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_2jLvIvoNEeib74B00RIUrA" comment="" name="new2" prompt="new2?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_2jLvI_oNEeib74B00RIUrA" comment="" name="new3" prompt="new3?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_2jLvJPoNEeib74B00RIUrA" comment="" name="new7" prompt="new7?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_2jLvJfoNEeib74B00RIUrA" comment="" name="new8" prompt="new8?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_2jLvJvoNEeib74B00RIUrA" comment="" name="new9" prompt="new9?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_2jLvJ_oNEeib74B00RIUrA" comment="" name="new10" prompt="new10?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_2jLvKPoNEeib74B00RIUrA" comment="" name="new11" prompt="new11?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_2jLvKfoNEeib74B00RIUrA" comment="" name="new12" prompt="new12?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_2jLvKvoNEeib74B00RIUrA" comment="" name="new13" prompt="new13?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_2jLvK_oNEeib74B00RIUrA" comment="" name="new14" prompt="new14?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_2jLvLPoNEeib74B00RIUrA" comment="" name="new15" prompt="new15?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_2jLvLfoNEeib74B00RIUrA" comment="" name="new16" prompt="new16?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_2jLvLvoNEeib74B00RIUrA" comment="" name="new17" prompt="new17?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_2jLvL_oNEeib74B00RIUrA" comment="" name="new18" prompt="new18?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_2jLvMPoNEeib74B00RIUrA" comment="" name="new19" prompt="new19?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_2jLvJ_oNEeib74B00RIUrA" comment="" name="stg_campaign" prompt="stg_campaign?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_2jLvKPoNEeib74B00RIUrA" comment="" name="stg_campaign_summary" prompt="stg_campaign_summary?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_2jLvKfoNEeib74B00RIUrA" comment="" name="stg_campaign_wave" prompt="stg_campaign_wave?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_2jLvKvoNEeib74B00RIUrA" comment="" name="stg_channel" prompt="stg_channel?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_2jLvK_oNEeib74B00RIUrA" comment="" name="stg_claim" prompt="stg_claim?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_2jLvLPoNEeib74B00RIUrA" comment="" name="stg_claim_party" prompt="stg_claim_party?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_2jLvLfoNEeib74B00RIUrA" comment="" name="stg_claim_party_address" prompt="stg_claim_party_address?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_2jLvLvoNEeib74B00RIUrA" comment="" name="stg_claim_party_contact" prompt="stg_claim_party_contact?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_2jLvL_oNEeib74B00RIUrA" comment="" name="stg_claim_status_history" prompt="stg_claim_status_history?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_2jLvMPoNEeib74B00RIUrA" comment="" name="stg_claim_summary" prompt="stg_claim_summary?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_2jLvMfoNEeib74B00RIUrA" comment="" name="new20" prompt="new20?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_2jLvMvoNEeib74B00RIUrA" comment="" name="new21" prompt="new21?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_2jLvM_oNEeib74B00RIUrA" comment="" name="new22" prompt="new22?" promptNeeded="false" type="id_String" value=""/>
