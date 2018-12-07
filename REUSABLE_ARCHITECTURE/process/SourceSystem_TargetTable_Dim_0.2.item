@@ -515,7 +515,7 @@
   </node>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="928" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Main job completed &quot;);&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Main job completed &quot;);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
@@ -572,7 +572,7 @@
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;Update product_lob&#xA;Set &#xA;product_lob_code=S.product_lob_code,&#xA;product_lob_description=S.product_lob_description,&#xA;effective_start_date=S.effective_start_date,&#xA;effective_end_date=S.effective_end_date,&#xA;data_load_dt=S.data_load_dt,&#xA;src_sys_cd=S.src_sys_cd&#xA;From product_lob_stg S&#xA;Where product_lob.product_line_id=S.product_line_id;&#xD;&#xA;&#xA;insert into product_lob (product_line_id,product_lob_code,product_lob_description,effective_start_date,effective_end_date,data_load_dt,src_sys_cd)&#xA;(select product_line_id,product_lob_code,product_lob_description,effective_start_date,effective_end_date,data_load_dt,src_sys_cd &#xD;&#xA;from product_lob_stg where product_line_id not in (select product_line_id from product_lob));&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;Update product_lob&#xA;Set &#xA;product_lob_code=S.product_lob_code,&#xA;product_lob_description=S.product_lob_description,&#xA;effective_start_date=S.effective_start_date,&#xA;effective_end_date=S.effective_end_date,&#xA;data_load_dt=S.data_load_dt,&#xA;src_sys_cd=S.src_sys_cd&#xA;From product_lob_stg S&#xA;Where product_lob.product_line_id=S.product_line_id;&#xD;&#xA;&#xD;&#xA;&#xA;insert into product_lob (product_line_id,product_lob_code,product_lob_description,effective_start_date,effective_end_date,data_load_dt,src_sys_cd)&#xA;(select product_line_id,product_lob_code,product_lob_description,effective_start_date,effective_end_date,data_load_dt,src_sys_cd &#xD;&#xA;from product_lob_stg where product_line_id not in (select product_line_id from product_lob));&quot;"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
     <elementParameter field="CHECK" name="PROPAGATE_RECORD_SET" value="false"/>
     <elementParameter field="COLUMN_LIST" name="RECORD_SET_COLUMN" value="" show="false"/>
