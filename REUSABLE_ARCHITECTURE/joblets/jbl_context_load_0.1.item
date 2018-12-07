@@ -412,7 +412,7 @@
       <elementParameter field="TEXT" name="NOTE_FONT" value="Calibri"/>
       <elementParameter field="TEXT" name="FONT_SIZE" value="11"/>
     </note>
-    <note opaque="false" posX="32" posY="-352" sizeHeight="225" sizeWidth="385" text="JOBLET TO LOAD CONTEXT FILES&#xD;&#xA;Author: Bigtapp pte ltd&#xD;&#xA;version: 0.2&#xD;&#xA;&#xD;&#xA;change control:&#xD;&#xA;Version 0.1: Calculates the date range and assigns it in the context variables&#xD;&#xA;&#xD;&#xA;Version 0.2: Added feature to store the min and max time in the audit table">
+    <note opaque="false" posX="32" posY="-352" sizeHeight="225" sizeWidth="385" text="JOBLET TO LOAD CONTEXT FILES&#xD;&#xA;Author: Bigtapp pte ltd&#xD;&#xA;version: 0.2&#xD;&#xA;&#xD;&#xA;change control:&#xD;&#xA;Version 0.1: Calculates the date range and assigns it in the &#xD;&#xA;context variables&#xD;&#xA;&#xD;&#xA;Version 0.2: Added feature to store the min and max time in the &#xD;&#xA;audit table">
       <elementParameter field="RADIO" name="NOTETXT_LEFT" value="true"/>
       <elementParameter field="RADIO" name="NOTETXT_CENTER" value="false"/>
       <elementParameter field="RADIO" name="NOTELABEL_CENTER" value="false"/>
