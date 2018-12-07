@@ -290,10 +290,7 @@
       <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xD;&#xA;context.scv_min_start_time=input_row.min_aud_time;&#xA;context.scv_max_end_time = input_row.max_aud_time;"/>
       <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-      <metadata connector="FLOW" name="tJavaRow_1">
-        <column comment="" key="false" length="-1" name="min_aud_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
-        <column comment="" key="false" length="-1" name="max_aud_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;" precision="-1" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
-      </metadata>
+      <metadata connector="FLOW" name="tJavaRow_1"/>
     </node>
     <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="640" posY="256">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
@@ -353,10 +350,7 @@
           <mapperTableEntries name="min_aud_time" expression="context.row2.min_aud_time " type="id_String" nullable="true"/>
           <mapperTableEntries name="max_aud_time" expression="context.row2.max_aud_time " type="id_String" nullable="true"/>
         </outputTables>
-        <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-          <mapperTableEntries name="min_aud_time" type="id_Date" nullable="true"/>
-          <mapperTableEntries name="max_aud_time" type="id_Date" nullable="true"/>
-        </inputTables>
+        <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE"/>
       </nodeData>
     </node>
     <node componentName="tRedshiftOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="256">
