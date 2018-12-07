@@ -39,6 +39,28 @@
     <contextParameter xmi:id="_mkqu9PSKEeiJYsgpEdgRHA" comment="" name="context_host_file" prompt="context_host_file?" promptNeeded="false" type="id_String" value="&quot;context_host.properties&quot;"/>
     <contextParameter xmi:id="_mkqu9fSKEeiJYsgpEdgRHA" comment="to mark the completion of actual data processing" name="success_flag" prompt="success_flag?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_mkqu9vSKEeiJYsgpEdgRHA" comment="" name="conn_rs_log" prompt="conn_rs_log?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTAPoLEeib74B00RIUrA" comment="" name="tgt_agent" prompt="tgt_agent?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTAfoLEeib74B00RIUrA" comment="" name="tgt_campaign" prompt="tgt_campaign?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTAvoLEeib74B00RIUrA" comment="" name="tgt_campaign_summary" prompt="tgt_campaign_summary?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTA_oLEeib74B00RIUrA" comment="" name="tgt_campaign_wave" prompt="tgt_campaign_wave?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTBPoLEeib74B00RIUrA" comment="" name="tgt_channel" prompt="tgt_channel?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTBfoLEeib74B00RIUrA" comment="" name="tgt_claim" prompt="tgt_claim?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTBvoLEeib74B00RIUrA" comment="" name="tgt_claim_party" prompt="tgt_claim_party?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTB_oLEeib74B00RIUrA" comment="" name="tgt_claim_prty_addr" prompt="tgt_claim_prty_addr?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTCPoLEeib74B00RIUrA" comment="" name="tgt_claim_prty_cntct" prompt="tgt_claim_prty_cntct?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTCfoLEeib74B00RIUrA" comment="" name="tgt_claim_status_hist" prompt="tgt_claim_status_hist?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTCvoLEeib74B00RIUrA" comment="" name="tgt_claim_smy" prompt="tgt_claim_smy?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTC_oLEeib74B00RIUrA" comment="" name="tgt_cro" prompt="tgt_cro?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTDPoLEeib74B00RIUrA" comment="" name="tgt_cro_agent_smy" prompt="tgt_cro_agent_smy?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTDfoLEeib74B00RIUrA" comment="" name="tgt_direct" prompt="tgt_direct?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTDvoLEeib74B00RIUrA" comment="" name="tgt_email" prompt="tgt_email?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTD_oLEeib74B00RIUrA" comment="" name="tgt_event" prompt="tgt_event?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTEPoLEeib74B00RIUrA" comment="" name="tgt_interaction" prompt="tgt_interaction?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTEfoLEeib74B00RIUrA" comment="" name="new10" prompt="new10?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTEvoLEeib74B00RIUrA" comment="" name="new11" prompt="new11?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTE_oLEeib74B00RIUrA" comment="" name="new12" prompt="new12?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTFPoLEeib74B00RIUrA" comment="" name="new13" prompt="new13?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTFfoLEeib74B00RIUrA" comment="" name="new14" prompt="new14?" promptNeeded="false" type="id_String" value=""/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_vQFU4PSMEeiJYsgpEdgRHA" confirmationNeeded="false" name="win_dev">
     <contextParameter xmi:id="_vQFU4fSMEeiJYsgpEdgRHA" comment="" name="conn_rs_host" prompt="conn_rs_host?" promptNeeded="false" type="id_String" value=""/>
@@ -79,5 +101,27 @@
     <contextParameter xmi:id="_vQFVBPSMEeiJYsgpEdgRHA" comment="" name="context_host_file" prompt="context_host_file?" promptNeeded="false" type="id_String" value="&quot;context_host.properties&quot;"/>
     <contextParameter xmi:id="_vQFVBfSMEeiJYsgpEdgRHA" comment="to mark the completion of actual data processing" name="success_flag" prompt="success_flag?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_vQFVBvSMEeiJYsgpEdgRHA" comment="" name="conn_rs_log" prompt="conn_rs_log?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTFvoLEeib74B00RIUrA" comment="" name="tgt_agent" prompt="tgt_agent?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTF_oLEeib74B00RIUrA" comment="" name="tgt_campaign" prompt="tgt_campaign?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTGPoLEeib74B00RIUrA" comment="" name="tgt_campaign_summary" prompt="tgt_campaign_summary?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTGfoLEeib74B00RIUrA" comment="" name="tgt_campaign_wave" prompt="tgt_campaign_wave?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTGvoLEeib74B00RIUrA" comment="" name="tgt_channel" prompt="tgt_channel?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTG_oLEeib74B00RIUrA" comment="" name="tgt_claim" prompt="tgt_claim?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTHPoLEeib74B00RIUrA" comment="" name="tgt_claim_party" prompt="tgt_claim_party?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTHfoLEeib74B00RIUrA" comment="" name="tgt_claim_prty_addr" prompt="tgt_claim_prty_addr?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTHvoLEeib74B00RIUrA" comment="" name="tgt_claim_prty_cntct" prompt="tgt_claim_prty_cntct?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTH_oLEeib74B00RIUrA" comment="" name="tgt_claim_status_hist" prompt="tgt_claim_status_hist?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTIPoLEeib74B00RIUrA" comment="" name="tgt_claim_smy" prompt="tgt_claim_smy?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTIfoLEeib74B00RIUrA" comment="" name="tgt_cro" prompt="tgt_cro?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTIvoLEeib74B00RIUrA" comment="" name="tgt_cro_agent_smy" prompt="tgt_cro_agent_smy?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTI_oLEeib74B00RIUrA" comment="" name="tgt_direct" prompt="tgt_direct?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTJPoLEeib74B00RIUrA" comment="" name="tgt_email" prompt="tgt_email?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTJfoLEeib74B00RIUrA" comment="" name="tgt_event" prompt="tgt_event?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTJvoLEeib74B00RIUrA" comment="" name="tgt_interaction" prompt="tgt_interaction?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTJ_oLEeib74B00RIUrA" comment="" name="new10" prompt="new10?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTKPoLEeib74B00RIUrA" comment="" name="new11" prompt="new11?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTKfoLEeib74B00RIUrA" comment="" name="new12" prompt="new12?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTKvoLEeib74B00RIUrA" comment="" name="new13" prompt="new13?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_bIxTK_oLEeib74B00RIUrA" comment="" name="new14" prompt="new14?" promptNeeded="false" type="id_String" value=""/>
   </talendfile:ContextType>
 </xmi:XMI>
