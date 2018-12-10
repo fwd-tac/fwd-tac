@@ -299,7 +299,7 @@
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select cast(min_aud_time as varchar) as min_aud_time ,cast(max_aud_time as varchar) as  max_aud_time from &#xD;&#xA;&#xD;&#xA;(SELECT max(aud_time) as max_aud_time ,1 as joinkey&#xD;&#xA;FROM&#x9;&quot;+context.conn_rs_schema+&quot;.batch_control  where upper(trim(job_name))='END_DL' and batch_hour=( SELECT max(batch_hour) FROM &quot;+context.conn_rs_schema+&quot;.batch_control )) a&#xD;&#xA;join&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;(SELECT min(aud_time) as min_aud_time , 1 as joinkey&#xD;&#xA;FROM&#x9; &quot;+context.conn_rs_schema+&quot;.batch_control where upper(trim(job_name))='START_DL' and  batch_hour=(SELECT cast(REGEXP_REPLACE(substring(cast(&#xD;&#xA;to_timestamp(cast(max(batch_hour) as VARCHAR)+'0000','yyyyMMddhhmiss') &#xD;&#xA;+ interval '&quot;+context.scv_threshold_hour+&quot; hours' as varchar),1,13),'-| ','') as BIGINT) FROM &quot;+context.conn_rs_schema+&quot;.batch_control))b&#xD;&#xA;on a.joinkey=b.joinkey&#xD;&#xA;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select cast(min_aud_time as varchar) as min_aud_time ,cast(max_aud_time as varchar) as  max_aud_time from &#xD;&#xA;&#xD;&#xA;(SELECT max(aud_time) as max_aud_time ,1 as joinkey&#xD;&#xA;FROM&#x9;&quot;+context.conn_rs_schema+&quot;.batch_control  where upper(trim(job_name))='END_DL' and batch_hour=( SELECT max(batch_hour) FROM &quot;+context.conn_rs_schema+&quot;.batch_control )) a&#xD;&#xA;join&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;(SELECT min(aud_time) as min_aud_time , 1 as joinkey&#xD;&#xA;FROM&#x9; &quot;+context.conn_rs_schema+&quot;.batch_control where upper(trim(job_name))='START_DL' and  &#xD;&#xA;batch_hour=(SELECT cast(REGEXP_REPLACE(substring(cast(&#xD;&#xA;to_timestamp(cast(max(batch_hour) as VARCHAR)+'0000','yyyyMMddhhmiss') &#xD;&#xA;+ interval '&quot;+context.scv_threshold_hour+&quot; hours' as varchar),1,13),'-| ','') as BIGINT) FROM &quot;+context.conn_rs_schema+&quot;.batch_control))b&#xD;&#xA;on a.joinkey=b.joinkey&#xD;&#xA;&quot;"/>
     <elementParameter field="MAPPING_TYPE" name="MAPPING" value="redshift_id" show="false"/>
     <elementParameter field="FILE" name="LOG_FILE" value="context.conn_rs_log"/>
     <elementParameter field="CLOSED_LIST" name="LOG_LEVEL" value="0"/>
@@ -539,6 +539,20 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_1"/>
   </node>
+  <node componentName="jbl_error_log" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="jbl_error_log_1"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
+    <elementParameter field="CHECK" name="DUMMY" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="LABEL" value="jbl_error_log"/>
+    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+    <elementParameter field="MEMO" name="COMMENT" value=""/>
+  </node>
   <connection connectorName="FLOW" label="src_scv_range" lineStyle="0" metaname="tRedshiftInput_1" offsetLabelX="0" offsetLabelY="0" source="tRedshiftInput_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="src_scv_range" show="false"/>
@@ -562,6 +576,11 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="jbl_error_log_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
