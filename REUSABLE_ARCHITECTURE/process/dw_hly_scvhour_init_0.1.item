@@ -515,7 +515,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
   </node>
-  <node componentName="jbl_error_log" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="384" posY="512">
+  <node componentName="jbl_error_log" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="160" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="jbl_error_log_1"/>
     <elementParameter field="TEXT" name="FAMILY" value="Joblets"/>
     <elementParameter field="CHECK" name="ACTIVATE" value="true"/>
