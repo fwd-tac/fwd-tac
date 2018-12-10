@@ -506,7 +506,6 @@
       <relatedItems xmi:id="_RJgCy_xWEeicUPPlJgAiOg" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_RJgCzPxWEeicUPPlJgAiOg" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_-hLf8PxZEeicUPPlJgAiOg" id="_KUgrYI8-EeiHDOm_6nTffQ" version="Latest" type="property"/>
-      <relatedItems xmi:id="_-hLf8fxZEeicUPPlJgAiOg" id="_KUgrYI8-EeiHDOm_6nTffQ - batch_control" version="Latest" type="schema"/>
       <relatedItems xmi:id="_xhcoMPxbEeicUPPlJgAiOg" id="_HGhF8O7kEeinqta1JcOHSw" version="Latest" type="joblet"/>
     </ItemsRelations>
     <migrationTask xmi:id="_IwRTQO46EeihD7EfnUn4rQ" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
