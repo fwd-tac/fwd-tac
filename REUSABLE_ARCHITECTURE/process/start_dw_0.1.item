@@ -495,8 +495,8 @@
     <elementParameter field="TEXT" name="LABEL" value="extract_date_range"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRedshiftInput_1">
-      <column comment="" key="false" length="-1" name="min_aud_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="max_aud_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="min_aud_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;" precision="-1" sourceType="DATE" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="max_aud_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;" precision="-1" sourceType="DATE" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="batch_hour" nullable="true" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
