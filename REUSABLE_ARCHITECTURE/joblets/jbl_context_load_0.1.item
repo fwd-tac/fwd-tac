@@ -410,7 +410,7 @@
         <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </node>
-    <node componentName="tUnite" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="160">
+    <node componentName="tUnite" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="128">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tUnite_1" show="false"/>
       <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
       <metadata connector="FLOW" name="tUnite_1">
@@ -486,7 +486,7 @@
         <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       </metadata>
     </node>
-    <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="192">
+    <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="448" posY="160">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1" show="false"/>
       <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#xA;output_row.key = &quot;host&quot;;&#xA;output_row.value = input_row.value;&#xA;&#xA;&#xA;&#xA;//To Storing jobname with current date to store error file&#xA;&#xA;String Job_name=jobName;&#xA;String Current_date=TalendDate.formatDate(&quot;yyyyMMdd HHmmss&quot;,TalendDate.getCurrentDate());&#xA;&#xA;&#xA;context.aud_job_date=Job_name+&quot;_&quot; +Current_date+&quot;.csv&quot;; &#xA;System.out.println(&quot;Today_date-->&quot;+context.aud_job_date); "/>
       <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
