@@ -495,8 +495,8 @@
     <elementParameter field="TEXT" name="LABEL" value="extract_date_range"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRedshiftInput_1">
-      <column comment="" key="false" length="-1" name="min_aud_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;" precision="-1" sourceType="DATE" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="max_aud_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;" precision="-1" sourceType="DATE" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="min_aud_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;" precision="-1" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="max_aud_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;" precision="-1" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
       <column comment="" key="false" length="-1" name="batch_hour" nullable="true" pattern="" precision="-1" sourceType="BIGINT" type="id_Long" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
@@ -560,8 +560,8 @@
         <mapperTableEntries name="max_aud_time" expression="src_scv_range.max_aud_time" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="src_scv_range" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="min_aud_time" type="id_String" nullable="true"/>
-        <mapperTableEntries name="max_aud_time" type="id_String" nullable="true"/>
+        <mapperTableEntries name="min_aud_time" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="max_aud_time" type="id_Date" nullable="true"/>
         <mapperTableEntries name="batch_hour" type="id_Long" nullable="true"/>
       </inputTables>
     </nodeData>
