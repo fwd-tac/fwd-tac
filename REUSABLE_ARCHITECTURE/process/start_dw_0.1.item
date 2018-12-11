@@ -764,12 +764,8 @@
         <additionalField key="Comment" value=""/>
       </column>
     </metadata>
-    <metadata connector="FLOW" name="tgt_file">
-      <column comment="" key="false" length="-1" name="min_aud_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="max_aud_time" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss.sss&quot;" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
-    </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="tgt_batch_control">
         <mapperTableEntries name="pid" expression="pid" type="id_String"/>
@@ -780,10 +776,6 @@
         <mapperTableEntries name="start_time" expression="src_scv_range.min_aud_time" type="id_Date" nullable="true"/>
         <mapperTableEntries name="end_time" expression="src_scv_range.max_aud_time" type="id_Date" nullable="true"/>
         <mapperTableEntries name="batch_hour" expression="src_scv_range.batch_hour " type="id_Long" nullable="true"/>
-      </outputTables>
-      <outputTables sizeState="INTERMEDIATE" name="tgt_file">
-        <mapperTableEntries name="min_aud_time" expression="src_scv_range.min_aud_time" type="id_String" nullable="true"/>
-        <mapperTableEntries name="max_aud_time" expression="src_scv_range.max_aud_time" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="src_scv_range" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="min_aud_time" type="id_Date" nullable="true"/>
