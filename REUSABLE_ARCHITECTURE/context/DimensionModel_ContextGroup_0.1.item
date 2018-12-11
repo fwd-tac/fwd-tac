@@ -30,13 +30,13 @@
     <contextParameter xmi:id="_mkqu6_SKEeiJYsgpEdgRHA" comment="" name="scv_threshold_hour" prompt="scv_threshold_hour?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_mkqu7PSKEeiJYsgpEdgRHA" comment="" name="scv_min_start_time" prompt="scv_min_start_time?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_mkqu7fSKEeiJYsgpEdgRHA" comment="" name="scv_max_end_time" prompt="scv_max_end_time?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_mkqu7vSKEeiJYsgpEdgRHA" comment="" name="contextdir" prompt="contextdir?" promptNeeded="false" type="id_String" value="&quot;/home/ubuntu/SCV/context_files/&quot;"/>
-    <contextParameter xmi:id="_mkqu7_SKEeiJYsgpEdgRHA" comment="" name="contextfile" prompt="contextfile?" promptNeeded="false" type="id_String" value="&quot;context.properties&quot;"/>
+    <contextParameter xmi:id="_mkqu7vSKEeiJYsgpEdgRHA" comment="" name="contextdir" prompt="contextdir?" promptNeeded="false" type="id_String" value="&quot;/home/ubuntu/Context_files/&quot;"/>
+    <contextParameter xmi:id="_mkqu7_SKEeiJYsgpEdgRHA" comment="" name="contextfile" prompt="contextfile?" promptNeeded="false" type="id_String" value="&quot;context_dw.properties&quot;"/>
     <contextParameter xmi:id="_mkqu8PSKEeiJYsgpEdgRHA" comment="" name="aud_batch_end_time" prompt="aud_batch_end_time?" promptNeeded="false" type="id_Date" value=""/>
     <contextParameter xmi:id="_mkqu8fSKEeiJYsgpEdgRHA" comment="" name="scv_threshold_batch_hour" prompt="scv_threshold_batch_hour?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_mkqu8vSKEeiJYsgpEdgRHA" comment="" name="email_smtp_host" prompt="email_smtp_host?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_mkqu8_SKEeiJYsgpEdgRHA" comment="" name="email_smtp_port" prompt="email_smtp_port?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_mkqu9PSKEeiJYsgpEdgRHA" comment="" name="context_host_file" prompt="context_host_file?" promptNeeded="false" type="id_String" value="&quot;context_host.properties&quot;"/>
+    <contextParameter xmi:id="_mkqu9PSKEeiJYsgpEdgRHA" comment="" name="context_host_file" prompt="context_host_file?" promptNeeded="false" type="id_String" value="&quot;context_host.csv&quot;"/>
     <contextParameter xmi:id="_mkqu9fSKEeiJYsgpEdgRHA" comment="to mark the completion of actual data processing" name="success_flag" prompt="success_flag?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_mkqu9vSKEeiJYsgpEdgRHA" comment="" name="conn_rs_log" prompt="conn_rs_log?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_bIxTAPoLEeib74B00RIUrA" comment="" name="tgt_agent" prompt="tgt_agent?" promptNeeded="false" type="id_String" value=""/>
@@ -175,7 +175,7 @@
     <contextParameter xmi:id="_65jf4PoSEeib74B00RIUrA" comment="" name="conn_s3_accesskey" prompt="conn_s3_accesskey?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_65jf4foSEeib74B00RIUrA" comment="" name="conn_s3_bucketname" prompt="conn_s3_bucketname?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_65jf4voSEeib74B00RIUrA" comment="" name="conn_s3_secretkey" prompt="conn_s3_secretkey?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_OgvfcP0UEeivuImG52gAvw" comment="" name="context_batchhourfile" prompt="context_batchhourfile?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_OgvfcP0UEeivuImG52gAvw" comment="" name="context_batchhourfile" prompt="context_batchhourfile?" promptNeeded="false" type="id_String" value="&quot;context_batch_hour.properties&quot;"/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_vQFU4PSMEeiJYsgpEdgRHA" confirmationNeeded="false" name="win_dev">
     <contextParameter xmi:id="_vQFU4fSMEeiJYsgpEdgRHA" comment="" name="conn_rs_host" prompt="conn_rs_host?" promptNeeded="false" type="id_String" value=""/>
@@ -208,7 +208,7 @@
     <contextParameter xmi:id="_vQFU_PSMEeiJYsgpEdgRHA" comment="" name="scv_min_start_time" prompt="scv_min_start_time?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_vQFU_fSMEeiJYsgpEdgRHA" comment="" name="scv_max_end_time" prompt="scv_max_end_time?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_vQFU_vSMEeiJYsgpEdgRHA" comment="" name="contextdir" prompt="contextdir?" promptNeeded="false" type="id_String" value="&quot;C:\contextfiles\&quot;"/>
-    <contextParameter xmi:id="_vQFU__SMEeiJYsgpEdgRHA" comment="" name="contextfile" prompt="contextfile?" promptNeeded="false" type="id_String" value="&quot;context.properties&quot;"/>
+    <contextParameter xmi:id="_vQFU__SMEeiJYsgpEdgRHA" comment="" name="contextfile" prompt="contextfile?" promptNeeded="false" type="id_String" value="&quot;context_dw.properties&quot;"/>
     <contextParameter xmi:id="_vQFVAPSMEeiJYsgpEdgRHA" comment="" name="aud_batch_end_time" prompt="aud_batch_end_time?" promptNeeded="false" type="id_Date" value=""/>
     <contextParameter xmi:id="_vQFVAfSMEeiJYsgpEdgRHA" comment="" name="scv_threshold_batch_hour" prompt="scv_threshold_batch_hour?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_vQFVAvSMEeiJYsgpEdgRHA" comment="" name="email_smtp_host" prompt="email_smtp_host?" promptNeeded="false" type="id_String" value=""/>
@@ -352,6 +352,6 @@
     <contextParameter xmi:id="_65kuAPoSEeib74B00RIUrA" comment="" name="conn_s3_accesskey" prompt="conn_s3_accesskey?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_65kuAfoSEeib74B00RIUrA" comment="" name="conn_s3_bucketname" prompt="conn_s3_bucketname?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_65kuAvoSEeib74B00RIUrA" comment="" name="conn_s3_secretkey" prompt="conn_s3_secretkey?" promptNeeded="false" type="id_String" value=""/>
-    <contextParameter xmi:id="_Ogvfcf0UEeivuImG52gAvw" comment="" name="context_batchhourfile" prompt="context_batchhourfile?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_Ogvfcf0UEeivuImG52gAvw" comment="" name="context_batchhourfile" prompt="context_batchhourfile?" promptNeeded="false" type="id_String" value="&quot;context_batch_hour.properties&quot;"/>
   </talendfile:ContextType>
 </xmi:XMI>
