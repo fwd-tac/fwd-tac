@@ -175,6 +175,7 @@
     <contextParameter xmi:id="_65jf4PoSEeib74B00RIUrA" comment="" name="conn_s3_accesskey" prompt="conn_s3_accesskey?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_65jf4foSEeib74B00RIUrA" comment="" name="conn_s3_bucketname" prompt="conn_s3_bucketname?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_65jf4voSEeib74B00RIUrA" comment="" name="conn_s3_secretkey" prompt="conn_s3_secretkey?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_OgvfcP0UEeivuImG52gAvw" comment="" name="context_batchhourfile" prompt="context_batchhourfile?" promptNeeded="false" type="id_String" value=""/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_vQFU4PSMEeiJYsgpEdgRHA" confirmationNeeded="false" name="win_dev">
     <contextParameter xmi:id="_vQFU4fSMEeiJYsgpEdgRHA" comment="" name="conn_rs_host" prompt="conn_rs_host?" promptNeeded="false" type="id_String" value=""/>
@@ -351,5 +352,6 @@
     <contextParameter xmi:id="_65kuAPoSEeib74B00RIUrA" comment="" name="conn_s3_accesskey" prompt="conn_s3_accesskey?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_65kuAfoSEeib74B00RIUrA" comment="" name="conn_s3_bucketname" prompt="conn_s3_bucketname?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_65kuAvoSEeib74B00RIUrA" comment="" name="conn_s3_secretkey" prompt="conn_s3_secretkey?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_Ogvfcf0UEeivuImG52gAvw" comment="" name="context_batchhourfile" prompt="context_batchhourfile?" promptNeeded="false" type="id_String" value=""/>
   </talendfile:ContextType>
 </xmi:XMI>
