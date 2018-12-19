@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_rfSa0AOVEemSiuzncoJZJQ" name="1ST_LEVEL" dataPackage="_rfSa1AOVEemSiuzncoJZJQ" JSONFilePath="C:/Users/Administrator/Desktop/file.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_rfSa0QOVEemSiuzncoJZJQ" LimitBoucle="50" AbsoluteXPathQuery="$" flag="ROOT">
+      <schemaTargets xmi:id="_rfSa0gOVEemSiuzncoJZJQ" RelativeXPathQuery="details" TagName="details"/>
+      <schemaTargets xmi:id="_rfSa0wOVEemSiuzncoJZJQ" RelativeXPathQuery="policyId" TagName="policyId"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_rfSa1AOVEemSiuzncoJZJQ" name="default" dataManager="_rfSa0AOVEemSiuzncoJZJQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_rfSa1QOVEemSiuzncoJZJQ" id="_dJdkwAOVEemSiuzncoJZJQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rfSa1gOVEemSiuzncoJZJQ" label="details" length="386" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_rfSa1wOVEemSiuzncoJZJQ" label="policyId" length="8" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
