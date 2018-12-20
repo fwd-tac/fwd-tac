@@ -182,6 +182,8 @@
     <contextParameter xmi:id="_SR8A0wQaEemyeN1q6dh7eg" comment="" name="dl_is_schema" prompt="dl_is_schema?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_SR8A1AQaEemyeN1q6dh7eg" comment="" name="dl_il_schema" prompt="dl_il_schema?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_SR8A1QQaEemyeN1q6dh7eg" comment="" name="dl_crm_schema" prompt="dl_crm_schema?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_RsWfcAQdEemyeN1q6dh7eg" comment="" name="scv_max_operator" prompt="scv_max_operator?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_RsWfcQQdEemyeN1q6dh7eg" comment="" name="scv_min_operator" prompt="scv_min_operator?" promptNeeded="false" type="id_String" value=""/>
   </talendfile:ContextType>
   <talendfile:ContextType xmi:id="_SR8A1gQaEemyeN1q6dh7eg" confirmationNeeded="false" name="win_dev">
     <contextParameter xmi:id="_SR8A1wQaEemyeN1q6dh7eg" comment="redshift connection parameters" name="conn_rs_host" prompt="conn_rs_host?" promptNeeded="false" type="id_String" value=""/>
@@ -365,5 +367,7 @@
     <contextParameter xmi:id="_SSO7mgQaEemyeN1q6dh7eg" comment="" name="dl_is_schema" prompt="dl_is_schema?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_SSO7mwQaEemyeN1q6dh7eg" comment="" name="dl_il_schema" prompt="dl_il_schema?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter xmi:id="_SSO7nAQaEemyeN1q6dh7eg" comment="" name="dl_crm_schema" prompt="dl_crm_schema?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_RsXGgAQdEemyeN1q6dh7eg" comment="" name="scv_max_operator" prompt="scv_max_operator?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter xmi:id="_RsXGgQQdEemyeN1q6dh7eg" comment="" name="scv_min_operator" prompt="scv_min_operator?" promptNeeded="false" type="id_String" value=""/>
   </talendfile:ContextType>
 </xmi:XMI>
