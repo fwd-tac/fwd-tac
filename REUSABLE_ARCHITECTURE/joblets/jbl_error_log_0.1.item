@@ -411,7 +411,7 @@
       <elementParameter field="TEXT" name="PORT" value="context.conn_rs_port"/>
       <elementParameter field="TEXT" name="DBNAME" value="context.conn_rs_database"/>
       <elementParameter field="TEXT" name="TYPE" value="REDSHIFT" show="false"/>
-      <elementParameter field="TEXT" name="SCHEMA_DB" value="context.conn_rs_schema"/>
+      <elementParameter field="TEXT" name="SCHEMA_DB" value="context.conn_rs_aud_schema"/>
       <elementParameter field="TEXT" name="USER" value="context.conn_rs_username"/>
       <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufzw1+lsxlfa9/5rkEtk0U/RHpaK4KEwBQ="/>
       <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
