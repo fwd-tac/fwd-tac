@@ -771,12 +771,12 @@
       </column>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="tgt_batch_control">
         <mapperTableEntries name="pid" expression="pid" type="id_String"/>
         <mapperTableEntries name="job_name" expression="jobName" type="id_String" nullable="true"/>
-        <mapperTableEntries name="project_name" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="project_name" expression="projectName" type="id_String" nullable="true"/>
         <mapperTableEntries name="table_name" expression="" type="id_String" nullable="true"/>
         <mapperTableEntries name="aud_time" expression="TalendDate.getCurrentDate()" type="id_Date" nullable="true"/>
         <mapperTableEntries name="start_time" expression="src_scv_range.min_aud_time" type="id_Date" nullable="true"/>
