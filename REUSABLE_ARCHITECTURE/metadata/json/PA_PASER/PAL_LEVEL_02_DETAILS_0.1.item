@@ -4,6 +4,7 @@
     <schema xmi:id="_DVwHwhKLEemhDKcBdY9JmA" LimitBoucle="50" AbsoluteXPathQuery="$.details" flag="ROOT">
       <schemaTargets xmi:id="_DVwHwxKLEemhDKcBdY9JmA" RelativeXPathQuery="policyholder" TagName="policyholder"/>
       <schemaTargets xmi:id="_DVwHxBKLEemhDKcBdY9JmA" RelativeXPathQuery="insured[*]" TagName="insured___"/>
+      <schemaTargets xmi:id="_6IRkMBKNEemhDKcBdY9JmA" RelativeXPathQuery="$.policyId" TagName="policyId"/>
     </schema>
   </TalendJSON:JSONFileConnection>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_DVwHxRKLEemhDKcBdY9JmA" name="default" dataManager="_DVwHwRKLEemhDKcBdY9JmA">
