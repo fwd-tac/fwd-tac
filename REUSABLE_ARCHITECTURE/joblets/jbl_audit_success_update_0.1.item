@@ -285,7 +285,7 @@
         </column>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
-        <uiProperties/>
+        <uiProperties shellMaximized="true"/>
         <varTables sizeState="INTERMEDIATE" name="Var">
           <mapperTableEntries name="var1" expression="context.aud_batch_end_time=TalendDate.getCurrentDate()" type="id_Date"/>
         </varTables>
@@ -403,9 +403,6 @@
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="lnk_main" show="false"/>
     </connection>
-    <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="TRIGGER_OUTPUT_1">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobError1" show="false"/>
-    </connection>
     <connection connectorName="FLOW" label="lnk_aud_success" lineStyle="0" metaname="lnk_aud_success" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tRedshiftOutput_1">
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="lnk_aud_success" show="false"/>
@@ -420,24 +417,10 @@
       <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
       <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
     </subjob>
-    <subjob>
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_OUTPUT_1" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-      <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-    </subjob>
     <jobletNodes componentName="TRIGGER_INPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="128" posY="288" input="true" trigger="true">
       <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_INPUT_1"/>
       <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
       <elementParameter field="CHECK" name="START" value="true" show="false"/>
-      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
-      <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
-      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
-      <elementParameter field="MEMO" name="COMMENT" value=""/>
-    </jobletNodes>
-    <jobletNodes componentName="TRIGGER_OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="512" posY="544" trigger="true">
-      <elementParameter field="TEXT" name="UNIQUE_NAME" value="TRIGGER_OUTPUT_1"/>
-      <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
-      <elementParameter field="CHECK" name="START" value="false" show="false"/>
       <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
       <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
       <elementParameter field="CHECK" name="INFORMATION" value="false"/>
