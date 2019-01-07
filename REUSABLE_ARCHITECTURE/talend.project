@@ -611,6 +611,7 @@
       <relatedItems xmi:id="_BR9IWxKEEemhDKcBdY9JmA" id="TalendDate" version="Latest" type="routine"/>
       <relatedItems xmi:id="_BR9IXBKEEemhDKcBdY9JmA" id="Mathematical" version="Latest" type="routine"/>
     </ItemsRelations>
+    <deletedFolders>metadata/json/JSON_E2E_PARSER</deletedFolders>
     <migrationTask xmi:id="_IwRTQO46EeihD7EfnUn4rQ" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_IwRTQe46EeihD7EfnUn4rQ" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_IwR6UO46EeihD7EfnUn4rQ" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
