@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_SkpT0BKLEemhDKcBdY9JmA" name="PA_LEVEL_02_DETAILS_POLICYHOLDER" dataPackage="_SkpT4BKLEemhDKcBdY9JmA" JSONFilePath="C:/Users/Administrator/Desktop/JSON_PARSER/PA_json.JSON" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_SkpT0RKLEemhDKcBdY9JmA" LimitBoucle="0" AbsoluteXPathQuery="$.details.policyholder" flag="ROOT">
+      <schemaTargets xmi:id="_SkpT0hKLEemhDKcBdY9JmA" RelativeXPathQuery="name" TagName="name"/>
+      <schemaTargets xmi:id="_SkpT0xKLEemhDKcBdY9JmA" RelativeXPathQuery="preferredName" TagName="preferredName"/>
+      <schemaTargets xmi:id="_SkpT1BKLEemhDKcBdY9JmA" RelativeXPathQuery="idNumber" TagName="idNumber"/>
+      <schemaTargets xmi:id="_SkpT1RKLEemhDKcBdY9JmA" RelativeXPathQuery="dob" TagName="dob"/>
+      <schemaTargets xmi:id="_SkpT1hKLEemhDKcBdY9JmA" RelativeXPathQuery="email" TagName="email"/>
+      <schemaTargets xmi:id="_SkpT1xKLEemhDKcBdY9JmA" RelativeXPathQuery="mobile" TagName="mobile"/>
+      <schemaTargets xmi:id="_SkpT2BKLEemhDKcBdY9JmA" RelativeXPathQuery="postalCode" TagName="postalCode"/>
+      <schemaTargets xmi:id="_SkpT2RKLEemhDKcBdY9JmA" RelativeXPathQuery="blockNo" TagName="blockNo"/>
+      <schemaTargets xmi:id="_SkpT2hKLEemhDKcBdY9JmA" RelativeXPathQuery="streetName" TagName="streetName"/>
+      <schemaTargets xmi:id="_SkpT2xKLEemhDKcBdY9JmA" RelativeXPathQuery="unitNo" TagName="unitNo"/>
+      <schemaTargets xmi:id="_SkpT3BKLEemhDKcBdY9JmA" RelativeXPathQuery="buildingName" TagName="buildingName"/>
+      <schemaTargets xmi:id="_SkpT3RKLEemhDKcBdY9JmA" RelativeXPathQuery="insuredType" TagName="insuredType"/>
+      <schemaTargets xmi:id="_SkpT3hKLEemhDKcBdY9JmA" RelativeXPathQuery="occupationClass" TagName="occupationClass"/>
+      <schemaTargets xmi:id="_SkpT3xKLEemhDKcBdY9JmA" RelativeXPathQuery="policyStartDate" TagName="policyStartDate"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_SkpT4BKLEemhDKcBdY9JmA" name="default" dataManager="_SkpT0BKLEemhDKcBdY9JmA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_SkpT4RKLEemhDKcBdY9JmA" id="_GeA5MBKLEemhDKcBdY9JmA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SkpT4hKLEemhDKcBdY9JmA" label="name" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SkpT4xKLEemhDKcBdY9JmA" label="preferredName" length="8" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SkpT5BKLEemhDKcBdY9JmA" label="idNumber" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SkpT5RKLEemhDKcBdY9JmA" label="dob" length="10" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SkpT5hKLEemhDKcBdY9JmA" label="email" length="18" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SkpT5xKLEemhDKcBdY9JmA" label="mobile" length="8" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SkpT6BKLEemhDKcBdY9JmA" label="postalCode" length="6" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SkpT6RKLEemhDKcBdY9JmA" label="blockNo" length="4" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SkpT6hKLEemhDKcBdY9JmA" label="streetName" length="22" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SkpT6xKLEemhDKcBdY9JmA" label="unitNo" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SkpT7BKLEemhDKcBdY9JmA" label="buildingName" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SkpT7RKLEemhDKcBdY9JmA" label="insuredType" length="1" talendType="id_Character" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SkpT7hKLEemhDKcBdY9JmA" label="occupationClass" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SkpT7xKLEemhDKcBdY9JmA" label="policyStartDate" length="10" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
