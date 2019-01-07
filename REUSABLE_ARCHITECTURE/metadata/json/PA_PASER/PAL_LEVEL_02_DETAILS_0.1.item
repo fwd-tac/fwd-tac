@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
-  <TalendJSON:JSONFileConnection xmi:id="_DVwHwRKLEemhDKcBdY9JmA" name="PAL_LEVEL_02_DETAILS" dataPackage="_DVwHxRKLEemhDKcBdY9JmA" JSONFilePath="C:/Users/Administrator/Desktop/JSON_PARSER/PA_json.JSON" Encoding="UTF-8" readbyMode="JSONPATH">
+  <TalendJSON:JSONFileConnection xmi:id="_DVwHwRKLEemhDKcBdY9JmA" name="PAL_LEVEL_02_DETAILS" dataPackage="_DVwHxRKLEemhDKcBdY9JmA __m7v0BKOEemhDKcBdY9JmA" JSONFilePath="C:/Users/Administrator/Desktop/JSON_PARSER/PA_json.JSON" Encoding="UTF-8" readbyMode="JSONPATH">
     <schema xmi:id="_DVwHwhKLEemhDKcBdY9JmA" LimitBoucle="50" AbsoluteXPathQuery="$.details" flag="ROOT">
       <schemaTargets xmi:id="_DVwHwxKLEemhDKcBdY9JmA" RelativeXPathQuery="policyholder" TagName="policyholder"/>
       <schemaTargets xmi:id="_DVwHxBKLEemhDKcBdY9JmA" RelativeXPathQuery="insured[*]" TagName="insured___"/>
@@ -11,6 +11,13 @@
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_DVwu0BKLEemhDKcBdY9JmA" id="_TA3yQBKKEemhDKcBdY9JmA" label="metadata">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DVwu0RKLEemhDKcBdY9JmA" label="policyholder" length="322" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DVwu0hKLEemhDKcBdY9JmA" label="insured___" length="203" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="__m7v0BKOEemhDKcBdY9JmA" name="default" dataManager="_DVwHwRKLEemhDKcBdY9JmA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="__m7v0RKOEemhDKcBdY9JmA" id="_9fW_UBKOEemhDKcBdY9JmA" label="metadata1">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__m7v0hKOEemhDKcBdY9JmA" label="policyholder" length="322" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__m7v0xKOEemhDKcBdY9JmA" label="insured___" length="203" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="__m7v1BKOEemhDKcBdY9JmA" label="policyId" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
     </ownedElement>
   </orgomg.cwm.resource.record:RecordFile>
 </xmi:XMI>
